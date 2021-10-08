@@ -1,0 +1,26 @@
+@import "colors";
+
+.price_list
+{
+    height: 400px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.price_top
+{
+    position: relative;
+    background-color: $orange2;
+    height: 25%;
+    border-radius: 8px 8px 0 0;
+}
+
+.price_title
+{
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
