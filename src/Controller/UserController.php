@@ -46,8 +46,7 @@ class UserController extends AbstractController
         $user = new User();
         $form = $this->createForm(LoginType::class, $user);
 
-        $user->setCreatedAt(new DateTimeImmutable());
-        // $user->setIdOption(1);
+        // $user->setCreatedAt(new DateTimeImmutable());
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
