@@ -22,6 +22,7 @@ class UserController extends AbstractController
         $user = new User();
         $form = $this->createForm(RegisterType::class, $user);
 
+
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
@@ -44,6 +45,9 @@ class UserController extends AbstractController
     {
         $user = new User();
         $form = $this->createForm(LoginType::class, $user);
+
+        $user->setCreatedAt(new DateTimeImmutable());
+        // $user->setIdOption(1);
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
