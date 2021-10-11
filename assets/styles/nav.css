@@ -49,3 +49,9 @@
 body{
   background-color: white;
 }
+.navBurger{
+  display: none;
+}
+.navBurger:hover{
+  cursor: pointer;
+}
