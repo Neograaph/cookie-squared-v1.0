@@ -23,7 +23,6 @@ class RegisterType extends AbstractType
             ->add('email')
             ->add('password', PasswordType::class)
             ->add('confirm_password', PasswordType::class)
-            // ->add('id_option')
         ;
     }
 
