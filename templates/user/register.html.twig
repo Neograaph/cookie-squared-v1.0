@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Inscription</h1>
+
+    {{ form_start(register) }}
+    {{ form_widget(register) }}
+    <button type="submit">Inscription</button>
+    {{ form_end(register) }}
+{% endblock %}
