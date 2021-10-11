@@ -1,0 +1,182 @@
+@import "colors";
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: "Montserrat-Regular"; 
+}
+.price
+{
+    display: flex;
+    justify-content: center;
+}
+
+.price_list
+{
+    height: 400px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px black;
+    margin: 10px;
+}
+
+// --------- PRICE TOP ----------
+
+.price_top
+{
+    position: relative;
+    background-color: $orange2;
+    height: 25%;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.price_title
+{
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $marron1;
+    z-index: 10;
+}
+
+.price_shadow_1
+{
+    position: absolute;
+    background-color: #FFCB65;
+    height:100%;
+    width: 100%;
+    top: 60%;
+    left:-10%;
+    border-radius: 10px;
+    transform: rotate(-30deg);
+}
+
+.price_shadow_2
+{
+    position: absolute;
+    background-color: #FFCB65;
+    height: 100%;
+    width: 100%;
+    top: 110%;
+    left: -60%;
+    border-radius: 10px;
+    transform: rotate(-60deg);
+}
+
+.price_shadow_3
+{
+    position: absolute;
+    background-color: #FFCB65;
+    height: 100%;
+    width: 100%;
+    top: -140%;
+    left: 50%;
+    border-radius: 10px;
+    transform: rotate(-60deg);
+}
+
+.price_shadow_4
+{
+    position: absolute;
+    background-color: #FFCB65;
+    height: 200%;
+    width: 100%;
+    top: 60%;
+    left: 10%;
+    border-radius: 10px;
+    transform: rotate(100deg);
+}
+
+.price_shadow_5
+{
+    position: absolute;
+    background-color: #FFCB65;
+    height: 100%;
+    width: 100%;
+    top: -140%;
+    left: -30%;
+    border-radius: 10px;
+    transform: rotate(-60deg);
+}
+
+// --------- PRICE BODY ----------
+
+.price_body
+{
+    height: 60%;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.price_circle
+{
+    position: absolute;
+    width: 40%;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.price_circle_text
+{
+    top: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:20;
+}
+
+.price_features
+{
+    padding-top: 60px;
+}
+
+.price_features h3
+{
+    margin:0;
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.price_features h3 .fa-check
+{
+    color: green;
+    margin-right: 5px;
+}
+
+.price_features h3 .fa-ban
+{
+    color: red;
+    margin-right: 5px;
+}
+
+// --------- PRICE FOOTER ----------
+
+.price_footer
+{
+    height: 15%;
+    background-color: #FFCB65;
+    border-radius: 0 0 8px 8px;
+}
+
+.price_footer_text
+{
+    margin:0;
+    font-weight: 500;
+    text-align:center;
+    padding-top: 12px;
+}
