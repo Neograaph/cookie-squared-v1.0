@@ -4,26 +4,23 @@
 {% endblock %}
 
 {% block body %}
-	<nav>
-		<div class='navTopShadow'></div>
-		<div class='navTop'>
-			<img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared">
-			<ul>
-				<li><a href="#sectionrgpd">RGPD & ePrivacy</a>
-				</li>
+<nav>
+    <div class='navTopShadow'></div>
+        <div class='navTop'>
+            <img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared">
+            <ul>
+                <li><a href="#sectionrgpd">RGPD & ePrivacy</a></li>
 				<li><a href="#sectionprice">Tarifs</a></li>
 				<li><a href="#sectionqsn">A propos</a></li>
-				<li>Connexion</li>
-				<li>Inscription</li>
-				<li>Langues</li>
-			</ul>
+                <li><a href="{{ path('app_login') }}">Connexion</a></li>
+                <li><a href="{{ path('register') }}">Inscription</a></li>
+                <li>Langues</li>
+            </ul> 
 			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-		</div>
-	</nav>
-
-	
+    </div>
+</nav>
 
 {# section prices #}
     <div class="pricecontainer" id="sectionprice">

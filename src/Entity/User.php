@@ -12,6 +12,10 @@ use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @UniqueEntity(
+ *     fields={"email"},
+ *     message="Cette adresse mail est déjà utilisée !"
+ * )
  */
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
@@ -23,7 +27,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=180, unique=true)
+     * @ORM\Column(name="email", type="string", length=180, unique=true)
      * @Assert\Email
      */
     private $email;

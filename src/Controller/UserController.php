@@ -29,14 +29,13 @@ class UserController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
 
             $hash = $hasher->hashPassword($user, $user->getPassword());
-
             $user->setPassword($hash);
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);
             $em->flush();
 
-            return $this->redirectToRoute('home_page');
+            return $this->redirectToRoute('app_login');
         }
 
         
@@ -50,9 +49,9 @@ class UserController extends AbstractController
      */
     public function login(AuthenticationUtils $authenticationUtils): Response
     {
-        // if ($this->getUser()) {
-        //     return $this->redirectToRoute('target_path');
-        // }
+        if ($this->getUser()) {
+            return $this->redirectToRoute('home_page');
+        }
 
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
