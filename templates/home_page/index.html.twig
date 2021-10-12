@@ -33,7 +33,7 @@
 							<a href="{{ path('app_logout') }}">Mes sites</a>
 						</div>
 					{% else %}
-					<a href="{{ path('register') }}">Inscription</a>
+						<a href="{{ path('register') }}">Inscription</a>
 					{% endif %}
 				</li>
 				<li>Langues</li>
@@ -44,9 +44,45 @@
 		</div>
 	</nav>
 
+	{# section accueil #}
+	<div class="accueil_container">
+		<div class="accueil_title">
+			<h1>Une solution simple pour gérer les Cookies de votre site web</h1>
+		</div>
+
+		<div class="accueil_description">
+			<p>Cookie Squared est une solution simple pour ouvrir une bannière de cookie entièrement personnalisable sur votre site Web. Il recueille le consentement de manière transparente et aide votre site Web à se conformer au RGPD et à la directive ePrivacy en seulement trois étapes faciles.</p>
+		</div>
+
+		<div class="accueil_img">
+			<img src="{{ asset('build/images/accueil.png') }}" alt="Image accueil principal">
+		</div>
+	</div>
+
+	<div class="fonctsectionmain" id="sectionfonctmain">
+
+		<h1>Fonctionnalités</h1>
+
+		<div class="fonctsection" id="sectionfonct">
+
+			<div class="fonct" id="fonct1">
+				<h2>Choisissez un modèle et personnalisez-le</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus sit et rem accusantium natus</p>
+			</div>
+			<div class="fonct" id="fonct2">
+				<h2>Scannez votre site</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus sit et rem accusantium natus</p>
+			</div>
+			<div class="fonct" id="fonct3">
+				<h2>Ajoutez les cookies que vous souhaitez</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus sit et rem accusantium natus</p>
+			</div>
+
+		</div>
+
+	</div>
 	{# section prices #}
 	<div class="pricecontainer" id="sectionprice">
-		<h1>Tarifs</h1>
 		<div class="price">
 
 			<div class="price_list_mobile">
@@ -81,34 +117,8 @@
 				</div>
 
 			</div>
-
-
-	<div class="fonctsectionmain" id="sectionfonctmain">
-
-		<h1>Fonctionnalités</h1>
-
-		<div class="fonctsection" id="sectionfonct">
-
-			<div class="fonct" id="fonct1">
-				<h2>Choisissez un modèle et personnalisez-le</h2>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus sit et rem accusantium natus</p>
-			</div>
-			<div class="fonct" id="fonct2">
-				<h2>Scannez votre site</h2>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus sit et rem accusantium natus</p>
-			</div>
-			<div class="fonct" id="fonct3">
-				<h2>Ajoutez les cookies que vous souhaitez</h2>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus sit et rem accusantium natus</p>
-			</div>
-
 		</div>
 
-	</div>
-
-
-	{# section prices #}
-	<div class="pricecontainer" id="sectionprice">
 		<h1>Tarifs</h1>
 		<div class="price">
 
@@ -259,6 +269,6 @@
 
 			<img src="{{ asset('build/images/logo2.png') }}" alt="logo">
 		</div>
-	</div>
 
-{% endblock %}
+
+	{% endblock %}

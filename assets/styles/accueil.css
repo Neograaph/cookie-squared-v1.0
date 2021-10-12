@@ -1,0 +1,41 @@
+.accueil_container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  grid-template-areas: 
+      "title img"
+      "description img";
+  margin: 100px 10% 100px 20%;
+}
+
+.accueil_title {
+  grid-area: title;
+  z-index:10;
+  align-self: center;
+}
+
+.accueil_description {
+  grid-area: description;
+  z-index:10;
+  align-self: start;
+  font-size: 20px;
+
+}
+
+.accueil_description p
+{
+  font-family: "Montserrat-Light", sans-serif; 
+}
+.accueil_img
+{
+  grid-area: img;
+  margin-left: -50px;
+}
+
+.accueil_img img
+{
+  width: 100%;
+  height: 100%;
+}
