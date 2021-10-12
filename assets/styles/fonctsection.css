@@ -1,0 +1,38 @@
+.fonctsection{
+    /* margin-top: 200px; */
+    height: 600px;
+    text-align: center;
+    background: url("../images/bgfonction.png");
+    background-size: cover;
+    padding: 5% 10%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .fonct{
+    display: flex;
+    justify-content: space-around;
+} */
+
+#fonct1{
+    clip-path: polygon(50% 0%, 88% 3%, 97% 35%, 100% 70%, 90% 89%, 50% 100%, 7% 98%, 0% 70%, 0% 35%, 17% 10%);
+    background-color: #DB7C0E;
+    height: 300px;
+    width: 25%;
+}
+
+#fonct2{
+    clip-path: polygon(53% 6%, 87% 15%, 97% 35%, 94% 70%, 90% 84%, 61% 86%, 26% 86%, 0% 70%, 9% 35%, 17% 10%);
+    background-color: #FED880;
+    height: 300px;
+    width: 25%;
+}
+
+#fonct3{
+    clip-path: polygon(54% 4%, 87% 15%, 89% 37%, 94% 70%, 90% 84%, 63% 95%, 30% 93%, 7% 70%, 9% 35%, 27% 1%);    
+    background-color: #EC902B;
+    height: 300px;
+    width: 25%;
+}
