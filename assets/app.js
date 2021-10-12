@@ -11,6 +11,8 @@ import './styles/app.css';
 import './styles/price.scss';
 import './styles/nav.css';
 import './styles/mediaQueries.css';
+import './styles/rgpdqsn.css';
+import './styles/wpsection.css';
 
 // start the Stimulus application
 import './bootstrap';
