@@ -91,4 +91,9 @@
     color: white;
     height: 50px;
   }
+  .navTop{
+    display: flex;
+    background-color: #fdd26d;
+    padding: 1%;
+  }
 }
