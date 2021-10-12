@@ -15,6 +15,19 @@
 {
     display: flex;
     justify-content: center;
+    
+}
+
+.pricecontainer{
+    
+    background-color: #f1f1f1;
+    padding-top: 10px;
+}
+
+.pricecontainer h1{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
 
 .price_list
@@ -24,6 +37,11 @@
     border-radius: 8px;
     box-shadow: 0 0 8px black;
     margin: 10px;
+}
+
+.price_list_mobile
+{
+    display: none;
 }
 
 // --------- PRICE TOP ----------

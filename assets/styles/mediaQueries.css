@@ -1,0 +1,94 @@
+@media only screen and (max-width: 900px)
+{
+    .containerprice
+    {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrow_left_price
+    {
+        max-width: 50px;
+        transform: rotate(180deg);
+        display:block;
+    }
+
+    .arrow_right_price
+    {
+        max-width: 50px;
+        display:block;
+    }
+    .price_list
+    {
+        display:none;
+    }
+
+    .price_list_mobile
+    {
+        display: block;
+        height: 600px;
+        width: 450px;
+        border-radius: 8px;
+        box-shadow: 0 0 8px black;
+        margin: 10px;
+    }
+
+    /* --------------- PRICE BODY ------------------ */
+    .price_circle
+    {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .price_circle_text
+    {
+        top: 35%;
+        font-size: 30px;
+    }
+
+    .price_features
+    {
+        padding-top: 80px;
+    }
+
+    .price_features h3
+    {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    /* --------------- PRICE FOOTER ------------------ */
+
+    .price_footer_text
+    {
+        padding-top: 25px;
+    }
+}
+    /* --------------- NAVBAR ------------------ */
+@media only screen and (max-width: 1200px) and (min-width:901px) {
+  .navTop>ul{
+    gap: 1%;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .navTop>ul{
+    gap: 0%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .navTop>ul{
+    display: none;
+  }
+  .navTop{
+    display: flex;
+    justify-content: space-between;
+  }
+  .navBurger{
+    display: block;
+    color: white;
+    height: 50px;
+  }
+}
