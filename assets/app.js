@@ -13,6 +13,7 @@ import './styles/nav.css';
 import './styles/mediaQueries.css';
 import './styles/rgpdqsn.css';
 import './styles/wpsection.css';
+import './styles/fonctsection.css';
 
 // start the Stimulus application
 import './bootstrap';
