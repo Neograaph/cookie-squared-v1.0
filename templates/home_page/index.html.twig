@@ -4,32 +4,30 @@
 {% endblock %}
 
 {% block body %}
-<nav>
-    <div class='navTopShadow'></div>
-        <div class='navTop'>
-            <img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared">
-            <ul>
-                <li>RGPD & ePrivacy </li>
-                <li>Tarifs</li>
-                <li>A propos</li>
-                <li>Connexion</li>
-                <li>Inscription</li>
-                <li>Langues</li>
-            </ul>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-    </div>
-</nav>
-<div class="container_price">
-		<div class="arrow_left_price">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
-			</svg>
+	<nav>
+		<div class='navTopShadow'></div>
+		<div class='navTop'>
+			<img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared">
+			<ul>
+				<li><a href="">RGPD & ePrivacy</a>
+				</li>
+				<li><a href="">Tarifs</a></li>
+				<li><a href="#sectionqsn">A propos</a></li>
+				<li>Connexion</li>
+				<li>Inscription</li>
+				<li>Langues</li>
+			</ul>
 		</div>
+	</nav>
 
+	
 
-		<div class="price_list_mobile">
+{# section prices #}
+    <div class="pricecontainer" id="sectionprice">
+    <h1>Tarifs</h1>
+	<div class="price">
+        
+		<div class="price_list">
 			<div class="price_top">
 				<h2 class="price_title">Free</h2>
 				<div class="price_shadow_1"></div>
@@ -59,115 +57,119 @@
 			<div class="price_footer">
 				<h2 class="price_footer_text">Try now for free</h2>
 			</div>
-
-		</div>
-		<div class="arrow_right_price">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
-			</svg>
 		</div>
 
+		<div class="price_list">
+			<div class="price_top">
+				<h2 class="price_title">Developer</h2>
+				<div class="price_shadow_2"></div>
+				<div class="price_shadow_3"></div>
+			</div>
 
-		<div class="price">
-			<div class="price_list">
-				<div class="price_top">
-					<h2 class="price_title">Free</h2>
-					<div class="price_shadow_1"></div>
+			<div class="price_body">
+				<div class="price_circle">
+					<h3 class="price_circle_text">9$</h3>
 				</div>
+				<div class="price_features">
+					<h3>
+						<i class="fas fa-check"></i>Feature 1</h3>
+					<h3>
+						<i class="fas fa-check"></i>Feature 2</h3>
+					<h3>
+						<i class="fas fa-check"></i>Feature 3</h3>
+					<h3>
+						<i class="fas fa-check"></i>Feature 4</h3>
+					<h3>
+						<i class="fas fa-ban"></i>Feature 5</h3>
+					<h3>
+						<i class="fas fa-ban"></i>Feature 6</h3>
 
-				<div class="price_body">
-					<div class="price_circle">
-						<h3 class="price_circle_text">Free</h3>
-					</div>
-					<div class="price_features">
-						<h3>
-							<i class="fas fa-check"></i>Feature 1</h3>
-						<h3>
-							<i class="fas fa-check"></i>Feature 2</h3>
-						<h3>
-							<i class="fas fa-ban"></i>Feature 3</h3>
-						<h3>
-							<i class="fas fa-ban"></i>Feature 4</h3>
-						<h3>
-							<i class="fas fa-ban"></i>Feature 5</h3>
-						<h3>
-							<i class="fas fa-ban"></i>Feature 6</h3>
-
-					</div>
-				</div>
-
-				<div class="price_footer">
-					<h2 class="price_footer_text">Try now for free</h2>
 				</div>
 			</div>
 
-			<div class="price_list">
-				<div class="price_top">
-					<h2 class="price_title">Developer</h2>
-					<div class="price_shadow_2"></div>
-					<div class="price_shadow_3"></div>
-				</div>
-
-				<div class="price_body">
-					<div class="price_circle">
-						<h3 class="price_circle_text">9$</h3>
-					</div>
-					<div class="price_features">
-						<h3>
-							<i class="fas fa-check"></i>Feature 1</h3>
-						<h3>
-							<i class="fas fa-check"></i>Feature 2</h3>
-						<h3>
-							<i class="fas fa-check"></i>Feature 3</h3>
-						<h3>
-							<i class="fas fa-check"></i>Feature 4</h3>
-						<h3>
-							<i class="fas fa-ban"></i>Feature 5</h3>
-						<h3>
-							<i class="fas fa-ban"></i>Feature 6</h3>
-
-					</div>
-				</div>
-
-				<div class="price_footer">
-					<h2 class="price_footer_text">Select</h2>
-				</div>
+			<div class="price_footer">
+				<h2 class="price_footer_text">Select</h2>
 			</div>
-
-			<div class="price_list">
-				<div class="price_top">
-					<h2 class="price_title">Business</h2>
-					<div class="price_shadow_4"></div>
-					<div class="price_shadow_5"></div>
-				</div>
-
-				<div class="price_body">
-					<div class="price_circle">
-						<h3 class="price_circle_text">19$</h3>
-					</div>
-					<div class="price_features">
-						<h3>
-							<i class="fas fa-check"></i>Feature 1</h3>
-						<h3>
-							<i class="fas fa-check"></i>Feature 2</h3>
-						<h3>
-							<i class="fas fa-check"></i>Feature 3</h3>
-						<h3>
-							<i class="fas fa-check"></i>Feature 4</h3>
-						<h3>
-							<i class="fas fa-check"></i>Feature 5</h3>
-						<h3>
-							<i class="fas fa-check"></i>Feature 6</h3>
-
-					</div>
-				</div>
-
-				<div class="price_footer">
-					<h2 class="price_footer_text">Select</h2>
-				</div>
-			</div>
-
 		</div>
+
+		<div class="price_list">
+			<div class="price_top">
+				<h2 class="price_title">Business</h2>
+				<div class="price_shadow_4"></div>
+				<div class="price_shadow_5"></div>
+			</div>
+
+			<div class="price_body">
+				<div class="price_circle">
+					<h3 class="price_circle_text">19$</h3>
+				</div>
+				<div class="price_features">
+					<h3>
+						<i class="fas fa-check"></i>Feature 1</h3>
+					<h3>
+						<i class="fas fa-check"></i>Feature 2</h3>
+					<h3>
+						<i class="fas fa-check"></i>Feature 3</h3>
+					<h3>
+						<i class="fas fa-check"></i>Feature 4</h3>
+					<h3>
+						<i class="fas fa-check"></i>Feature 5</h3>
+					<h3>
+						<i class="fas fa-check"></i>Feature 6</h3>
+
+				</div>
+			</div>
+
+			<div class="price_footer">
+				<h2 class="price_footer_text">Select</h2>
+			</div>
+		</div>
+
+	</div>
+    </div>
+
+    <div id="sectionwp">
+        <h1>Extension Wordpress</h1><br>
+        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth</p><br><br>
+        <button><h2>Télecharger le plugin Wordpress</h2></button>
+    </div>
+
+	{# section RGPD #}
+	<div id="sectionrgpd">
+		<br><br><br>
+		<div class="flexrgpd">
+			<h2 id="rgpd">RGPD et ePrivacy</h2>
+		</div>
+		<div id="parargpd">
+			<p><br>Le sigle RGPD signifie « Règlement Général sur la Protection des Données » (en anglais « General Data Protection Regulation » ou GDPR). Le RGPD encadre le traitement des données personnelles sur le territoire de l’Union européenne.<br><br>
+
+				Le règlement ePrivacy 2021 est un projet de règlement du Conseil de l'UE qui régit toutes les communications électroniques sur les services et réseaux accessibles au public provenant de particuliers au sein de l'Union européenne.<br><br>
+
+				Ce nouveau règlement européen s’inscrit dans la continuité de la Loi française Informatique et Libertés de 1978 et renforce le contrôle par les citoyens de l’utilisation qui peut être faite des données les concernant.<br><br>
+
+				Il harmonise les règles en Europe en offrant un cadre juridique unique aux professionnels. Il permet de développer leurs activités numériques au sein de l’UE en se fondant sur la confiance des utilisateurs.</p><br>
+
+			<button><a href="#">En savoir plus</a></button>
+		</div>
+	</div>
+
+
+	{# section Qui Sommes Nous #}
+	<div id="sectionqsn">
+		<h1 id="qsn">Qui sommes nous ?</h1><br>
+		<div id="mainqsn">
+			<p><br>Depuis 2017, nous accompagnons nos clients à la réalisation de leurs projets numériques.
+				<br><br>
+
+				L’humain est au centre de notre stratégie, nous accompagnons, formons, et donnons vie à vos projets avec des solutions adaptées à vos besoins, à ceux de vos clients, à ceux de votre équipe.<br><br>
+
+				Code Colliders c’est avant tout la passion du développement de tout projet, quel qu’il soit, en mettant l’accent sur les solutions numériques, connectées.<br><br>
+
+				Nous menons à bien vos projets de la conception à la réalisation.</p>
+
+
+			<img src="{{ asset('build/images/logo2.png') }}" alt="logo">
+		</div>
+	</div>
 
 {% endblock %}
->>>>>>> templates/home_page/index.html.twig
