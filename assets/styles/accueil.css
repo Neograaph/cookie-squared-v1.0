@@ -6,7 +6,8 @@
   justify-content: center;
   grid-template-areas: 
       "title img"
-      "description img";
+      "description img"
+      "button img";
   margin: 100px 10% 100px 20%;
 }
 
@@ -28,10 +29,26 @@
 {
   font-family: "Montserrat-Light", sans-serif; 
 }
+
+.accueil_start_button
+{
+  grid-area: button;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+.accueil_start_button a
+{
+  padding: 16px 100px;
+  background-color: #F8A730;
+  text-align: center;
+  border-radius: 8px;
+}
+
 .accueil_img
 {
   grid-area: img;
-  margin-left: -50px;
+  z-index: -10;
 }
 
 .accueil_img img
