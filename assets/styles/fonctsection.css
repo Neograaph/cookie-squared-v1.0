@@ -4,8 +4,8 @@
     background: url("../images/bgfonction.png");
     background-size: 100%;
     padding: 5% 10%;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-repeat: repeat-y;
+    
 }
 
 
