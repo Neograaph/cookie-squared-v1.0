@@ -69,6 +69,12 @@
     text-align: center;
   }
 
+  /* media queries fonct */
+
+  .fonctsection{
+      display: flex;
+      flex-direction: column;
+  }
   /* --------------- PRICES ------------------ */
 
   .containerprice
