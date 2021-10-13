@@ -2,11 +2,13 @@
 
 {% block body %}
     <div class="form-background">
-        <div class="user-form">
+        <div class="user-form register-form">
             <h1>Inscription</h1>
 
             {{ form_start(register) }}
             {{ form_widget(register) }}
+            <input type="checkbox" class="check" name="rules" required>
+			<label for="rules">J'ai lu et j'accepte le règlement et la politique de confidentialité</label>
             <button type="submit">Créer mon compte</button>
             {{ form_end(register) }}
         </div>

@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Log in!
+{% block title %}Connexion
 {% endblock %}
 
 {% block body %}
@@ -25,10 +25,8 @@
 
 				<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 
-				<label>
-					<input type="checkbox" id="remember_me" name="_remember_me">
-					Se souvenir de moi
-				</label>
+				<input type="checkbox" class="check" name="_remember_me">
+				<label for="_remember_me">Se souvenir de moi</label>
 
 				<button type="submit">
 					Se connecter
