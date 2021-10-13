@@ -1,5 +1,5 @@
 .fonctsectionmain{
-    height: 600px;
+    height: auto;
     text-align: center;
     background: url("../images/bgfonction.png");
     background-size: 100%;
@@ -45,6 +45,7 @@
 }
 
 @media only screen and (max-width: 900px) {
+
         .fonctsection{
             display: flex;
             flex-direction: row;
