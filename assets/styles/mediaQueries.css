@@ -36,7 +36,40 @@
     padding: 1%;
   }
 
-  /* --------- PRICES ------------ */
+  /* --------------- HOME ------------------ */
+
+  .accueil_container
+  {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: 
+    "title"
+    "img"
+    "description"
+    "button" !important;
+    margin: 100px 10% 100px 10% !important;
+  }
+
+  .accueil_title
+  {
+    font-size: 2vw !important;
+  }
+
+  .accueil_title h1
+  {
+    text-align: center;
+  }
+
+  .accueil_description
+  {
+    font-size: 2vw !important;
+  }
+
+  .accueil_description p
+  {
+    text-align: center;
+  }
+
+  /* --------------- PRICES ------------------ */
 
   .containerprice
   {

@@ -1,5 +1,4 @@
 .accueil_container {
-  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -15,13 +14,16 @@
   grid-area: title;
   z-index:10;
   align-self: center;
+  font-size: 1.5vw;
 }
+
+
 
 .accueil_description {
   grid-area: description;
   z-index:10;
   align-self: start;
-  font-size: 20px;
+  font-size: 1.5vw;
 
 }
 
@@ -39,7 +41,7 @@
 
 .accueil_start_button a
 {
-  padding: 16px 100px;
+  padding: 16px 50px;
   background-color: #F8A730;
   text-align: center;
   border-radius: 8px;
@@ -54,5 +56,6 @@
 .accueil_img img
 {
   width: 100%;
-  height: 100%;
+  min-width: 350px;
+  height: auto;
 }
