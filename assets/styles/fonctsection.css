@@ -22,7 +22,6 @@
     clip-path: polygon(50% 0%, 88% 3%, 97% 35%, 100% 70%, 90% 89%, 50% 100%, 7% 98%, 0% 70%, 0% 35%, 17% 10%);
     background-color: #DB7C0E;
     height: 80%;
-    width: 30%;
     padding: 80px 40px 80px 40px;
 }
 
@@ -30,7 +29,6 @@
     clip-path: polygon(53% 6%, 87% 15%, 97% 35%, 94% 70%, 90% 84%, 61% 86%, 26% 86%, 0% 70%, 9% 35%, 17% 10%);
     background-color: #FED880;
     height: 80%;
-    width: 30%;
     padding: 80px 40px 80px 40px;
 
 }
@@ -39,7 +37,6 @@
     clip-path: polygon(54% 4%, 87% 15%, 89% 37%, 94% 70%, 90% 84%, 63% 95%, 30% 93%, 7% 70%, 9% 35%, 27% 1%);    
     background-color: #EC902B;
     height: 80%;
-    width: 30%;
     padding: 80px 40px 80px 40px;
   
 }
@@ -48,6 +45,6 @@
 
         .fonctsection{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
         }
     }
