@@ -1,0 +1,41 @@
+.form-background {
+    height: 100vh;
+    background-color: #111;
+    fill-opacity: 20%;
+    display: flex;
+    align-items: center;
+}
+.user-form{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.user-form input {
+    height: 50px;
+    width: 100%;
+    border-radius: 20px;
+    border: solid #a45b16 2px;
+    margin: 30px 0;
+    display: block;
+    text-align: center;
+    font-size: large;
+}
+
+.user-form button {
+    background-color: #e6943b;
+    height: 60px;
+    width: 250px;
+    border: none;
+    border-radius: 20px;
+}
+
+.user-form #remember_me {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    display: inline;
+}
