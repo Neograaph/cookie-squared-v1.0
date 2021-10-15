@@ -7,7 +7,6 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
-
 import './styles/price.scss';
 import './styles/nav.css';
 import './styles/mediaQueries.css';
@@ -18,6 +17,7 @@ import './styles/forms.css';
 import './styles/footer.css';
 import './js/slider';
 
+import './js/nav.js';
 
 // start the Stimulus application
 import './bootstrap';
