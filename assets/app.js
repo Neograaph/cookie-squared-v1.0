@@ -17,5 +17,6 @@ import './styles/fonctsection.css';
 import './styles/accueil.css';
 import './styles/forms.css';
 
+import './js/nav.js';
 // start the Stimulus application
 import './bootstrap';
