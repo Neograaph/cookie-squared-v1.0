@@ -21,6 +21,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "@splidejs/splide": "^3.1.6",
         "watch": "^1.0.2"
     }
 }
