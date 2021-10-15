@@ -49,8 +49,42 @@
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
 				</svg>
 			</div>
-			{# fin menu burger #}
 		</div>
+		<div id="navOpen">
+			<ul>
+				<li>
+					<a href="#sectionrgpd">RGPD & ePrivacy</a>
+				</li>
+				<li>
+					<a href="#sectionprice">Tarifs</a>
+				</li>
+				<li>
+					<a href="#sectionqsn">A propos</a>
+				</li>
+				<li>
+					{% if app.user %}
+						<div class="mb-3">
+							<a href="{{ path('app_logout') }}">Profil</a>
+						</div>
+					{% else %}
+						<a href="{{ path('app_login') }}">Connexion</a>
+					{% endif %}
+				</li>
+				<li>
+					{% if app.user %}
+						<div class="mb-3">
+							<a href="{{ path('app_logout') }}">Mes sites</a>
+						</div>
+					{% else %}
+						<a href="{{ path('register') }}">Inscription</a>
+					{% endif %}
+				</li>
+				<li>
+				<a href="#">Langues</a>
+				</li>
+			</ul>
+		</div>
+			{# fin menu burger #}
 	</nav>
 
 	{# section accueil #}

@@ -44,3 +44,33 @@ body{
 .navBurger:hover{
   cursor: pointer;
 }
+/* masque le menu version téléphone au chargement de la page */
+#navClose{
+  display: none;
+}
+#navOpen{
+  display: none;
+  background-color: #fdd26d;
+  position: absolute;
+  z-index: 50;
+  height: 100%;
+  width: 100%;
+  top: 55px;
+}
+#navOpen>ul{
+  display: flex;
+  flex-direction: column;
+  /* gap: 30px; */
+  margin-top: 50px;
+  align-items: center;
+}
+#navOpen>ul>li{
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #F6B556;
+}
+#navOpen>ul>li>a{
+  display: block;
+  padding: 20px 0;
+}
