@@ -14,7 +14,7 @@
 .price
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     
 }
 
@@ -34,7 +34,7 @@
 .price_list
 {
     height: 400px;
-    width: 250px;
+    width: 300px;
     border-radius: 8px;
     box-shadow: 0 0 8px black;
     margin: 10px;
@@ -144,7 +144,7 @@
 .price_circle
 {
     position: absolute;
-    width: 40%;
+    width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: white;
@@ -156,11 +156,15 @@
 
 .price_circle_text
 {
-    top: 20%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    // top: 20%;
+    // position: absolute;
+    // left: 50%;
+    transform: translateY(-50%);
     z-index:20;
+    // align-items: center;
+    text-align: center;
+    padding-top: 100%;
+    
 }
 
 .price_features
