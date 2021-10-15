@@ -47,13 +47,14 @@
 }
 
 #mainqsn p{
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 8%;
+    margin-left: 8%;
     text-align: center;
 }
 
-img{
+ #mainqsn img{
     height: 100px;
+    margin: auto;
 }
 
 #qsn{
