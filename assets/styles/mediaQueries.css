@@ -143,4 +143,15 @@
   {
       padding-top: 25px;
   }
+
+
+/* -------------------RESPONSIVE QUI SOMMES NOUS---------------- */
+
+  #mainqsn
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
 }
