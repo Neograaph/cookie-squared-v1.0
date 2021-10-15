@@ -77,31 +77,14 @@
   }
   /* --------------- PRICES ------------------ */
 
-  .containerprice
-  {
-      margin-top: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .arrow_left_price
-  {
-      max-width: 50px;
-      transform: rotate(180deg);
-      display:block;
-  }
-
-  .arrow_right_price
-  {
-      max-width: 50px;
-      display:block;
-  }
   .price_list
   {
       display:none;
   }
-
+  .splide
+  {
+    display: block;
+  }
   .price_list_mobile
   {
       display: block;
