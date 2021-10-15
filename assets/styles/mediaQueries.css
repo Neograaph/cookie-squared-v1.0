@@ -1,3 +1,26 @@
+@media only screen and (min-width:901px)
+{
+  #sectionwp{
+    height: 300px;
+    color: white;
+    text-align: center;
+    background: url("../images/bgwp2.png");
+    padding: 5% 10%;
+    
+}
+
+#sectionwp button{
+    background-color: #F9A90C;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.wpresponsive_img
+{
+  display: none;
+}
+}
 @media only screen and (max-width: 1200px) and (min-width:901px) {
 
   /* --------------- NAVBAR ------------------ */
@@ -127,6 +150,19 @@
       padding-top: 25px;
   }
 
+  /* --------------- WORDPRESS SECTION ------------------ */
+
+  #sectionwp{
+    text-align: center;
+    padding: 5% 10%;
+    
+}
+#sectionwp button{
+    background-color: #F9A90C;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
 
 /* -------------------RESPONSIVE QUI SOMMES NOUS---------------- */
 
