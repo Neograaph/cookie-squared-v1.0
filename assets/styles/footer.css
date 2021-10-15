@@ -1,0 +1,29 @@
+
+
+.footer1{
+    background-color: #fdd26d;
+    padding: 0 10%;
+    height: 200px;
+    clip-path: polygon(0% 0%,100% 0%,100% 71%,94% 91%,87% 63%,66% 90%,56% 72%,37% 91%,16% 57%,0% 100%);
+    
+        
+  }
+  .footer2{
+    background-color: #fddd8c;
+    height: 250px;
+    width: 100%;
+    clip-path: polygon(0% 0%,100% 0%,100% 71%,94% 91%,87% 63%,66% 90%,56% 72%,37% 91%,16% 57%,0% 100%);
+    transform: scaleY(-1);
+}
+
+.footer4{
+    transform: scaleY(-1);
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    
+}
+.footer4 img{
+    width: auto;
+    margin: auto;
+}

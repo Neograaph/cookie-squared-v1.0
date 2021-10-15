@@ -11,12 +11,13 @@ import './styles/price.scss';
 import './styles/nav.css';
 import './styles/mediaQueries.css';
 import './styles/rgpdqsn.css';
-import './styles/wpsection.css';
 import './styles/fonctsection.css';
 import './styles/accueil.css';
 import './styles/forms.css';
+import './styles/footer.css';
 import './js/slider';
 
 import './js/nav.js';
+
 // start the Stimulus application
 import './bootstrap';
