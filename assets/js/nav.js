@@ -12,6 +12,8 @@ document.getElementById('navShow').addEventListener('click', function () {
   document.getElementById('navShow').style.display="none";
   document.getElementById('navClose').style.display="block";
   document.getElementById('navOpen').style.display="block";
+  document.getElementById('main').style.display="none";
+  document.getElementById('footer').style.display="none";
 
 });
 
@@ -21,5 +23,6 @@ document.getElementById('navClose').addEventListener('click', function () {
   document.getElementById('navShow').style.display="block";
   document.getElementById('navClose').style.display="none";
   document.getElementById('navOpen').style.display="none";
-
+  document.getElementById('main').style.display="block";
+  document.getElementById('footer').style.display="block";
 });
