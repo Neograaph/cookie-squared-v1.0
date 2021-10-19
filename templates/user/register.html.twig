@@ -11,6 +11,8 @@
 			<label for="rules">J'ai lu et j'accepte le règlement et la politique de confidentialité</label>
             <button type="submit">Créer mon compte</button>
             {{ form_end(register) }}
+
+            <p>Vous possédez déjà un compte ? <a href="{{ path('app_login') }}">Connectez-vous ici</a></p>
         </div>
     </div>
 {% endblock %}
