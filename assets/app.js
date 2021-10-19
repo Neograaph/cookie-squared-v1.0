@@ -14,9 +14,9 @@ import './styles/rgpdqsn.css';
 import './styles/fonctsection.css';
 import './styles/accueil.css';
 import './styles/forms.css';
+import './styles/userpage.css';
 import './styles/footer.css';
 import './js/slider';
-
 import './js/nav.js';
 
 // start the Stimulus application

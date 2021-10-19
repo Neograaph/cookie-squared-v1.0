@@ -62,6 +62,14 @@ class UserController extends AbstractController
     }
 
     /**
+     * @Route("/profil", name="user_info")
+     */
+    public function FunctionName(): Response
+    {
+        return $this->render('user/userinfo.html.twig', []);
+    }
+
+    /**
      * @Route("/logout", name="app_logout")
      */
     public function logout(): void
