@@ -21,7 +21,7 @@
 				<li>
 					{% if app.user %}
 						<div class="mb-3">
-							<a href="{{ path('app_logout') }}">Profil</a>
+							<a href="{{ path('user_info') }}">Profil</a>
 						</div>
 					{% else %}
 						<a href="{{ path('app_login') }}">Connexion</a>
@@ -64,7 +64,7 @@
 				<li>
 					{% if app.user %}
 						<div class="mb-3">
-							<a class="link" href="{{ path('app_logout') }}">Profil</a>
+							<a class="link" href="{{ path('user_info') }}">Profil</a>
 						</div>
 					{% else %}
 						<a class="link" href="{{ path('app_login') }}">Connexion</a>
@@ -98,7 +98,7 @@
 		</div>
 
 		<div class="accueil_start_button">
-			<a href="#">Commencer</a>
+			<a href=" {{ path('register') }} ">Commencer</a>
 		</div>
 
 		<div class="accueil_img">
