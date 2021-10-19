@@ -194,4 +194,12 @@ a{
     flex-wrap: wrap;
   }
 
+  .footer1{
+    height: 300px !important;
+  }
+  .footer2{
+    height: 350px !important;
+  }
+  
+
 }
