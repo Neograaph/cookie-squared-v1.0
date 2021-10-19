@@ -16,6 +16,7 @@ import './styles/wpsection.css';
 import './styles/fonctsection.css';
 import './styles/accueil.css';
 import './styles/forms.css';
+import './styles/userpage.css';
 
 // start the Stimulus application
 import './bootstrap';

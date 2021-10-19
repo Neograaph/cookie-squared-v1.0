@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page Utilisateur{% endblock %}
+
+{% block body %}
+	<div class="user_container">
+		<h2>Profil de {{ app.user.firstname }} {{ app.user.lastname }}</h2><br>
+		<h3>Informations de l'utilisateur</h3><br>
+
+		<p>Adresse mail : {{ app.user.email }}</p>
+		<p>Nom : {{ app.user.lastname }}</p>
+		<p>Prénom : {{ app.user.firstname }}</p>
+		<a href="">Modifier le mot de passe</a>
+
+		<div class="accueil_start_button">
+			<a href="">Voir mes sites</a>
+		</div>
+	</div>
+{% endblock %}
