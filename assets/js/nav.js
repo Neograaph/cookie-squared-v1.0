@@ -14,6 +14,7 @@ document.getElementById('navShow').addEventListener('click', function () {
   document.getElementById('navOpen').style.display="block";
   document.getElementById('main').style.display="none";
   document.getElementById('footer').style.display="none";
+  document.getElementById('aside').style.display="none";
 
 });
 
@@ -25,6 +26,7 @@ document.getElementById('navClose').addEventListener('click', function () {
   document.getElementById('navOpen').style.display="none";
   document.getElementById('main').style.display="block";
   document.getElementById('footer').style.display="block";
+  document.getElementById('aside').style.display="block";
 });
 
 document.getElementsByClassName('link')[0].addEventListener('click', function(){hide()});
@@ -38,4 +40,5 @@ function hide () {
   document.getElementById('navOpen').style.display="none";
   document.getElementById('main').style.display="block";
   document.getElementById('footer').style.display="block";
+  document.getElementById('aside').style.display="block";
 }

@@ -6,6 +6,18 @@
     left: 10px;
     background: url("../images/cookie.png");
     background-size: 100%;
-    z-index: 10;
+    z-index: 35;
 
+}
+
+/* ----------banniere cookie-------------- */
+
+#cookiebanner{
+    top: 0;
+    min-height: 100%;
+    width: 25%;
+    position: fixed;
+    right: 0;
+    background-color: blue;
+    z-index: 35;
 }
