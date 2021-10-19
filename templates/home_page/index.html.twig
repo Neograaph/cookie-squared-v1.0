@@ -38,12 +38,55 @@
 				</li>
 				<li>Langues</li>
 			</ul>
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-			</svg>
+			{# menu burger #}
+			<div id='navShow'>
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+				</svg>
+			</div>
+			<div id='navClose'>
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+				</svg>
+			</div>
 		</div>
+		<div id="navOpen">
+			<ul>
+				<li>
+					<a href="#sectionrgpd">RGPD & ePrivacy</a>
+				</li>
+				<li>
+					<a href="#sectionprice">Tarifs</a>
+				</li>
+				<li>
+					<a href="#sectionqsn">A propos</a>
+				</li>
+				<li>
+					{% if app.user %}
+						<div class="mb-3">
+							<a href="{{ path('app_logout') }}">Profil</a>
+						</div>
+					{% else %}
+						<a href="{{ path('app_login') }}">Connexion</a>
+					{% endif %}
+				</li>
+				<li>
+					{% if app.user %}
+						<div class="mb-3">
+							<a href="{{ path('app_logout') }}">Mes sites</a>
+						</div>
+					{% else %}
+						<a href="{{ path('register') }}">Inscription</a>
+					{% endif %}
+				</li>
+				<li>
+				<a href="#">Langues</a>
+				</li>
+			</ul>
+		</div>
+			{# fin menu burger #}
 	</nav>
-
+	<main id='main'>
 	{# section accueil #}
 	<div class="accueil_container">
 		<div class="accueil_title">
@@ -87,8 +130,14 @@
 		</div>
 
 	</div>
+
 	{# section prices #}
 	<div class="pricecontainer" id="sectionprice">
+		<h1>Tarifs</h1>
+		<div class="splide">
+		<div class="splide__track">
+		<ul class="splide__list">
+		<li class="splide__slide">
 		<div class="price">
 
 			<div class="price_list_mobile">
@@ -124,8 +173,88 @@
 
 			</div>
 		</div>
+		</li>
+				<li class="splide__slide">
+		<div class="price">
 
-		<h1>Tarifs</h1>
+			<div class="price_list_mobile">
+				<div class="price_top">
+					<h2 class="price_title">Developer</h2>
+					<div class="price_shadow_2"></div>
+					<div class="price_shadow_3"></div>
+				</div>
+
+				<div class="price_body">
+					<div class="price_circle">
+						<h3 class="price_circle_text">9$</h3>
+					</div>
+					<div class="price_features">
+						<h3>
+							<i class="fas fa-check"></i>Feature 1</h3>
+						<h3>
+							<i class="fas fa-check"></i>Feature 2</h3>
+						<h3>
+							<i class="fas fa-ban"></i>Feature 3</h3>
+						<h3>
+							<i class="fas fa-ban"></i>Feature 4</h3>
+						<h3>
+							<i class="fas fa-ban"></i>Feature 5</h3>
+						<h3>
+							<i class="fas fa-ban"></i>Feature 6</h3>
+
+					</div>
+				</div>
+
+				<div class="price_footer">
+					<h2 class="price_footer_text">Select</h2>
+				</div>
+
+			</div>
+		</div>
+		</li>
+				<li class="splide__slide">
+		<div class="price">
+
+			<div class="price_list_mobile">
+				<div class="price_top">
+					<h2 class="price_title">Business</h2>
+					<div class="price_shadow_4"></div>
+					<div class="price_shadow_5"></div>
+				</div>
+
+				<div class="price_body">
+					<div class="price_circle">
+						<h3 class="price_circle_text">19$</h3>
+					</div>
+					<div class="price_features">
+						<h3>
+							<i class="fas fa-check"></i>Feature 1</h3>
+						<h3>
+							<i class="fas fa-check"></i>Feature 2</h3>
+						<h3>
+							<i class="fas fa-ban"></i>Feature 3</h3>
+						<h3>
+							<i class="fas fa-ban"></i>Feature 4</h3>
+						<h3>
+							<i class="fas fa-ban"></i>Feature 5</h3>
+						<h3>
+							<i class="fas fa-ban"></i>Feature 6</h3>
+
+					</div>
+				</div>
+
+				<div class="price_footer">
+					<h2 class="price_footer_text">Select</h2>
+				</div>
+
+			</div>
+		</div>
+		</li>
+		</ul>
+		</div>
+		</div>
+
+		
 		<div class="price">
 
 			<div class="price_list">
@@ -230,7 +359,11 @@
 	</div>
 
 	<div id="sectionwp">
+
 		<h1>Extension Wordpress</h1><br>
+
+		<img src="{{ asset("build/images/wpresponsive.png") }}" alt="WP Responsive" class="wpresponsive_img">
+
 		<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth</p><br><br>
 		<button>
 			<h2>Télecharger le plugin Wordpress</h2>
@@ -263,6 +396,7 @@
 	<div id="sectionqsn">
 		<h1 id="qsn">Qui sommes nous ?</h1><br>
 		<div id="mainqsn">
+			<a href="https://codecolliders.com/"><img src="{{ asset('build/images/logo2.png') }}" alt="logo" onclick="https://codecolliders.com/"></a>
 			<p><br>Depuis 2017, nous accompagnons nos clients à la réalisation de leurs projets numériques.
 				<br><br>
 
@@ -272,9 +406,24 @@
 
 				Nous menons à bien vos projets de la conception à la réalisation.</p>
 
-
-			<img src="{{ asset('build/images/logo2.png') }}" alt="logo">
 		</div>
+		</div>
+	</main>
 
+	<footer id='footer'>
 
-	{% endblock %}
+		<div class="footer2">
+			<div class="footer1">
+				<div class="footer4">
+					<img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared"><br>
+					<p>Politique de confidentialité   -   Cookies   -   Mentions légales</p><br>
+					<p>Tous droits réservés | ©2021 Code colliders</p>
+					<br>
+				</div>
+			</div>
+
+		</div>
+		<div class="footer3"></div>
+	</footer>
+
+{% endblock %}
