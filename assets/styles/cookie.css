@@ -1,0 +1,11 @@
+#cookie{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background: url("../images/cookie.png");
+    background-size: 100%;
+    z-index: 10;
+
+}
