@@ -26,3 +26,16 @@ document.getElementById('navClose').addEventListener('click', function () {
   document.getElementById('main').style.display="block";
   document.getElementById('footer').style.display="block";
 });
+
+document.getElementsByClassName('link')[0].addEventListener('click', function(){hide()});
+document.getElementsByClassName('link')[1].addEventListener('click', function(){hide()});
+document.getElementsByClassName('link')[2].addEventListener('click', function(){hide()});
+document.getElementsByClassName('link')[3].addEventListener('click', function(){hide()});
+
+function hide () {
+  document.getElementById('navShow').style.display="block";
+  document.getElementById('navClose').style.display="none";
+  document.getElementById('navOpen').style.display="none";
+  document.getElementById('main').style.display="block";
+  document.getElementById('footer').style.display="block";
+}
