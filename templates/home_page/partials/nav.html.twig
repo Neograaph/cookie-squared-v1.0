@@ -1,0 +1,78 @@
+<nav id='haut'>
+		<div class='navTopShadow'></div>
+		<div class='navTop'>
+			<img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared">
+			<ul>
+				<li>
+					<a href="{{ path('home_page') }}#sectionrgpd">RGPD & ePrivacy</a>
+				</li>
+				<li>
+					<a href="{{ path('home_page') }}#sectionprice">Tarifs</a>
+				</li>
+				<li>
+					<a href="{{ path('home_page') }}#sectionqsn">A propos</a>
+				</li>
+				<li>
+					{% if app.user %}
+						<div class="mb-3">
+							<a href="{{ path('user_info') }}">Profil</a>
+						</div>
+					{% else %}
+						<a href="{{ path('app_login') }}">Connexion</a>
+					{% endif %}
+				</li>
+				<li>
+					{% if app.user %}
+						<div class="mb-3">
+							<a href="{{ path('dashboard') }}">Mes sites</a>
+						</div>
+					{% else %}
+						<a href="{{ path('register') }}">Inscription</a>
+					{% endif %}
+				</li>
+				<li>Langues</li>
+			</ul>
+			{# menu burger #}
+			<div id='navShow'>
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+				</svg>
+			</div>
+			<div id='navClose'>
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+				</svg>
+			</div>
+		</div>
+		<div id="navOpen">
+			<ul>
+				<li>
+					<a class="link" href="{{ path('home_page') }}#sectionrgpd">RGPD & ePrivacy</a>
+				</li>
+				<li>
+					<a class="link" href="{{ path('home_page') }}#sectionprice">Tarifs</a>
+				</li>
+				<li>
+					<a class="link" href="{{ path('home_page') }}#sectionqsn">A propos</a>
+				</li>
+				<li>
+					{% if app.user %}
+						<a class="link" href="{{ path('user_info') }}">Profil</a>					
+					{% else %}
+						<a class="link" href="{{ path('app_login') }}">Connexion</a>
+					{% endif %}
+				</li>
+				<li>
+					{% if app.user %}
+						<a class="link" href="{{ path('dashboard') }}">Mes sites</a>			
+					{% else %}
+						<a class="link" href="{{ path('register') }}">Inscription</a>
+					{% endif %}
+				</li>
+				<li>
+				<a href="#">Langues</a>
+				</li>
+			</ul>
+		</div>
+			{# fin menu burger #}
+</nav>

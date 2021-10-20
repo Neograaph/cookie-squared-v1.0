@@ -1,10 +1,11 @@
-{% extends 'base.html.twig' %}
+<title>{% block title %}Hello HomePageController!{% endblock %}</title>
 
-{% block title %}Hello HomePageController!
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset("build/app.css") }}">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css' integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg==' crossorigin='anonymous'/>
 {% endblock %}
 
 {% block body %}
-
 
 	{# banniere #}
 	<aside id="aside">
@@ -30,118 +31,30 @@
 	{# background opacity #}
 	<div id="all"></div>
 
-	{# nav #}
-	<nav id="nav">
-		<div class='navTopShadow'></div>
-		<div class='navTop'>
-			<img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared">
-			<ul>
-				<li>
-					<a href="#sectionrgpd">RGPD & ePrivacy</a>
-				</li>
-				<li>
-					<a href="#sectionprice">Tarifs</a>
-				</li>
-				<li>
-					<a href="#sectionqsn">A propos</a>
-				</li>
-				<li>
-					{% if app.user %}
-						<div class="mb-3">
-							<a href="{{ path('app_logout') }}">Profil</a>
-						</div>
-					{% else %}
-						<a href="{{ path('app_login') }}">Connexion</a>
-					{% endif %}
-				</li>
-				<li>
-					{% if app.user %}
-						<div class="mb-3">
-							<a href="{{ path('app_logout') }}">Mes sites</a>
-						</div>
-					{% else %}
-						<a href="{{ path('register') }}">Inscription</a>
-					{% endif %}
-				</li>
-				<li>Langues</li>
-			</ul>
-			{# menu burger #}
-			<div id='navShow'>
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-				</svg>
-			</div>
-			<div id='navClose'>
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-				</svg>
-			</div>
+{% include "home_page/partials/nav.html.twig" %}
+<main id='main'>
+	{# logo  #}
+	<a href="#">
+		<div id="cookie"></div>
+	</a>
+	{# section accueil #}
+	<div class="accueil_container">
+		<div class="accueil_title">
+			<h1>Une solution simple pour gérer les Cookies de votre site web</h1>
 		</div>
-		<div id="navOpen">
-			<ul>
-				<li>
-					<a class="link" href="#sectionrgpd">RGPD & ePrivacy</a>
-				</li>
-				<li>
-					<a class="link" href="#sectionprice">Tarifs</a>
-				</li>
-				<li>
-					<a class="link" href="#sectionqsn">A propos</a>
-				</li>
-				<li>
-					{% if app.user %}
-						<div class="mb-3">
-							<a class="link" href="{{ path('app_logout') }}">Profil</a>
-						</div>
-					{% else %}
-						<a class="link" href="{{ path('app_login') }}">Connexion</a>
-					{% endif %}
-				</li>
-				<li>
-					{% if app.user %}
-						<div class="mb-3">
-							<a class="link" href="{{ path('app_logout') }}">Mes sites</a>
-						</div>
-					{% else %}
-						<a class="link" href="{{ path('register') }}">Inscription</a>
-					{% endif %}
-				</li>
-				<li>
-					<a href="#">Langues</a>
-				</li>
-			</ul>
+
+		<div class="accueil_description">
+			<p>Cookie Squared est une solution simple pour ouvrir une bannière de cookie entièrement personnalisable sur votre site Web. Il recueille le consentement de manière transparente et aide votre site Web à se conformer au RGPD et à la directive ePrivacy en seulement trois étapes faciles.</p>
 		</div>
-		{# fin menu burger #}
-	</nav>
 
-
-	<main
-		id='main'>
-
-
-		{# logo  #}
-		<a href="#">
-			<div id="cookie"></div>
-		</a>
-
-		{# section accueil #}
-		<div class="accueil_container">
-			<div class="accueil_title">
-				<h1>Une solution simple pour gérer les Cookies de votre site web</h1>
-			</div>
-
-			<div class="accueil_description">
-				<p>Cookie Squared est une solution simple pour ouvrir une bannière de cookie entièrement personnalisable sur votre site Web. Il recueille le consentement de manière transparente et aide votre site Web à se conformer au RGPD et à la directive ePrivacy en seulement trois étapes faciles.</p>
-			</div>
-
-			<div class="accueil_start_button">
-				<a href="#">Commencer</a>
-			</div>
-
-			<div class="accueil_img">
-				<img src="{{ asset('build/images/accueil.png') }}" alt="Image accueil principal">
-			</div>
+		<div class="accueil_start_button">
+			<a href=" {{ path('register') }} ">Commencer</a>
 		</div>
+
+		<div class="accueil_img">
+			<img src="{{ asset('build/images/accueil.png') }}" alt="Image accueil principal">
+		</div>
+	</div>
 
 		{# section fonctionnalite #}
 
@@ -448,22 +361,10 @@
 		</div>
 	</main>
 
+{% include "home_page/partials/footer.html.twig" %}
 
-	<footer id='footer'>
-
-		<div class="footer2">
-			<div class="footer1">
-				<div class="footer4">
-					<img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared"><br>
-					<p>Politique de confidentialité   -   Cookies   -   Mentions légales</p><br>
-					<p>Tous droits réservés | ©2021 Code colliders</p>
-					<br>
-				</div>
-			</div>
-
-		</div>
-		<div class="footer3"></div>
-	</footer>
-
-
+{% block javascripts %}
+	{{ encore_entry_script_tags('init') }}
+	{{ encore_entry_script_tags('app') }}
+{% endblock %}
 {% endblock %}
