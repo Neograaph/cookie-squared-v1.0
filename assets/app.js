@@ -18,7 +18,7 @@ import './styles/userpage.css';
 import './styles/footer.css';
 import './styles/backToTop.css';
 
-import './js/slider';
+// import './js/slider';
 import './js/nav.js';
 import './js/backToTop';
 

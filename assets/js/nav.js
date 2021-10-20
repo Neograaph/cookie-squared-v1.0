@@ -1,4 +1,4 @@
-// console.log('annimation nav burger');
+console.log('annimation nav burger');
 let navStatus = false;
 let navOpen = false;
 // display none au chargement de la page

@@ -4,13 +4,13 @@
 			<img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared">
 			<ul>
 				<li>
-					<a href="#sectionrgpd">RGPD & ePrivacy</a>
+					<a href="{{ path('home_page') }}#sectionrgpd">RGPD & ePrivacy</a>
 				</li>
 				<li>
-					<a href="#sectionprice">Tarifs</a>
+					<a href="{{ path('home_page') }}#sectionprice">Tarifs</a>
 				</li>
 				<li>
-					<a href="#sectionqsn">A propos</a>
+					<a href="{{ path('home_page') }}#sectionqsn">A propos</a>
 				</li>
 				<li>
 					{% if app.user %}
@@ -47,13 +47,13 @@
 		<div id="navOpen">
 			<ul>
 				<li>
-					<a class="link" href="#sectionrgpd">RGPD & ePrivacy</a>
+					<a class="link" href="{{ path('home_page') }}#sectionrgpd">RGPD & ePrivacy</a>
 				</li>
 				<li>
-					<a class="link" href="#sectionprice">Tarifs</a>
+					<a class="link" href="{{ path('home_page') }}#sectionprice">Tarifs</a>
 				</li>
 				<li>
-					<a class="link" href="#sectionqsn">A propos</a>
+					<a class="link" href="{{ path('home_page') }}#sectionqsn">A propos</a>
 				</li>
 				<li>
 					{% if app.user %}

@@ -3,7 +3,10 @@
 {% block title %}Page Utilisateur{% endblock %}
 
 {% block body %}
-	<div class="user-container">
+
+{% include "home_page/partials/nav.html.twig" %}
+
+	<div class="user_container">
 		<h2>Profil de {{ app.user.firstname }} {{ app.user.lastname }}</h2><br>
 		<h3>Informations de l'utilisateur</h3><br>
 
@@ -13,7 +16,11 @@
 		<a href="{{  path('change_password') }}">Modifier le mot de passe</a>
 
 		<div class="accueil_start_button">
-			<a href="">Voir mes sites</a>
+			<a href="{{ path('dashboard') }}">Voir mes sites</a>
+			<a href="{{ path('app_logout') }}">Déconnexion</a>
 		</div>
 	</div>
+
+{% include "home_page/partials/footer.html.twig" %}
+
 {% endblock %}
