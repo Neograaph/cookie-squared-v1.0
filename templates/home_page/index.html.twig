@@ -1,6 +1,10 @@
-{% extends 'base.html.twig' %}
+{# {% extends 'base.html.twig' %} #}
 
-{% block title %}Hello HomePageController!
+<title>{% block title %}Hello HomePageController!{% endblock %}</title>
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset("build/app.css") }}">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css' integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg==' crossorigin='anonymous'/>
 {% endblock %}
 
 {% block body %}
@@ -331,4 +335,8 @@
 
 	{% include "home_page/partials/footer.html.twig" %}
 
+	{% block javascripts %}
+	{{ encore_entry_script_tags('init') }}
+	{{ encore_entry_script_tags('app') }}
+	{% endblock %}
 {% endblock %}
