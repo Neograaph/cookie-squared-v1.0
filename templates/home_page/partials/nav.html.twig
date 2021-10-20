@@ -24,7 +24,7 @@
 				<li>
 					{% if app.user %}
 						<div class="mb-3">
-							<a href="{{ path('dashboard') }}">Mes sites</a>
+							<a href="{{ path('my_sites') }}">Mes sites</a>
 						</div>
 					{% else %}
 						<a href="{{ path('register') }}">Inscription</a>
@@ -64,7 +64,7 @@
 				</li>
 				<li>
 					{% if app.user %}
-						<a class="link" href="{{ path('dashboard') }}">Mes sites</a>			
+						<a class="link" href="{{ path('my_sites') }}">Mes sites</a>			
 					{% else %}
 						<a class="link" href="{{ path('register') }}">Inscription</a>
 					{% endif %}
