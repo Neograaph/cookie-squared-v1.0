@@ -17,9 +17,11 @@ import './styles/forms.css';
 import './styles/userpage.css';
 import './styles/footer.css';
 import './styles/backToTop.css';
+import './styles/cookie.css';
 
-// import './js/slider';
+import './js/slider';
 import './js/nav.js';
+import './js/cookiebanner';
 import './js/backToTop';
 
 // start the Stimulus application
