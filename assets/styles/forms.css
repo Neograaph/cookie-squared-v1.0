@@ -54,7 +54,7 @@
 }
 
 .user_form a ,
-.user_container a {
+.user_container>a {
     color: #e6943b;
 }
 
