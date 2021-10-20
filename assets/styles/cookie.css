@@ -74,6 +74,11 @@
     margin: 5px;
   }
 
+  #btns button:hover{
+    cursor: pointer;
+    
+  }
+
   #btns{
       
       display: flex;
