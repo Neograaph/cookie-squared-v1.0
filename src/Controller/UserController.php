@@ -4,8 +4,6 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\RegisterType;
-use DateTimeImmutable;
-use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -64,10 +62,12 @@ class UserController extends AbstractController
     /**
      * @Route("/profil", name="user_info")
      */
-    public function FunctionName(): Response
+    public function userPage(): Response
     {
         return $this->render('user/userinfo.html.twig', []);
     }
+
+    
 
     /**
      * @Route("/logout", name="app_logout")
