@@ -7,6 +7,7 @@
     background: url("../images/cookie.png");
     background-size: 100%;
     z-index: 45;
+    display: none;
 
 }
 
@@ -53,16 +54,17 @@
 
   #banniere2{
       position: fixed;
-      width: 94%;
+      width: 86%;
       height: 20%;
       background-color: #F9F9F9;
       z-index: 46;
       bottom: 10px;
-      left: 3%;
+      left: 7%;
       border-radius: 10px;
       text-align: center;
       padding-left: 5%;
       padding-right: 5%;
+      border: solid rgb(196, 189, 189) 1px;
   }
 
   #btns button{
