@@ -104,3 +104,7 @@
     color: white;
     border: solid #FF9A23 1px;
   }
+
+  #cross:hover{
+    cursor: pointer;
+  }

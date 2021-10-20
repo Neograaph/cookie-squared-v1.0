@@ -7,6 +7,7 @@ let btnrefuse = document.getElementById('btnrefuse');
 let btnpref = document.getElementById('btnpref');
 let btnaccept = document.getElementById('btnaccept');
 let banniere2 = document.getElementById('banniere2');
+let cross = document.getElementById('cross');
 
 
 // ----------banniere1-------------
@@ -25,6 +26,12 @@ window.addEventListener('click', function (event) {
     }
 
 })
+
+document.getElementById('cross').addEventListener('click', function () {
+    cookiebanner.style.display = "none";
+    all.style.display="none";
+    cookie.style.display="block";
+ });
 
 
 // --------banniere2-----------------
