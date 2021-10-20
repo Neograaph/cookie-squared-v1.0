@@ -17,4 +17,13 @@ class DashboardController extends AbstractController
             'controller_name' => 'DashboardController',
         ]);
     }
+    /**
+     * @Route("/dashboard/scan", name="scan")
+     */
+    public function showScan(): Response
+    {
+        return $this->render('dashboard/scan.html.twig', [
+            'controller_name' => 'DashboardController',
+        ]);
+    }
 }
