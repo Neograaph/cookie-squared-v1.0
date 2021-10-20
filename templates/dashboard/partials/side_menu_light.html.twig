@@ -87,9 +87,9 @@
 		<div class="side-nav__devider my-6"></div>
 		<ul>
 			<li>
-				<a href="#" class="side-menu">
+				<a href="#" {% if app.request.get('_route') == 'cookies' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
 					<div class="side-menu__icon">
-						<i data-feather="calendar"></i>
+						<i data-feather="calendar" class=""></i>
 					</div>
 					<div class="side-menu__title">
 						Gestion des cookies
@@ -97,7 +97,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#" class="side-menu">
+				<a href="#" {% if app.request.get('_route') == 'personnalisation' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
 					<div class="side-menu__icon">
 						<i data-feather="box"></i>
 					</div>
@@ -107,7 +107,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#" class="side-menu">
+				<a href="#" {% if app.request.get('_route') == 'scan' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
 					<div class="side-menu__icon">
 						<i data-feather="inbox"></i>
 					</div>
@@ -117,7 +117,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#" class="side-menu">
+				<a href="#" {% if app.request.get('_route') == 'embed' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
 					<div class="side-menu__icon">
 						<i data-feather="hard-drive"></i>
 					</div>
