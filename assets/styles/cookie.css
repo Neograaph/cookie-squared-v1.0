@@ -40,8 +40,55 @@
     width: 100%;
     left: 0;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.2;
     z-index: 41;
     position: fixed;
-    display: none;
+    
+  }
+
+  #cookie a{
+      height: 100%;
+      width: 100%;
+  }
+
+  #banniere2{
+      position: fixed;
+      width: 94%;
+      height: 20%;
+      background-color: #F9F9F9;
+      z-index: 46;
+      bottom: 10px;
+      left: 3%;
+      border-radius: 5px;
+      text-align: center;
+  }
+
+  #btns button{
+    
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+  #btns{
+      
+      display: flex;
+      justify-content: center;
+  }
+
+  #btnrefuse{
+      background-color: #DEDEDE;
+      color: #0E0E0E;
+  }
+
+  #btnpref{
+    background-color: #FFF2E2;
+    color: #0E0E0E;
+    border: solid #FF9A23 1px;
+  }
+
+  #btnaccept{
+    background-color: #F9A90C;
+    color: white;
+    border: solid #FF9A23 1px;
   }
