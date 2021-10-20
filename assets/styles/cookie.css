@@ -6,7 +6,7 @@
     left: 10px;
     background: url("../images/cookie.png");
     background-size: 100%;
-    z-index: 35;
+    z-index: 45;
 
 }
 
@@ -19,7 +19,7 @@
     position: fixed;
     right: 0;
     background-color: blue;
-    z-index: 35;
+    z-index: 45;
     display: none;
     animation-name: example1;
     animation-duration: 1s;
@@ -30,4 +30,18 @@
 @keyframes example1 {
     0%   {width:0%}
     100%  {width:25%}  
+  }
+
+  /* ---------------div all------------------- */
+
+  #all{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 41;
+    position: fixed;
+    display: none;
   }
