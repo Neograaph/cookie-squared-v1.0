@@ -4,8 +4,8 @@
 {% endblock %}
 
 {% block body %}
-	<div class="form-background">
-		<div class="user-form">
+	<div class="form_background">
+		<div class="user_form">
 			<form method="post">
 				{% if error %}
 					<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
