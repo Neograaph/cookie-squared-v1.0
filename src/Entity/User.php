@@ -48,6 +48,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     public $confirm_password;
 
+    public $old_password;
+
     /**
      * @ORM\Column(type="string", length=255)
      */
