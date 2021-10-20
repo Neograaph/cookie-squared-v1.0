@@ -1,10 +1,10 @@
-.form-background {
+.form_background {
     height: 100vh;
     background-color: #eee;
     display: flex;
     align-items: center;
 }
-.user-form{
+.user_form{
     width: 400px;
     margin: 0 auto;
     text-align: center;
@@ -12,15 +12,15 @@
     border-radius: 20px;
     background-color: #fff;
 }
-.register-form {
+.register_form {
     width: 800px;
 }
 
-.user-form h1 {
+.user_form h1 {
     margin: 0 0 50px;
 }
 
-.user-form input {
+.user_form input {
     height: 50px;
     width: 100%;
     border-radius: 20px;
@@ -30,11 +30,11 @@
     text-align: center;
     font-size: large;
 }
-.user-form li {
+.user_form li {
     color: red;
 }
 
-.user-form button {
+.user_form button {
     background-color: #e6943b;
     padding: 15px;
     border: none;
@@ -46,19 +46,19 @@
     margin: 0 0 20px;
 }
 
-.user-form .check {
+.user_form .check {
     height: 15px;
     width: 20px;
     border-radius: 10px;
     display: inline;
 }
 
-.user-form a ,
-.user-container a {
+.user_form a ,
+.user_container a {
     color: #e6943b;
 }
 
-.user-container {
+.user_container {
     width: 1100px;
     margin: 100px auto;
 }
