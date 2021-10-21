@@ -21,6 +21,8 @@ window.addEventListener('click', function (event) {
     if (event.target == document.getElementById('all')){
         cookiebanner.style.display = "none";
         all.style.display="none";
+        cookie.style.display="block";
+        banniere2.style.display="none";
     }
 })
 

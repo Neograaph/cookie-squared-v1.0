@@ -1,7 +1,9 @@
 <nav id='haut'>
 		<div class='navTopShadow'></div>
 		<div class='navTop'>
-			<img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared">
+			<a href="{{ path('home_page') }}">
+				<img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared">
+			</a>
 			<ul>
 				<li>
 					<a href="{{ path('home_page') }}#sectionrgpd">RGPD & ePrivacy</a>
@@ -24,7 +26,7 @@
 				<li>
 					{% if app.user %}
 						<div class="mb-3">
-							<a href="{{ path('dashboard') }}">Mes sites</a>
+							<a href="{{ path('my_sites') }}">Mes sites</a>
 						</div>
 					{% else %}
 						<a href="{{ path('register') }}">Inscription</a>
@@ -64,7 +66,7 @@
 				</li>
 				<li>
 					{% if app.user %}
-						<a class="link" href="{{ path('dashboard') }}">Mes sites</a>			
+						<a class="link" href="{{ path('my_sites') }}">Mes sites</a>			
 					{% else %}
 						<a class="link" href="{{ path('register') }}">Inscription</a>
 					{% endif %}
