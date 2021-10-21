@@ -30,7 +30,7 @@ window.addEventListener('click', function (event) {
         all.style.display="none";
         cookie.style.display="block";
         cookiebanner.style.display="none";     
-        // console.log(document.cookie);
+        console.log(document.cookie);
     }
 })
 
@@ -76,8 +76,9 @@ btnaccept.addEventListener('click', function () {
     cookie.style.display="block";
     cookiebanner2.style.display="none"
     all.style.display="none";
-    document.cookie="boolcookie=true; path=/; domain=cookiesquared.codecolliders.dev; max-age=86400";
+    document.cookie="boolcookie = true; path=/; SameSite=Strict";
     console.log(document.cookie);
+    
  });
 
 
@@ -87,8 +88,9 @@ btnaccept.addEventListener('click', function () {
 
 
 
-if(document.cookie('boolcookie=true')){
+if('boolcookie=true'){
     cookiebanner2.style.display="none"
     all.style.display="none";
+    cookie.style.display="block";
 }
 
