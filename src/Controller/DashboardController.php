@@ -11,11 +11,14 @@ class DashboardController extends AbstractController
     /**
      * @Route("/dashboard", name="my_sites")
      */
-    public function index(): Response
+    public function MySites(): Response
     {
-        return $this->render('dashboard/my_sites.html.twig', [
-            'controller_name' => 'DashboardController',
-        ]);
+        if($this->getUser())
+        {
+            
+            return $this->render('dashboard/my_sites.html.twig');
+        }
+        return $this->redirectToRoute('home_page');
     }
     /**
      * @Route("/dashboard/scan", name="scan")
