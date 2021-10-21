@@ -18,6 +18,7 @@ import './styles/userpage.css';
 import './styles/footer.css';
 import './styles/backToTop.css';
 import './styles/cookie.css';
+import './styles/scan.css';
 
 import './js/slider';
 import './js/nav.js';
