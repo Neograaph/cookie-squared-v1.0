@@ -39,6 +39,10 @@
     justify-content: center;
 }
 
+#btnrgpd:hover{
+    cursor: pointer;
+}
+
 #mainqsn{
     display: flex;
     justify-content: space-around;
