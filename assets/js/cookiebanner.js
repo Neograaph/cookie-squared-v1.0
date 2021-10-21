@@ -45,7 +45,7 @@ btnvalidcookies.addEventListener('click', function(){
     cookiebanner.style.display="none";
     all.style.display="none";
     cookie.style.display="block";
-    document.cookie="boolcookie=true";
+    document.cookie="boolcookie=true; path=/; SameSite=Strict";
     console.log(document.cookie);
 })
 
@@ -56,7 +56,7 @@ btnrefuse.addEventListener('click', function () {
     cookie.style.display="block";
     cookiebanner2.style.display="none"
     all.style.display="none";
-    document.cookie="boolcookie=true";
+    document.cookie="boolcookie=true; path=/; SameSite=Strict";
     console.log(document.cookie);
  });
  
@@ -76,7 +76,7 @@ btnaccept.addEventListener('click', function () {
     cookie.style.display="block";
     cookiebanner2.style.display="none"
     all.style.display="none";
-    document.cookie="boolcookie = true; path=/; SameSite=Strict";
+    document.cookie="boolcookie=true; path=/; SameSite=Strict";
     console.log(document.cookie);
     
  });
