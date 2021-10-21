@@ -36,4 +36,20 @@ class CookieController extends AbstractController
             'cookieForm' => $form->createView()
         ]);
     }
+
+    /**
+     * @Route("/dashboard/delcookie", name="del_cookie")
+     */
+    function delCookie(CookieRepository $cookieRepository, EntityManagerInterface $em)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $cookie = $cookieRepository->find(2);
+
+        $em->remove($cookie);
+
+        $em->flush();
+
+        return $this->redirectToRoute('cookie');
+    }
 }
