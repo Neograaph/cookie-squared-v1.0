@@ -63,7 +63,7 @@
   #cookiebanner2{
       position: fixed;
       width: 86%;
-      height: 20%;
+      height: auto;
       background-color: #F9F9F9;
       z-index: 46;
       bottom: 10px;
@@ -73,6 +73,7 @@
       padding-left: 5%;
       padding-right: 5%;
       border: solid rgb(196, 189, 189) 1px;
+      font-size: 1vw;
   }
 
   #btns button{
@@ -80,6 +81,9 @@
     padding: 8px;
     border-radius: 7px;
     margin: 5px;
+    width: 20%;
+    height: 5%;
+    font-size: 1vw
   }
 
   #btns{
