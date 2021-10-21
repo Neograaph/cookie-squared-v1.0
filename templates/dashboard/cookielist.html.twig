@@ -22,26 +22,25 @@
                     </tr>
                 </thead>
                 <tbody>
+
+                    {% for onecookie in cookies %}
                     <tr>
-                        <td>APISID</td>
-                        <td>analitics</td>
-                        <td>2 mois</td>
-                        <td>google.com</td>
-                        <td>nom-du-site.com/home</td>
+                        <td>{{ onecookie.name }}</td>
+                        <td>{{ onecookie.category }}</td>
+                        <td>{{ onecookie.duration }}</td>
+                        <td>{{ onecookie.domain }}</td>
+                        <td>{{ onecookie.path }}</td>
                         <td><button class="btn btn-danger me-1 mb-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash w-5 h-5"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg> </button></td>
                     </tr>
-                    <tr>
-                        <form action="">
-                            <td>APISID</td>
-                            <td>analitics</td>
-                            <td>2 mois</td>
-                            <td>google.com</td>
-                            <td>nom-du-site.com/home</td>
-                            <td><button class="btn btn-danger me-1 mb-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash w-5 h-5"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg> </button></td>
-                        </form>
+                    {% endfor %}
+
+                    <tr id="add_cookie_form">
+                        {{ form_start(cookieForm) }}
+                        {{ form_end(cookieForm) }}
                     </tr>
+                    
                     <tr>
-                        <td colspan="6" class="text-center"><a href="">ajouter un cookie</a></td>
+                        <td colspan="6" class="text-center"><a href="" id="add_cookie">ajouter un cookie</a></td>
                     </tr>
                     
                 </tbody>
