@@ -43,6 +43,11 @@ class Sites
      */
     private $cookie_list;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $name;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -104,6 +109,18 @@ class Sites
     public function setCookieList(?string $cookie_list): self
     {
         $this->cookie_list = $cookie_list;
+
+        return $this;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
 
         return $this;
     }
