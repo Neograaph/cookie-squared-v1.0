@@ -14,7 +14,6 @@ let cross = document.getElementById('cross');
 
 document.getElementById('cookie').addEventListener('click', function () {
    cookiebanner.style.display="block";
-   cookie.style.transform="rotate(45deg)";
    all.style.display="block";
 });
 
@@ -22,14 +21,13 @@ window.addEventListener('click', function (event) {
     if (event.target == document.getElementById('all')){
         cookiebanner.style.display = "none";
         all.style.display="none";
-        cookie.style.transform="rotate(0)";
     }
 })
 
 document.getElementById('cross').addEventListener('click', function () {
     cookiebanner.style.display = "none";
     all.style.display="none";
-    cookie.style.display="block";
+    // cookie.style.display="block";
  });
 
 

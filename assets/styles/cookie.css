@@ -8,7 +8,20 @@
     background-size: 100%;
     z-index: 45;
     display: none;
+    
 
+}
+#cookie:hover{
+    animation: example2 1.5s infinite;
+    
+}
+@keyframes example2 {
+  0%   {
+    transform: rotate(0);
+  }
+  100%  {
+    transform: rotate(360deg);
+  }  
 }
 
 /* ----------banniere cookie-------------- */
