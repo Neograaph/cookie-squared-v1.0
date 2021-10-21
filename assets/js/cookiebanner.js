@@ -11,7 +11,12 @@ let cross = document.getElementById('cross');
 let btnvalidcookies = document.getElementById('btnvalidcookies');
 
 
+
+
+
+
 // ----------banniere1-------------
+
 
 cookie.addEventListener('click', function () {
    cookiebanner.style.display="block";
@@ -24,21 +29,24 @@ window.addEventListener('click', function (event) {
         cookiebanner.style.display = "none";
         all.style.display="none";
         cookie.style.display="block";
-        banniere2.style.display="none";
+        cookiebanner.style.display="none";     
+        // console.log(document.cookie);
     }
 })
 
 cross.addEventListener('click', function () {
     cookiebanner.style.display = "none";
     all.style.display="none";
-    // cookie.style.display="block";
+    cookie.style.display="block";
+    
  });
 
 btnvalidcookies.addEventListener('click', function(){
     cookiebanner.style.display="none";
     all.style.display="none";
     cookie.style.display="block";
-
+    document.cookie="boolcookie=true";
+    console.log(document.cookie);
 })
 
 
@@ -48,7 +56,8 @@ btnrefuse.addEventListener('click', function () {
     cookie.style.display="block";
     cookiebanner2.style.display="none"
     all.style.display="none";
-
+    document.cookie="boolcookie=true";
+    console.log(document.cookie);
  });
  
 
@@ -67,6 +76,19 @@ btnaccept.addEventListener('click', function () {
     cookie.style.display="block";
     cookiebanner2.style.display="none"
     all.style.display="none";
-
-
+    document.cookie="boolcookie=true; path=/; domain=cookiesquared.codecolliders.dev; max-age=86400";
+    console.log(document.cookie);
  });
+
+
+
+//  ---------------ne pas afficher le bandeau si cookies deja choisis------------
+
+
+
+
+if(document.cookie('boolcookie=true')){
+    cookiebanner2.style.display="none"
+    all.style.display="none";
+}
+
