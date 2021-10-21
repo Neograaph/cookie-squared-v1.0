@@ -12,10 +12,10 @@
 
 }
 #cookie:hover{
-    animation: example2 1.5s infinite;
+    animation: rotatecookie 1.5s 1;
     
 }
-@keyframes example2 {
+@keyframes rotatecookie {
   0%   {
     transform: rotate(0);
   }
@@ -40,6 +40,7 @@
   animation-iteration-count: 1;
   padding: 5px;
   text-align: center;
+  font-size: 1.5vw;
 }
 
 
@@ -89,7 +90,7 @@
       font-size: 1vw;
   }
 
-  #btns button{
+  .buttons{
     
     padding: 8px;
     border-radius: 7px;
@@ -129,4 +130,21 @@
 
   #cross:hover{
     cursor: pointer;
+  }
+
+  #btnvalidcookies{
+    background-color: #F9A90C;
+    color: white;
+    border: solid #FF9A23 1px;
+    position: absolute;
+    bottom: 5px;
+  }
+
+  #btnvalidcookies:hover{
+    cursor: pointer;
+  }
+
+  #divvalidate{
+    display: flex;
+    justify-content: center;
   }
