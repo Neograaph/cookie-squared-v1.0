@@ -201,5 +201,8 @@ a{
     height: 350px !important;
   }
   
+  #cookiebanner h3{
+    font-size: 12px;
+  }
 
 }
