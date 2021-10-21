@@ -130,7 +130,7 @@
 			<li class="side-nav__devider my-6"></li>
 
 			<li>
-				<a href="#" class="side-menu">
+				<a href="#" {% if app.request.get('_route') == 'my_sites' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
 					<div class="side-menu__icon">
 						<i data-feather="edit"></i>
 					</div>
