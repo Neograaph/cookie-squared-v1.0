@@ -8,13 +8,20 @@ let btnpref = document.getElementById('btnpref');
 let btnaccept = document.getElementById('btnaccept');
 let cookiebanner2 = document.getElementById('cookiebanner2');
 let cross = document.getElementById('cross');
+let btnvalidcookies = document.getElementById('btnvalidcookies');
+
+
+
+
 
 
 // ----------banniere1-------------
 
-document.getElementById('cookie').addEventListener('click', function () {
+
+cookie.addEventListener('click', function () {
    cookiebanner.style.display="block";
    all.style.display="block";
+   cookie.style.display="none"
 });
 
 window.addEventListener('click', function (event) {
@@ -22,28 +29,39 @@ window.addEventListener('click', function (event) {
         cookiebanner.style.display = "none";
         all.style.display="none";
         cookie.style.display="block";
-        banniere2.style.display="none";
+        cookiebanner.style.display="none";     
+        console.log(document.cookie);
     }
 })
 
-document.getElementById('cross').addEventListener('click', function () {
+cross.addEventListener('click', function () {
     cookiebanner.style.display = "none";
     all.style.display="none";
-    // cookie.style.display="block";
+    cookie.style.display="block";
+    
  });
+
+btnvalidcookies.addEventListener('click', function(){
+    cookiebanner.style.display="none";
+    all.style.display="none";
+    cookie.style.display="block";
+    document.cookie="boolcookie=true; path=/; SameSite=Strict";
+    console.log(document.cookie);
+})
 
 
 // --------banniere2-----------------
 
-document.getElementById('btnrefuse').addEventListener('click', function () {
+btnrefuse.addEventListener('click', function () {
     cookie.style.display="block";
     cookiebanner2.style.display="none"
     all.style.display="none";
-
+    document.cookie="boolcookie=true; path=/; SameSite=Strict";
+    console.log(document.cookie);
  });
  
 
-document.getElementById('btnpref').addEventListener('click', function () {
+btnpref.addEventListener('click', function () {
     
     cookiebanner2.style.display="none"
     cookiebanner.style.display="block";
@@ -54,10 +72,25 @@ document.getElementById('btnpref').addEventListener('click', function () {
 
  });
 
-document.getElementById('btnaccept').addEventListener('click', function () {
+btnaccept.addEventListener('click', function () {
     cookie.style.display="block";
     cookiebanner2.style.display="none"
     all.style.display="none";
-
-
+    document.cookie="boolcookie=true; path=/; SameSite=Strict";
+    console.log(document.cookie);
+    
  });
+
+
+
+//  ---------------ne pas afficher le bandeau si cookies deja choisis------------
+
+
+
+
+// if('boolcookie=true'){
+//     cookiebanner2.style.display="none"
+//     all.style.display="none";
+//     cookie.style.display="block";
+// }
+

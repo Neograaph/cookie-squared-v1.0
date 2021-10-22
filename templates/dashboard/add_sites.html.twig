@@ -1,0 +1,53 @@
+{% extends 'dashboard_base.html.twig' %}
+
+{% block body %}
+	<!-- BEGIN: Content -->
+	<div class="content">
+		<div
+			class="top-bar">
+			<!-- BEGIN: Breadcrumb -->
+			<div class="-intro-x breadcrumb me-auto d-none d-sm-flex">
+				<a href="">Dashboard</a>
+				<i data-feather="chevron-right" class="breadcrumb__icon"></i>
+				<a href="{{ path('my_sites') }}">Mes sites</a>
+				<i data-feather="chevron-right" class="breadcrumb__icon"></i>
+				<a href="#" class="breadcrumb--active">Ajouter un site</a>
+			</div>
+
+			<div class="intro-x me-auto me-sm-6">
+				<a href="{{ path('my_sites') }}">
+					<button class="btn btn-primary w-50 me-2 mb-2 mt-3">
+						<i data-feather="corner-up-left" class="w-4 h-4 me-2"></i>Retour</button>
+				</a>
+			</div>
+
+			<div class="intro-x me-auto me-sm-6">
+				<a href="{{ path("home_page") }}">
+					<div class="cursor-pointer" role="button" aria-expanded="false">
+						<i data-feather="home" class="notification__icon dark-text-gray-300"></i>
+					</div>
+				</a>
+			</div>
+
+		</div>
+
+		<div class="intro-y d-flex align-items-center justify-content-center mt-8 mb-5">
+			<h1 class="fs-3xl fw-medium me-auto justify-content-center">
+				Créer un nouveau site
+			</h1>
+		</div>
+
+		<div class="intro-y box">
+			<div id="input" class="p-5">
+				<div class="preview">
+					{{ form_start(sites) }}
+					{{ form_widget(sites) }}
+                    <input type="submit" class="btn btn-primary mt-5" value="Créer un nouveau site">
+					{{ form_end(sites) }}
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+{% endblock %}

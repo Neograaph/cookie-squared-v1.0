@@ -4,7 +4,6 @@ namespace App\Entity;
 
 use App\Repository\ChangePasswordRepository;
 
-
 class ChangePassword
 {
 
