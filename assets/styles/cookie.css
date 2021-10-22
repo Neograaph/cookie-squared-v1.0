@@ -28,7 +28,7 @@
 
 #cookiebanner{
   top: 0;
-  min-height: 100%;
+  height: 100%;
   width: 25%;
   position: fixed;
   right: 0;
@@ -44,6 +44,7 @@
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
 }
+
 
 
 @keyframes example1 {
@@ -63,7 +64,23 @@
 }
 
 #cookiebanner p{
-  text-align: left !important;
+  text-align: left;
+}
+
+#btnvalidcookies:hover{
+  cursor: pointer;
+}
+
+#divvalidate{
+  display: flex;
+  justify-content: center;
+}
+
+#btnvalidcookies{
+  background-color: #F9A90C;
+  color: white;
+  border: solid #FF9A23 1px;
+  bottom: 5px;
 }
 
   /* ---------------div all------------------- */
@@ -143,22 +160,9 @@
     cursor: pointer;
   }
 
-  #btnvalidcookies{
-    background-color: #F9A90C;
-    color: white;
-    border: solid #FF9A23 1px;
-    position: absolute;
-    bottom: 5px;
-  }
 
-  #btnvalidcookies:hover{
-    cursor: pointer;
-  }
 
-  #divvalidate{
-    display: flex;
-    justify-content: center;
-  }
+
 
 
 
