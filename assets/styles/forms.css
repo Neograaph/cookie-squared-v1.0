@@ -56,9 +56,11 @@
 .user_form a ,
 .user_container>a {
     color: #e6943b;
+    line-height: 20px;
 }
 
 .user_container {
-    width: 1100px;
+    max-width: 1550px;
+    padding: 0 15px;
     margin: 100px auto;
 }
