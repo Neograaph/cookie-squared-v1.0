@@ -12,10 +12,10 @@
 
 }
 #cookie:hover{
-    animation: example2 1.5s infinite;
+    animation: rotatecookie 1.5s 1;
     
 }
-@keyframes example2 {
+@keyframes rotatecookie {
   0%   {
     transform: rotate(0);
   }
@@ -28,7 +28,7 @@
 
 #cookiebanner{
   top: 0;
-  min-height: 100%;
+  height: 100%;
   width: 25%;
   position: fixed;
   right: 0;
@@ -38,9 +38,13 @@
   animation-name: example1;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  padding: 5px;
+  padding: 15px;
   text-align: center;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
 }
+
 
 
 @keyframes example1 {
@@ -52,6 +56,31 @@
   position: absolute;
   right: 4px;
   top: 4px;
+}
+
+.gen{
+  display: flex;
+  justify-content: space-between;
+}
+
+#cookiebanner p{
+  text-align: left;
+}
+
+#btnvalidcookies:hover{
+  cursor: pointer;
+}
+
+#divvalidate{
+  display: flex;
+  justify-content: center;
+}
+
+#btnvalidcookies{
+  background-color: #F9A90C;
+  color: white;
+  border: solid #FF9A23 1px;
+  bottom: 5px;
 }
 
   /* ---------------div all------------------- */
@@ -89,7 +118,7 @@
       font-size: 1vw;
   }
 
-  #btns button{
+  .buttons{
     
     padding: 8px;
     border-radius: 7px;
@@ -130,3 +159,71 @@
   #cross:hover{
     cursor: pointer;
   }
+
+
+
+
+
+
+
+/* ------------------Toggleswitch------------ */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
