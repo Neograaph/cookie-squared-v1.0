@@ -20,9 +20,8 @@ import './styles/backToTop.css';
 import './styles/cookie.css';
 import './styles/scan.css';
 
-import './js/slider';
+
 import './js/nav.js';
-import './js/cookiebanner';
 import './js/backToTop';
 
 // start the Stimulus application
