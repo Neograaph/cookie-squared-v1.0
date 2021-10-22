@@ -88,9 +88,9 @@ btnaccept.addEventListener('click', function () {
 
 
 
-if('boolcookie=true'){
-    cookiebanner2.style.display="none"
-    all.style.display="none";
-    cookie.style.display="block";
-}
+// if('boolcookie=true'){
+//     cookiebanner2.style.display="none"
+//     all.style.display="none";
+//     cookie.style.display="block";
+// }
 
