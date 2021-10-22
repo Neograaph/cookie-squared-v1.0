@@ -6,7 +6,7 @@ let navOpen = false;
 document.getElementById('navShow').addEventListener('click', function () {
   navStatus = !navStatus;
   // console.log(navStatus);
-  console.log(location.pathname);
+  // console.log(location.pathname);
   document.getElementById('navShow').style.display="none";
   document.getElementById('navClose').style.display="block";
   document.getElementById('navOpen').style.display="block";
