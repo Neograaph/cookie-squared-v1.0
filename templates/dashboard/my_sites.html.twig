@@ -55,11 +55,11 @@
 										<tr class="intro-x">
 											<td>
 												<div class="fw-medium text-nowrap text-center">{{ mysite.name }}</div>
-												<div class="text-gray-600 fs-xs text-nowrap mt-0.5 text-center">{# {{ mysite.created_at|date("d/m/Y") }} #}Test</div>
+												<div class="text-gray-600 fs-xs text-nowrap mt-0.5 text-center">{{ mysite.createdat|date("d/m/Y") }}</div>
 											</td>
 
 											<td>
-												<div class="fw-medium text-nowrap text-center">{% if mysite.scan_at is not defined %}Aucun scan effectué {% else %}mysite.scan_at{% endif %}</div>
+												<div class="fw-medium text-nowrap text-center">{% if mysite.scanat is empty %}Aucun scan effectué {% else %} {{ mysite.scanat|date("d/m/Y") }}{% endif %}</div>
 											</td>
 
 											<td>

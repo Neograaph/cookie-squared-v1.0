@@ -6,6 +6,7 @@ use App\Entity\Sites;
 use App\Entity\User;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -25,6 +26,7 @@ class SitesType extends AbstractType
                 'label_attr' => ['class' => 'form-label'],
                 'label' => 'URL du site'
                 ])
+            ->add('created_at', DateTimeType::class,array('mapped'=>false));
             
         ;
     }
