@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\User;
 use App\Entity\Sites;
 use App\Form\SitesType;
+use App\Repository\SitesRepository;
 use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -17,12 +18,14 @@ class DashboardController extends AbstractController
     /**
      * @Route("/dashboard", name="my_sites")
      */
-    public function mySites(): Response
+    public function mySites(SitesRepository $sitesrepo): Response
     {
+        $user = new User();
+        $user = $this->getUser();
         if($this->getUser())
         {
-
-            return $this->render('dashboard/my_sites.html.twig');
+            $mysites = $sitesrepo->findBy(['id_owner' => $user]);
+            return $this->render('dashboard/my_sites.html.twig', compact('mysites'));
         }
         return $this->redirectToRoute('home_page');
     }
@@ -45,6 +48,7 @@ class DashboardController extends AbstractController
             $em->persist($sites);
             $em->persist($user);
             $em->flush();
+            return $this->redirectToRoute("my_sites");
         }
 
         return $this->render('dashboard/add_sites.html.twig', [
