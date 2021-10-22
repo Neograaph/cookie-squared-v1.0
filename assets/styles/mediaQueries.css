@@ -205,4 +205,11 @@ a{
     font-size: 12px;
   }
 
+
+  /* --------------- PAGE PROFIL ------------------ */
+
+  .user_container {
+    text-align: center;
+  }
+
 }
