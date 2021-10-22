@@ -44,3 +44,8 @@ import "./chat";
 import "./calendar";
 import "./dark-mode-switcher";
 import "./mobile-menu";
+
+/*
+    perso js
+*/
+import "./addCookie";
