@@ -26,7 +26,6 @@ class SitesType extends AbstractType
                 'label_attr' => ['class' => 'form-label'],
                 'label' => 'URL du site'
                 ])
-            ->add('created_at', DateTimeType::class,array('mapped'=>false));
             
         ;
     }
