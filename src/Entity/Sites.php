@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\SitesRepository;
+use DateTime;
+use DateTimeImmutable;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -48,6 +50,12 @@ class Sites
      */
     private $name;
 
+    public function __construct()
+    {
+        $this->created_at = new DateTimeImmutable();
+        $this->scan_at = NULL;
+        $this->cookie_list = NULL;
+    }
     public function getId(): ?int
     {
         return $this->id;

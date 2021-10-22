@@ -2,13 +2,15 @@
 
 namespace App\Controller;
 
+use App\Entity\User;
 use App\Entity\Sites;
 use App\Form\SitesType;
+use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class DashboardController extends AbstractController
 {
@@ -31,12 +33,18 @@ class DashboardController extends AbstractController
     public function addSites(Request $request, EntityManagerInterface $em): Response
     {
         $sites = new Sites();
+        $user = new User();
+        $user = $this->getUser();
+        $sites->setIdOwner($user);
         $form = $this->createForm(SitesType::class, $sites);
         $form->handleRequest($request);
 
         if($form->isSubmitted() && $form->isValid())
         {
-
+            
+            $em->persist($sites);
+            $em->persist($user);
+            $em->flush();
         }
 
         return $this->render('dashboard/add_sites.html.twig', [

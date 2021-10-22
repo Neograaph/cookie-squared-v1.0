@@ -73,7 +73,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private $created_at;
 
     /**
-     * @ORM\OneToMany(targetEntity=Sites::class, mappedBy="id_owner")
+     * @ORM\OneToMany(targetEntity=Sites::class, cascade={"persist", "remove"}, mappedBy="id_owner")
      */
     private $sites;
 
