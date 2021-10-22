@@ -11,7 +11,7 @@
 </head>
 
 {% block body %}
-
+<body>
 	{# banniere #}
 	<aside id="aside">
 		<div id="cookiebanner">
@@ -369,8 +369,9 @@
 
 {% include "home_page/partials/footer.html.twig" %}
 
-{% block javascripts %}
-	{{ encore_entry_script_tags('init') }}
-	{{ encore_entry_script_tags('app') }}
-{% endblock %}
+	{% block javascripts %}
+		{{ encore_entry_script_tags('init') }}
+		{{ encore_entry_script_tags('app') }}
+	{% endblock %}
+</body>
 {% endblock %}
