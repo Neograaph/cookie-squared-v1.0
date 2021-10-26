@@ -2,15 +2,15 @@
 
 namespace App\Entity;
 
-use App\Repository\SitesRepository;
+use App\Repository\SiteRepository;
 use DateTime;
 use DateTimeImmutable;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=SitesRepository::class)
+ * @ORM\Entity(repositoryClass=SiteRepository::class)
  */
-class Sites
+class Site
 {
     /**
      * @ORM\Id
