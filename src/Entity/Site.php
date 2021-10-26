@@ -5,6 +5,8 @@ namespace App\Entity;
 use App\Repository\SiteRepository;
 use DateTime;
 use DateTimeImmutable;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -50,11 +52,17 @@ class Site
      */
     private $name;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Cookie::class, mappedBy="id_site", orphanRemoval=true)
+     */
+    private $cookies;
+
     public function __construct()
     {
         $this->created_at = new DateTimeImmutable();
         $this->scan_at = NULL;
         $this->cookie_list = NULL;
+        $this->cookies = new ArrayCollection();
     }
     public function getId(): ?int
     {
@@ -129,6 +137,36 @@ class Site
     public function setName(string $name): self
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Cookie[]
+     */
+    public function getCookies(): Collection
+    {
+        return $this->cookies;
+    }
+
+    public function addCookie(Cookie $cookie): self
+    {
+        if (!$this->cookies->contains($cookie)) {
+            $this->cookies[] = $cookie;
+            $cookie->setIdSite($this);
+        }
+
+        return $this;
+    }
+
+    public function removeCookie(Cookie $cookie): self
+    {
+        if ($this->cookies->removeElement($cookie)) {
+            // set the owning side to null (unless already changed)
+            if ($cookie->getIdSite() === $this) {
+                $cookie->setIdSite(null);
+            }
+        }
 
         return $this;
     }
