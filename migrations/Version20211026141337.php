@@ -20,7 +20,6 @@ final class Version20211026141337 extends AbstractMigration
     public function up(Schema $schema): void
     {
         // this up() migration is auto-generated, please modify it to your needs
-        $this->addSql('ALTER TABLE cookie ADD description VARCHAR(255) NOT NULL');
         $this->addSql('ALTER TABLE cookie ADD CONSTRAINT FK_8AE0BA662820BF36 FOREIGN KEY (id_site_id) REFERENCES site (id)');
         $this->addSql('CREATE INDEX IDX_8AE0BA662820BF36 ON cookie (id_site_id)');
     }
@@ -30,6 +29,5 @@ final class Version20211026141337 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->addSql('ALTER TABLE cookie DROP FOREIGN KEY FK_8AE0BA662820BF36');
         $this->addSql('DROP INDEX IDX_8AE0BA662820BF36 ON cookie');
-        $this->addSql('ALTER TABLE cookie DROP description');
     }
 }
