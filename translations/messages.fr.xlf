@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="fgO7Pq3" resname="Fonctionnalités">
+        <source>Fonctionnalités</source>
+        <target>Fonctionnalités</target>
+      </trans-unit>
+      <trans-unit id="ttp87mD" resname="Tarifs">
+        <source>Tarifs</source>
+        <target>Tarifs</target>
+      </trans-unit>
+      <trans-unit id="yTU55Ml" resname="Connexion">
+        <source>Connexion</source>
+        <target>Connexion</target>
+      </trans-unit>
+      <trans-unit id="ppm54YT" resname="Profil">
+        <source>Profil</source>
+        <target>Profil</target>
+      </trans-unit>
+      <trans-unit id="MeS445Py" resname="Mes sites">
+        <source>Mes sites</source>
+        <target>Mes sites</target>
+      </trans-unit>
+      <trans-unit id="gtm963HT" resname="Langues">
+        <source>Langues</source>
+        <target>Langues</target>
+      </trans-unit>
+      <trans-unit id="yam447MM" resname="Inscription">
+        <source>Inscription</source>
+        <target>Inscription</target>
+      </trans-unit>
+      <trans-unit id="qqRST5M" resname="A propos">
+        <source>A propos</source>
+        <target>A propos</target>
+      </trans-unit>
+      <trans-unit id="pmi78PPt" resname="Toutrefuser">
+        <source>Tout refuser</source>
+        <target>Tout refuser</target>
+      </trans-unit>
+      <trans-unit id="pmi78PPa" resname="Toutaccepter">
+        <source>Tout accepter</source>
+        <target>Tout accepter</target>
+      </trans-unit>
+      <trans-unit id="pmi78PPk" resname="Preferences">
+        <source>Préférences</source>
+        <target>Préférences</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
