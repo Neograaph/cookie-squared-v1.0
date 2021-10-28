@@ -3,9 +3,9 @@
 namespace App\Controller;
 
 use App\Entity\User;
-use App\Entity\Sites;
-use App\Form\SitesType;
-use App\Repository\SitesRepository;
+use App\Entity\Site;
+use App\Form\SiteType;
+use App\Repository\SiteRepository;
 use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,13 +18,13 @@ class DashboardController extends AbstractController
     /**
      * @Route("/dashboard", name="my_sites")
      */
-    public function mySites(SitesRepository $sitesrepo): Response
+    public function mySites(SiteRepository $siterepo): Response
     {
         $user = new User();
         $user = $this->getUser();
         if($this->getUser())
         {
-            $mysites = $sitesrepo->findBy(['id_owner' => $user]);
+            $mysites = $siterepo->findBy(['id_owner' => $user]);
             return $this->render('dashboard/my_sites.html.twig', compact('mysites'));
         }
         return $this->redirectToRoute('home_page');
@@ -35,11 +35,11 @@ class DashboardController extends AbstractController
      */
     public function addSites(Request $request, EntityManagerInterface $em): Response
     {
-        $sites = new Sites();
+        $sites = new Site();
         $user = new User();
         $user = $this->getUser();
         $sites->setIdOwner($user);
-        $form = $this->createForm(SitesType::class, $sites);
+        $form = $this->createForm(SiteType::class, $sites);
         $form->handleRequest($request);
 
         if($form->isSubmitted() && $form->isValid())

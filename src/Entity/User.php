@@ -73,7 +73,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private $created_at;
 
     /**
-     * @ORM\OneToMany(targetEntity=Sites::class, cascade={"persist", "remove"}, mappedBy="id_owner")
+     * @ORM\OneToMany(targetEntity=Site::class, cascade={"persist", "remove"}, mappedBy="id_owner")
      */
     private $sites;
 
@@ -230,7 +230,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this->sites;
     }
 
-    public function addSite(Sites $site): self
+    public function addSite(Site $site): self
     {
         if (!$this->sites->contains($site)) {
             $this->sites[] = $site;
@@ -240,7 +240,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function removeSite(Sites $site): self
+    public function removeSite(Site $site): self
     {
         if ($this->sites->removeElement($site)) {
             // set the owning side to null (unless already changed)

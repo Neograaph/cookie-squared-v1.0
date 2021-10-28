@@ -42,6 +42,17 @@ class Cookie
      */
     private $path;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Site::class, inversedBy="cookies")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $id_site;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $description;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -103,6 +114,30 @@ class Cookie
     public function setPath(?string $path): self
     {
         $this->path = $path;
+
+        return $this;
+    }
+
+    public function getIdSite(): ?Site
+    {
+        return $this->id_site;
+    }
+
+    public function setIdSite(?Site $id_site): self
+    {
+        $this->id_site = $id_site;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): self
+    {
+        $this->description = $description;
 
         return $this;
     }
