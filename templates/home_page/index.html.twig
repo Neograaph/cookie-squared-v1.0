@@ -21,47 +21,47 @@
 				<i class="fas fa-times" id="cross"></i>
 				
 				<div class="gen">
-					<h3>Essentiels</h3>
+					<h3>{% trans %}Essentiels{% endtrans %}</h3>
 					<label class="switch">
 						<input type="checkbox">
 						<span class="slider round"></span>
 					</label>
 				</div>
 				<br>
-				<p>Ces éléments sont nécessaires pour activer les fonctionnalités de base du site Web.</p><br>
+				<p>{% trans %}Ces éléments sont nécessaires pour activer les fonctionnalités de base du site Web.{% endtrans %}</p><br>
 
 				<div class="gen">
-					<h3>Marketing</h3>
+					<h3>{% trans %}Marketing{% endtrans %}</h3>
 					<label class="switch">
 						<input type="checkbox">
 						<span class="slider round"></span>
 					</label>
 				</div>
 				<br>
-				<p>Ces éléments sont utilisés pour diffuser des publicités plus pertinentes pour vous et vos intérêts. Ils peuvent également être utilisés pour limiter le nombre de fois où vous voyez une publicité et mesurer l'efficacité des campagnes publicitaires. Les réseaux publicitaires les placent généralement avec l'autorisation de l'exploitant du site Web.</p><br>
+				<p>{% trans %}Ces éléments sont utilisés pour diffuser des publicités plus pertinentes pour vous et vos intérêts. Ils peuvent également être utilisés pour limiter le nombre de fois où vous voyez une publicité et mesurer l'efficacité des campagnes publicitaires. Les réseaux publicitaires les placent généralement avec l'autorisation de l'exploitant du site Web.{% endtrans %}</p><br>
 
 				<div class="gen">
-					<h3>Personnalisation</h3>
+					<h3>{% trans %}Personnalisation{% endtrans %}</h3>
 					<label class="switch">
 						<input type="checkbox">
 						<span class="slider round"></span>
 					</label>
 				</div>
 				<br>
-				<p>Ces éléments permettent au site Web de se souvenir des choix que vous faites (tels que votre nom d'utilisateur, votre langue ou la région dans laquelle vous vous trouvez) et fournissent des fonctionnalités améliorées et plus personnelles. Par exemple, un site Web peut vous fournir des bulletins météorologiques locaux ou des informations sur le trafic en conservant des données sur votre emplacement actuel.</p><br>
+				<p>{% trans %}Ces éléments permettent au site Web de se souvenir des choix que vous faites (tels que votre nom d'utilisateur, votre langue ou la région dans laquelle vous vous trouvez) et fournissent des fonctionnalités améliorées et plus personnelles. Par exemple, un site Web peut vous fournir des bulletins météorologiques locaux ou des informations sur le trafic en conservant des données sur votre emplacement actuel.{% endtrans %}</p><br>
 
 				<div class="gen">
-					<h3>Analyses</h3>
+					<h3>{% trans %}Analyses{% endtrans %}</h3>
 					<label class="switch">
 						<input type="checkbox">
 						<span class="slider round"></span>
 					</label>
 				</div>
 				<br>
-				<p>Ces éléments aident l'exploitant du site Web à comprendre comment son site Web fonctionne, comment les visiteurs interagissent avec le site et s'il peut y avoir des problèmes techniques. Ce type de conservation ne collecte généralement pas d'informations permettant d'identifier un visiteur.</p><br>
+				<p>{% trans %}Ces éléments aident l'exploitant du site Web à comprendre comment son site Web fonctionne, comment les visiteurs interagissent avec le site et s'il peut y avoir des problèmes techniques. Ce type de conservation ne collecte généralement pas d'informations permettant d'identifier un visiteur.{% endtrans %}</p><br>
 				
 				<div id="divvalidate">
-					<button id="btnvalidcookies" class="buttons">Valider</button>
+					<button id="btnvalidcookies" class="buttons">{% trans %}Valider{% endtrans %}</button>
 				</div>
 			</div>
 		</aside>
@@ -71,7 +71,7 @@
 		<div id="cookiebanner2">
 			<br>
 			<h3>{% trans %}cesiteutilisedescookies{% endtrans %}</h3>
-			<p>Nous utilisons des cookies pour personnaliser la navigation de l'utilisateur ainsi que les publicités affichées sur le site. Si vous cliquez sur “accepter”, vous autorisez la collecte d’information concernant votre navigation.
+			<p>{% trans %}Nous utilisons des cookies pour personnaliser la navigation de l'utilisateur ainsi que les publicités affichées sur le site. Si vous cliquez sur “accepter”, vous autorisez la collecte d’information concernant votre navigation.{% endtrans %}
 			</p>
 			<div id="btns">
 				<button id="btnrefuse" class="buttons">{% trans %}Tout refuser{% endtrans %}</button>
@@ -97,11 +97,11 @@
 				</div>
 
 				<div class="accueil_description">
-					<p>Cookie Squared est une solution simple pour ouvrir une bannière de cookie entièrement personnalisable sur votre site Web. Il recueille le consentement de manière transparente et aide votre site Web à se conformer au RGPD et à la directive ePrivacy en seulement trois étapes faciles.</p>
+					<p>{% trans %}Cookie Squared est une solution simple pour ouvrir une bannière de cookie entièrement personnalisable sur votre site Web. Il recueille le consentement de manière transparente et aide votre site Web à se conformer au RGPD et à la directive ePrivacy en seulement trois étapes faciles.{% endtrans %}</p>
 				</div>
 
 				<div class="accueil_start_button">
-					<a href=" {{ path('register') }} ">Commencer</a>
+					<a href=" {{ path('register') }} ">{% trans %}Commencer{% endtrans %}</a>
 				</div>
 
 				<div class="accueil_img">
@@ -118,15 +118,15 @@
 				<div class="fonctsection" id="sectionfonct">
 
 					<div class="fonct" id="fonct1">
-						<h2>Choisissez un modèle et personnalisez-le</h2>
+						<h2>{% trans %}Choisissez un modèle et personnalisez-le{% endtrans %}</h2>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus sit et rem accusantium natus</p>
 					</div>
 					<div class="fonct" id="fonct2">
-						<h2>Scannez votre site</h2>
+						<h2>{% trans %}Scannez votre site{% endtrans %}</h2>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus sit et rem accusantium natus</p>
 					</div>
 					<div class="fonct" id="fonct3">
-						<h2>Ajoutez les cookies que vous souhaitez</h2>
+						<h2>{% trans %}Ajoutez les cookies que vous souhaitez{% endtrans %}</h2>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam delectus sit et rem accusantium natus</p>
 					</div>
 
@@ -145,33 +145,33 @@
 
 									<div class="price_list_mobile">
 										<div class="price_top">
-											<h2 class="price_title">Free</h2>
+											<h2 class="price_title">{% trans %}Free{% endtrans %}</h2>
 											<div class="price_shadow_1"></div>
 										</div>
 
 										<div class="price_body">
 											<div class="price_circle">
-												<h3 class="price_circle_text">Free</h3>
+												<h3 class="price_circle_text">{% trans %}Free{% endtrans %}</h3>
 											</div>
 											<div class="price_features">
 												<h3>
-													<i class="fas fa-check"></i>Feature 1</h3>
+													<i class="fas fa-check"></i>{% trans %}Feature 1{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-check"></i>Feature 2</h3>
+													<i class="fas fa-check"></i>{% trans %}Feature 2{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 3</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 3{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 4</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 4{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 5</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 5{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 6</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 6{% endtrans %}</h3>
 
 											</div>
 										</div>
 
 										<div class="price_footer">
-											<h2 class="price_footer_text">Try now for free</h2>
+											<h2 class="price_footer_text">{% trans %}Try now for free{% endtrans %}</h2>
 										</div>
 
 									</div>
@@ -182,7 +182,7 @@
 
 									<div class="price_list_mobile">
 										<div class="price_top">
-											<h2 class="price_title">Developer</h2>
+											<h2 class="price_title">{% trans %}Developer{% endtrans %}</h2>
 											<div class="price_shadow_2"></div>
 											<div class="price_shadow_3"></div>
 										</div>
@@ -193,23 +193,23 @@
 											</div>
 											<div class="price_features">
 												<h3>
-													<i class="fas fa-check"></i>Feature 1</h3>
+													<i class="fas fa-check"></i>{% trans %}Feature 1{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-check"></i>Feature 2</h3>
+													<i class="fas fa-check"></i>{% trans %}Feature 2{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 3</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 3{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 4</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 4{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 5</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 5{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 6</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 6{% endtrans %}</h3>
 
 											</div>
 										</div>
 
 										<div class="price_footer">
-											<h2 class="price_footer_text">Select</h2>
+											<h2 class="price_footer_text">{% trans %}Select{% endtrans %}</h2>
 										</div>
 
 									</div>
@@ -220,7 +220,7 @@
 
 									<div class="price_list_mobile">
 										<div class="price_top">
-											<h2 class="price_title">Business</h2>
+											<h2 class="price_title">{% trans %}Business{% endtrans %}</h2>
 											<div class="price_shadow_4"></div>
 											<div class="price_shadow_5"></div>
 										</div>
@@ -231,23 +231,23 @@
 											</div>
 											<div class="price_features">
 												<h3>
-													<i class="fas fa-check"></i>Feature 1</h3>
+													<i class="fas fa-check"></i>{% trans %}Feature 1{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-check"></i>Feature 2</h3>
+													<i class="fas fa-check"></i>{% trans %}Feature 2{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 3</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 3{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 4</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 4{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 5</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 5{% endtrans %}</h3>
 												<h3>
-													<i class="fas fa-ban"></i>Feature 6</h3>
+													<i class="fas fa-ban"></i>{% trans %}Feature 6{% endtrans %}</h3>
 
 											</div>
 										</div>
 
 										<div class="price_footer">
-											<h2 class="price_footer_text">Select</h2>
+											<h2 class="price_footer_text">{% trans %}Select{% endtrans %}</h2>
 										</div>
 
 									</div>
@@ -262,39 +262,39 @@
 
 					<div class="price_list">
 						<div class="price_top">
-							<h2 class="price_title">Free</h2>
+							<h2 class="price_title">{% trans %}Free{% endtrans %}</h2>
 							<div class="price_shadow_1"></div>
 						</div>
 
 						<div class="price_body">
 							<div class="price_circle">
-								<h3 class="price_circle_text">Free</h3>
+								<h3 class="price_circle_text">{% trans %}Free{% endtrans %}</h3>
 							</div>
 							<div class="price_features">
 								<h3>
-									<i class="fas fa-check"></i>Feature 1</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 1{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-check"></i>Feature 2</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 2{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-ban"></i>Feature 3</h3>
+									<i class="fas fa-ban"></i>{% trans %}Feature 3{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-ban"></i>Feature 4</h3>
+									<i class="fas fa-ban"></i>{% trans %}Feature 4{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-ban"></i>Feature 5</h3>
+									<i class="fas fa-ban"></i>{% trans %}Feature 5{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-ban"></i>Feature 6</h3>
+									<i class="fas fa-ban"></i>{% trans %}Feature 6{% endtrans %}</h3>
 
 							</div>
 						</div>
 
 						<div class="price_footer">
-							<h2 class="price_footer_text">Try now for free</h2>
+							<h2 class="price_footer_text">{% trans %}Try now for free{% endtrans %}</h2>
 						</div>
 					</div>
 
 					<div class="price_list">
 						<div class="price_top">
-							<h2 class="price_title">Developer</h2>
+							<h2 class="price_title">{% trans %}Developer{% endtrans %}</h2>
 							<div class="price_shadow_2"></div>
 							<div class="price_shadow_3"></div>
 						</div>
@@ -305,29 +305,29 @@
 							</div>
 							<div class="price_features">
 								<h3>
-									<i class="fas fa-check"></i>Feature 1</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 1{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-check"></i>Feature 2</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 2{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-check"></i>Feature 3</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 3{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-check"></i>Feature 4</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 4{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-ban"></i>Feature 5</h3>
+									<i class="fas fa-ban"></i>{% trans %}Feature 5{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-ban"></i>Feature 6</h3>
+									<i class="fas fa-ban"></i>{% trans %}Feature 6{% endtrans %}</h3>
 
 							</div>
 						</div>
 
 						<div class="price_footer">
-							<h2 class="price_footer_text">Select</h2>
+							<h2 class="price_footer_text">{% trans %}Select{% endtrans %}</h2>
 						</div>
 					</div>
 
 					<div class="price_list">
 						<div class="price_top">
-							<h2 class="price_title">Business</h2>
+							<h2 class="price_title">{% trans %}Business{% endtrans %}</h2>
 							<div class="price_shadow_4"></div>
 							<div class="price_shadow_5"></div>
 						</div>
@@ -338,23 +338,23 @@
 							</div>
 							<div class="price_features">
 								<h3>
-									<i class="fas fa-check"></i>Feature 1</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 1{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-check"></i>Feature 2</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 2{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-check"></i>Feature 3</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 3{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-check"></i>Feature 4</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 4{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-check"></i>Feature 5</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 5{% endtrans %}</h3>
 								<h3>
-									<i class="fas fa-check"></i>Feature 6</h3>
+									<i class="fas fa-check"></i>{% trans %}Feature 6{% endtrans %}</h3>
 
 							</div>
 						</div>
 
 						<div class="price_footer">
-							<h2 class="price_footer_text">Select</h2>
+							<h2 class="price_footer_text">{% trans %}Select{% endtrans %}</h2>
 						</div>
 					</div>
 
@@ -364,13 +364,13 @@
 			{# section WP #}
 			<div id="sectionwp">
 
-				<h1>Extension Wordpress</h1><br>
+				<h1>{% trans %}Extension Wordpress{% endtrans %}</h1><br>
 
 				<img src="{{ asset("build/images/wpresponsive.png") }}" alt="WP Responsive" class="wpresponsive_img">
 
-				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth</p><br><br>
+				<p>{% trans %}wordpressdescription{% endtrans %}</p><br><br>
 				<button>
-					<h2>Télecharger le plugin Wordpress</h2>
+					<h2>{% trans %}Télecharger le plugin Wordpress{% endtrans %}</h2>
 				</button>
 			</div>
 
@@ -381,16 +381,16 @@
 					<h2 id="rgpd">RGPD et ePrivacy</h2>
 				</div>
 				<div id="parargpd">
-					<p><br>Le sigle RGPD signifie « Règlement Général sur la Protection des Données » (en anglais « General Data Protection Regulation » ou GDPR). Le RGPD encadre le traitement des données personnelles sur le territoire de l’Union européenne.<br><br>
+					<p><br>{% trans %}Le sigle RGPD signifie « Règlement Général sur la Protection des Données » (en anglais « General Data Protection Regulation » ou GDPR). Le RGPD encadre le traitement des données personnelles sur le territoire de l’Union européenne.<br><br>
 
 						Le règlement ePrivacy 2021 est un projet de règlement du Conseil de l'UE qui régit toutes les communications électroniques sur les services et réseaux accessibles au public provenant de particuliers au sein de l'Union européenne.<br><br>
 
 						Ce nouveau règlement européen s’inscrit dans la continuité de la Loi française Informatique et Libertés de 1978 et renforce le contrôle par les citoyens de l’utilisation qui peut être faite des données les concernant.<br><br>
 
-						Il harmonise les règles en Europe en offrant un cadre juridique unique aux professionnels. Il permet de développer leurs activités numériques au sein de l’UE en se fondant sur la confiance des utilisateurs.</p><br>
+						Il harmonise les règles en Europe en offrant un cadre juridique unique aux professionnels. Il permet de développer leurs activités numériques au sein de l’UE en se fondant sur la confiance des utilisateurs.{% endtrans %}</p><br>
 
 					<button id="btnrgpd">
-						<a href="https://www.alsaeci.com/rgpd-et-eprivacy-ce-que-vous-devez-savoir/#:~:text=Le%20RGPD%20et%20l%E2%80%99ePrivacy%20sont%20deux%20r%C3%A9glementations%20diff%C3%A9rentes,pour%20%C3%A9viter%20tout%20probl%C3%A8me%20avec%20les%20institutions%20comp%C3%A9tentes." target="_blank">En savoir plus</a>
+						<a href="https://www.alsaeci.com/rgpd-et-eprivacy-ce-que-vous-devez-savoir/#:~:text=Le%20RGPD%20et%20l%E2%80%99ePrivacy%20sont%20deux%20r%C3%A9glementations%20diff%C3%A9rentes,pour%20%C3%A9viter%20tout%20probl%C3%A8me%20avec%20les%20institutions%20comp%C3%A9tentes." target="_blank">{% trans %}En savoir plus{% endtrans %}</a>
 					</button>
 				</div>
 			</div>
@@ -398,17 +398,17 @@
 
 			{# section Qui Sommes Nous #}
 			<div id="sectionqsn">
-				<h1 id="qsn">Qui sommes nous ?</h1><br>
+				<h1 id="qsn">{% trans %}Qui sommes nous ?{% endtrans %}</h1><br>
 				<div id="mainqsn">
 					<a href="https://codecolliders.com/"><img src="{{ asset('build/images/logo2.png') }}" alt="logo" onclick="https://codecolliders.com/"></a>
-					<p><br>Depuis 2017, nous accompagnons nos clients à la réalisation de leurs projets numériques.
+					<p><br>{% trans %}Depuis 2017, nous accompagnons nos clients à la réalisation de leurs projets numériques.
 						<br><br>
 
 						L’humain est au centre de notre stratégie, nous accompagnons, formons, et donnons vie à vos projets avec des solutions adaptées à vos besoins, à ceux de vos clients, à ceux de votre équipe.<br><br>
 
 						Code Colliders c’est avant tout la passion du développement de tout projet, quel qu’il soit, en mettant l’accent sur les solutions numériques, connectées.<br><br>
 
-						Nous menons à bien vos projets de la conception à la réalisation.</p>
+						Nous menons à bien vos projets de la conception à la réalisation.{% endtrans %}</p>
 
 				</div>
 			</div>
