@@ -57,25 +57,17 @@
         <source>unesolutionsimple</source>
         <target>A simple way to manage cookies on your website</target>
       </trans-unit>
-      <trans-unit id="pMf4Je2" resname="Ce site utilise des cookies">
-        <source>Ce site utilise des cookies</source>
-        <target>__Ce site utilise des cookies</target>
-      </trans-unit>
       <trans-unit id="ZZrU_6a" resname="Tout refuser">
         <source>Tout refuser</source>
-        <target>__Tout refuser</target>
+        <target>Refuse everything</target>
       </trans-unit>
       <trans-unit id="IDJgOHE" resname="Préférences">
         <source>Préférences</source>
-        <target>__Préférences</target>
+        <target>Preferences</target>
       </trans-unit>
       <trans-unit id="d1k21.l" resname="Tout accepter">
         <source>Tout accepter</source>
-        <target>__Tout accepter</target>
-      </trans-unit>
-      <trans-unit id="ufrGs3y" resname="Une solution simple pour gérer les Cookies de votre site web">
-        <source>Une solution simple pour gérer les Cookies de votre site web</source>
-        <target>__Une solution simple pour gérer les Cookies de votre site web</target>
+        <target>Accept everything</target>
       </trans-unit>
     </body>
   </file>
