@@ -1,53 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+  <file source-language="es" target-language="es" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
-      <trans-unit id="fgO7Pq3" resname="Fonctionnalités">
+      <trans-unit id="vSFYwT3" resname="Fonctionnalités">
         <source>Fonctionnalités</source>
         <target>Funcionalidades</target>
       </trans-unit>
-      <trans-unit id="ttp87mD" resname="Tarifs">
+      <trans-unit id="_zCujCh" resname="Tarifs">
         <source>Tarifs</source>
         <target>Precios</target>
       </trans-unit>
-      <trans-unit id="yTU55Ml" resname="Connexion">
+      <trans-unit id="YdaVBBA" resname="Connexion">
         <source>Connexion</source>
         <target>Connección</target>
       </trans-unit>
-      <trans-unit id="ppm54YT" resname="Profil">
+      <trans-unit id="4mfTQ4I" resname="Profil">
         <source>Profil</source>
         <target>Perfil</target>
       </trans-unit>
-      <trans-unit id="MeS445Py" resname="Mes sites">
+      <trans-unit id="GS36YEG" resname="Mes sites">
         <source>Mes sites</source>
         <target>Mis sitios</target>
       </trans-unit>
-      <trans-unit id="gtm963HT" resname="Langues">
+      <trans-unit id="LSWfCb9" resname="Langues">
         <source>Langues</source>
         <target>Idiomas</target>
       </trans-unit>
-      <trans-unit id="yam447MM" resname="Inscription">
+      <trans-unit id="z7GsDIB" resname="Inscription">
         <source>Inscription</source>
-        <target>Inscriptión</target>
+        <target>Inscripción</target>
       </trans-unit>
-      <trans-unit id="qqRST5M" resname="A propos">
+      <trans-unit id="ZyFT62v" resname="A propos">
         <source>A propos</source>
         <target>Sobre</target>
       </trans-unit>
-      <trans-unit id="pmi78PPt" resname="Toutrefuser">
+      <trans-unit id="ws.biMX" resname="Toutrefuser">
         <source>Tout refuser</source>
         <target>Rechazar todo</target>
       </trans-unit>
-      <trans-unit id="pmi78PPa" resname="Toutaccepter">
+      <trans-unit id="fPhAYo5" resname="Toutaccepter">
         <source>Tout accepter</source>
         <target>Aceptar todo</target>
       </trans-unit>
-      <trans-unit id="pmi78PPk" resname="Preferences">
+      <trans-unit id="ZpYvcqC" resname="Preferences">
         <source>Préférences</source>
         <target>Preferencias</target>
+      </trans-unit>
+      <trans-unit id="pMf4Je2" resname="Ce site utilise des cookies">
+        <source>Ce site utilise des cookies</source>
+        <target>Este sitio utiliza cookies</target>
+      </trans-unit>
+      <trans-unit id="ZZrU_6a" resname="Tout refuser">
+        <source>Tout refuser</source>
+        <target>Rechazar todo</target>
+      </trans-unit>
+      <trans-unit id="IDJgOHE" resname="Préférences">
+        <source>Préférences</source>
+        <target>Preferencias</target>
+      </trans-unit>
+      <trans-unit id="d1k21.l" resname="Tout accepter">
+        <source>Tout accepter</source>
+        <target>Aceptar todo</target>
+      </trans-unit>
+      <trans-unit id="ufrGs3y" resname="Une solution simple pour gérer les Cookies de votre site web">
+        <source>unesolutionsimple</source>
+        <target>Una solución sencilla para gestionar las cookies de su sitio web</target>
       </trans-unit>
     </body>
   </file>
