@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
@@ -214,6 +214,14 @@
 						Code Colliders is above all the passion of developing any project, with a focus on digital, connected solutions.<br><br>
 
 						We carry out your projects from conception to realization.]]></target>
+      </trans-unit>
+      <trans-unit id="tIvOol9" resname="Politique de confidentialité   -   Cookies   -   Mentions légales">
+        <source>Politique de confidentialité   -   Cookies   -   Mentions légales</source>
+        <target>Privacy policy   -   Cookies   -   Legal notice</target>
+      </trans-unit>
+      <trans-unit id="oshT.U9" resname="Tous droits réservés | ©2021 Code colliders">
+        <source>Tous droits réservés | ©2021 Code colliders</source>
+        <target>All rights reserved | ©2021 Code colliders</target>
       </trans-unit>
     </body>
   </file>
