@@ -57,12 +57,18 @@ class Site
      */
     private $cookies;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Custom::class, mappedBy="id_site", orphanRemoval=true)
+     */
+    private $customs;
+
     public function __construct()
     {
         $this->created_at = new DateTimeImmutable();
         $this->scan_at = NULL;
         $this->cookie_list = NULL;
         $this->cookies = new ArrayCollection();
+        $this->customs = new ArrayCollection();
     }
     public function getId(): ?int
     {
@@ -165,6 +171,36 @@ class Site
             // set the owning side to null (unless already changed)
             if ($cookie->getIdSite() === $this) {
                 $cookie->setIdSite(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Custom[]
+     */
+    public function getCustoms(): Collection
+    {
+        return $this->customs;
+    }
+
+    public function addCustom(Custom $custom): self
+    {
+        if (!$this->customs->contains($custom)) {
+            $this->customs[] = $custom;
+            $custom->setIdSite($this);
+        }
+
+        return $this;
+    }
+
+    public function removeCustom(Custom $custom): self
+    {
+        if ($this->customs->removeElement($custom)) {
+            // set the owning side to null (unless already changed)
+            if ($custom->getIdSite() === $this) {
+                $custom->setIdSite(null);
             }
         }
 

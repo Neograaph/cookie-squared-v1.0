@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Site;
 use App\Entity\Cookie;
 use App\Form\CookieType;
 use App\Repository\CookieRepository;
@@ -22,9 +23,12 @@ class CookieController extends AbstractController
 
         $cookie = new Cookie;
 
+        $site = new Site;
+
         $form = $this->createForm(CookieType::class, $cookie);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
+            $cookie->setIdSite($site);
             $em->persist($cookie);
             $em->flush();
         }

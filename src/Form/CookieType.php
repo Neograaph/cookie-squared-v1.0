@@ -6,6 +6,7 @@ use App\Entity\Cookie;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 
 class CookieType extends AbstractType
@@ -19,7 +20,7 @@ class CookieType extends AbstractType
             ->add('domain')
             ->add('path')
             ->add('description')
-            ->add('id_site', NumberType::class, ['required' => true])
+            ->add('id_site', HiddenType::class, ['required' => true])
         ;
     }
 
