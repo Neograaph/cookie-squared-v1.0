@@ -9,128 +9,112 @@
         <source>Fonctionnalités</source>
         <target>Fonctionnalités</target>
       </trans-unit>
-      <trans-unit id="_zCujCh" resname="Tarifs">
-        <source>Tarifs</source>
+      <trans-unit id="_zCujCh" resname="prices">
+        <source>prices</source>
         <target>Tarifs</target>
       </trans-unit>
-      <trans-unit id="YdaVBBA" resname="Connexion">
-        <source>Connexion</source>
+      <trans-unit id="YdaVBBA" resname="connexion">
+        <source>connexion</source>
         <target>Connexion</target>
       </trans-unit>
-      <trans-unit id="4mfTQ4I" resname="Profil">
-        <source>Profil</source>
+      <trans-unit id="4mfTQ4I" resname="profile">
+        <source>profile</source>
         <target>Profil</target>
       </trans-unit>
-      <trans-unit id="GS36YEG" resname="Mes sites">
-        <source>Mes sites</source>
+      <trans-unit id="GS36YEG" resname="mysites">
+        <source>mysites</source>
         <target>Mes sites</target>
       </trans-unit>
-      <trans-unit id="LSWfCb9" resname="Langues">
-        <source>Langues</source>
+      <trans-unit id="LSWfCb9" resname="languages">
+        <source>languages</source>
         <target>Langues</target>
       </trans-unit>
-      <trans-unit id="z7GsDIB" resname="Inscription">
-        <source>Inscription</source>
+      <trans-unit id="z7GsDIB" resname="registration">
+        <source>registration</source>
         <target>Inscription</target>
       </trans-unit>
-      <trans-unit id="ZyFT62v" resname="A propos">
-        <source>A propos</source>
+      <trans-unit id="ZyFT62v" resname="about">
+        <source>about</source>
         <target>A propos</target>
       </trans-unit>
-      <trans-unit id="ws.biMX" resname="Toutrefuser">
-        <source>Toutrefuser</source>
+      <trans-unit id="ws.biMX" resname="refuse">
+        <source>refuse</source>
         <target>Tout refuser</target>
       </trans-unit>
-      <trans-unit id="fPhAYo5" resname="Toutaccepter">
-        <source>Toutaccepter</source>
+      <trans-unit id="fPhAYo5" resname="accept">
+        <source>accept</source>
         <target>Tout accepter</target>
       </trans-unit>
-      <trans-unit id="ZpYvcqC" resname="Preferences">
-        <source>Preferences</source>
+      <trans-unit id="ZpYvcqC" resname="preferences">
+        <source>preferences</source>
         <target>Préférences</target>
       </trans-unit>
-      <trans-unit id="nq8mO4_" resname="unesolutionsimple">
-        <source>unesolutionsimple</source>
+      <trans-unit id="nq8mO4_" resname="simplesolutiontitle">
+        <source>simplesolutiontitle</source>
         <target>Une solution simple pour gérer les Cookies de votre site web</target>
       </trans-unit>
-      <trans-unit id="pMf4Je2" resname="Ce site utilise des cookies">
-        <source>Ce site utilise des cookies</source>
-        <target>Ce site utilise des cookies</target>
-      </trans-unit>
-      <trans-unit id="ZZrU_6a" resname="Tout refuser">
-        <source>Tout refuser</source>
-        <target>Tout refuser</target>
-      </trans-unit>
-      <trans-unit id="IDJgOHE" resname="Préférences">
-        <source>Préférences</source>
-        <target>Préférences</target>
-      </trans-unit>
-      <trans-unit id="d1k21.l" resname="Tout accepter">
-        <source>Tout accepter</source>
-        <target>Tout accepter</target>
-      </trans-unit>
-      <trans-unit id="nqv6d41" resname="Essentiels">
-        <source>Essentiels</source>
+      <trans-unit id="nqv6d41" resname="Essentials">
+        <source>Essentials</source>
         <target>Essentiels</target>
       </trans-unit>
-      <trans-unit id="vuR3u.z" resname="Ces éléments sont nécessaires pour activer les fonctionnalités de base du site Web.">
-        <source>Ces éléments sont nécessaires pour activer les fonctionnalités de base du site Web.</source>
+      <trans-unit id="vuR3u.z" resname="essentialelements">
+        <source>essentialelements</source>
         <target>Ces éléments sont nécessaires pour activer les fonctionnalités de base du site Web.</target>
       </trans-unit>
       <trans-unit id="9ZBM96E" resname="Marketing">
         <source>Marketing</source>
         <target>Marketing</target>
       </trans-unit>
-      <trans-unit id="jkZwnJV" resname="Ces éléments sont utilisés pour diffuser des publicités plus pertinentes pour vous et vos intérêts. Ils peuvent également être utilisés pour limiter le nombre de fois où vous voyez une publicité et mesurer l'efficacité des campagnes publicitaires. Les réseaux publicitaires les placent généralement avec l'autorisation de l'exploitant du site Web.">
-        <source>Ces éléments sont utilisés pour diffuser des publicités plus pertinentes pour vous et vos intérêts. Ils peuvent également être utilisés pour limiter le nombre de fois où vous voyez une publicité et mesurer l'efficacité des campagnes publicitaires. Les réseaux publicitaires les placent généralement avec l'autorisation de l'exploitant du site Web.</source>
+      <trans-unit id="jkZwnJV" resname="marketingelements">
+        <source>marketingelements</source>
         <target>Ces éléments sont utilisés pour diffuser des publicités plus pertinentes pour vous et vos intérêts. Ils peuvent également être utilisés pour limiter le nombre de fois où vous voyez une publicité et mesurer l'efficacité des campagnes publicitaires. Les réseaux publicitaires les placent généralement avec l'autorisation de l'exploitant du site Web.</target>
       </trans-unit>
       <trans-unit id="EoQMk_o" resname="Personnalisation">
         <source>Personnalisation</source>
         <target>Personnalisation</target>
       </trans-unit>
-      <trans-unit id="__k4mgP" resname="Ces éléments permettent au site Web de se souvenir des choix que vous faites (tels que votre nom d'utilisateur, votre langue ou la région dans laquelle vous vous trouvez) et fournissent des fonctionnalités améliorées et plus personnelles. Par exemple, un site Web peut vous fournir des bulletins météorologiques locaux ou des informations sur le trafic en conservant des données sur votre emplacement actuel.">
-        <source>Ces éléments permettent au site Web de se souvenir des choix que vous faites (tels que votre nom d'utilisateur, votre langue ou la région dans laquelle vous vous trouvez) et fournissent des fonctionnalités améliorées et plus personnelles. Par exemple, un site Web peut vous fournir des bulletins météorologiques locaux ou des informations sur le trafic en conservant des données sur votre emplacement actuel.</source>
+      <trans-unit id="__k4mgP" resname="personnalisationelements">
+        <source>personnalisationelements</source>
         <target>Ces éléments permettent au site Web de se souvenir des choix que vous faites (tels que votre nom d'utilisateur, votre langue ou la région dans laquelle vous vous trouvez) et fournissent des fonctionnalités améliorées et plus personnelles. Par exemple, un site Web peut vous fournir des bulletins météorologiques locaux ou des informations sur le trafic en conservant des données sur votre emplacement actuel.</target>
       </trans-unit>
-      <trans-unit id="0sIo.JH" resname="Analyses">
-        <source>Analyses</source>
+      <trans-unit id="0sIo.JH" resname="Analysis">
+        <source>Analysis</source>
         <target>Analyses</target>
       </trans-unit>
-      <trans-unit id="XJXOVtE" resname="Ces éléments aident l'exploitant du site Web à comprendre comment son site Web fonctionne, comment les visiteurs interagissent avec le site et s'il peut y avoir des problèmes techniques. Ce type de conservation ne collecte généralement pas d'informations permettant d'identifier un visiteur.">
-        <source>Ces éléments aident l'exploitant du site Web à comprendre comment son site Web fonctionne, comment les visiteurs interagissent avec le site et s'il peut y avoir des problèmes techniques. Ce type de conservation ne collecte généralement pas d'informations permettant d'identifier un visiteur.</source>
+      <trans-unit id="XJXOVtE" resname="analysiselements">
+        <source>analysiselements</source>
         <target>Ces éléments aident l'exploitant du site Web à comprendre comment son site Web fonctionne, comment les visiteurs interagissent avec le site et s'il peut y avoir des problèmes techniques. Ce type de conservation ne collecte généralement pas d'informations permettant d'identifier un visiteur.</target>
       </trans-unit>
       <trans-unit id="YmunqJ." resname="Valider">
         <source>Valider</source>
         <target>Valider</target>
       </trans-unit>
-      <trans-unit id="iOY9Le6" resname="cesiteutilisedescookies">
-        <source>cesiteutilisedescookies</source>
+      <trans-unit id="iOY9Le6" resname="siteusescookies">
+        <source>siteusescookies</source>
         <target>Ce site utilise des cookies</target>
       </trans-unit>
-      <trans-unit id="6TTqDf3" resname="Nous utilisons des cookies pour personnaliser la navigation de l'utilisateur ainsi que les publicités affichées sur le site. Si vous cliquez sur “accepter”, vous autorisez la collecte d’information concernant votre navigation.">
-        <source>Nous utilisons des cookies pour personnaliser la navigation de l'utilisateur ainsi que les publicités affichées sur le site. Si vous cliquez sur “accepter”, vous autorisez la collecte d’information concernant votre navigation.</source>
+      <trans-unit id="6TTqDf3" resname="weusecookies">
+        <source>weusecookies</source>
         <target>Nous utilisons des cookies pour personnaliser la navigation de l'utilisateur ainsi que les publicités affichées sur le site. Si vous cliquez sur “accepter”, vous autorisez la collecte d’information concernant votre navigation.</target>
       </trans-unit>
-      <trans-unit id="69bried" resname="Cookie Squared est une solution simple pour ouvrir une bannière de cookie entièrement personnalisable sur votre site Web. Il recueille le consentement de manière transparente et aide votre site Web à se conformer au RGPD et à la directive ePrivacy en seulement trois étapes faciles.">
-        <source>Cookie Squared est une solution simple pour ouvrir une bannière de cookie entièrement personnalisable sur votre site Web. Il recueille le consentement de manière transparente et aide votre site Web à se conformer au RGPD et à la directive ePrivacy en seulement trois étapes faciles.</source>
+      <trans-unit id="69bried" resname="simplesolution">
+        <source>simplesolution</source>
         <target>Cookie Squared est une solution simple pour ouvrir une bannière de cookie entièrement personnalisable sur votre site Web. Il recueille le consentement de manière transparente et aide votre site Web à se conformer au RGPD et à la directive ePrivacy en seulement trois étapes faciles.</target>
       </trans-unit>
-      <trans-unit id="OLkQr70" resname="Commencer">
-        <source>Commencer</source>
+      <trans-unit id="OLkQr70" resname="begin">
+        <source>begin</source>
         <target>Commencer</target>
       </trans-unit>
-      <trans-unit id="zejBcvI" resname="Choisissez un modèle et personnalisez-le">
-        <source>Choisissez un modèle et personnalisez-le</source>
+      <trans-unit id="zejBcvI" resname="choosemodel">
+        <source>choosemodel</source>
         <target>Choisissez un modèle et personnalisez-le</target>
       </trans-unit>
-      <trans-unit id="pXxOmNf" resname="Scannez votre site">
-        <source>Scannez votre site</source>
+      <trans-unit id="pXxOmNf" resname="scanwebsite">
+        <source>scanwebsite</source>
         <target>Scannez votre site</target>
       </trans-unit>
-      <trans-unit id="EEOJGg3" resname="Ajoutez les cookies que vous souhaitez">
-        <source>Ajoutez les cookies que vous souhaitez</source>
+      <trans-unit id="EEOJGg3" resname="addcookies">
+        <source>addcookies</source>
         <target>Ajoutez les cookies que vous souhaitez</target>
       </trans-unit>
       <trans-unit id="9BGh_2J" resname="Free">
@@ -161,8 +145,8 @@
         <source>Feature 6</source>
         <target>Fonctionnalité 6</target>
       </trans-unit>
-      <trans-unit id="Cc3zL14" resname="Try now for free">
-        <source>Try now for free</source>
+      <trans-unit id="Cc3zL14" resname="tryfree">
+        <source>tryfree</source>
         <target>Essayez gratuitement</target>
       </trans-unit>
       <trans-unit id="P7ezlBb" resname="Developer">
@@ -177,26 +161,20 @@
         <source>Business</source>
         <target>Business</target>
       </trans-unit>
-      <trans-unit id="oSWUkiT" resname="Extension Wordpress">
-        <source>Extension Wordpress</source>
+      <trans-unit id="oSWUkiT" resname="wpextension">
+        <source>wpextension</source>
         <target>Extension Wordpress</target>
       </trans-unit>
       <trans-unit id="qEtmf0F" resname="wordpressdescription">
         <source>wordpressdescription</source>
         <target>Wordpressdescription</target>
       </trans-unit>
-      <trans-unit id="vdd_XhW" resname="Télecharger le plugin Wordpress">
-        <source>Télecharger le plugin Wordpress</source>
+      <trans-unit id="vdd_XhW" resname="dlplugin">
+        <source>dlplugin</source>
         <target>Télecharger le plugin Wordpress</target>
       </trans-unit>
-      <trans-unit id="Uj9GJ.P" resname="Le sigle RGPD signifie « Règlement Général sur la Protection des Données » (en anglais « General Data Protection Regulation » ou GDPR). Le RGPD encadre le traitement des données personnelles sur le territoire de l’Union européenne.&lt;br&gt;&lt;br&gt;&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;Le règlement ePrivacy 2021 est un projet de règlement du Conseil de l'UE qui régit toutes les communications électroniques sur les services et réseaux accessibles au public provenant de particuliers au sein de l'Union européenne.&lt;br&gt;&lt;br&gt;&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;Ce nouveau règlement européen s’inscrit dans la continuité de la Loi française Informatique et Libertés de 1978 et renforce le contrôle par les citoyens de l’utilisation qui peut être faite des données les concernant.&lt;br&gt;&lt;br&gt;&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;Il harmonise les règles en Europe en offrant un cadre juridique unique aux professionnels. Il permet de développer leurs activités numériques au sein de l’UE en se fondant sur la confiance des utilisateurs.">
-        <source>Le sigle RGPD signifie « Règlement Général sur la Protection des Données » (en anglais « General Data Protection Regulation » ou GDPR). Le RGPD encadre le traitement des données personnelles sur le territoire de l’Union européenne.&lt;br&gt;&lt;br&gt;
-
-						Le règlement ePrivacy 2021 est un projet de règlement du Conseil de l'UE qui régit toutes les communications électroniques sur les services et réseaux accessibles au public provenant de particuliers au sein de l'Union européenne.&lt;br&gt;&lt;br&gt;
-
-						Ce nouveau règlement européen s’inscrit dans la continuité de la Loi française Informatique et Libertés de 1978 et renforce le contrôle par les citoyens de l’utilisation qui peut être faite des données les concernant.&lt;br&gt;&lt;br&gt;
-
-						Il harmonise les règles en Europe en offrant un cadre juridique unique aux professionnels. Il permet de développer leurs activités numériques au sein de l’UE en se fondant sur la confiance des utilisateurs.</source>
+      <trans-unit id="Uj9GJ.P" resname="rgpddescription">
+        <source>rgpddescription</source>
         <target><![CDATA[Le sigle RGPD signifie « Règlement Général sur la Protection des Données » (en anglais « General Data Protection Regulation » ou GDPR). Le RGPD encadre le traitement des données personnelles sur le territoire de l’Union européenne.<br><br>
 
 						Le règlement ePrivacy 2021 est un projet de règlement du Conseil de l'UE qui régit toutes les communications électroniques sur les services et réseaux accessibles au public provenant de particuliers au sein de l'Union européenne.<br><br>
@@ -205,23 +183,16 @@
 
 						Il harmonise les règles en Europe en offrant un cadre juridique unique aux professionnels. Il permet de développer leurs activités numériques au sein de l’UE en se fondant sur la confiance des utilisateurs.]]></target>
       </trans-unit>
-      <trans-unit id="3TrjMlD" resname="En savoir plus">
-        <source>En savoir plus</source>
+      <trans-unit id="3TrjMlD" resname="morergpd">
+        <source>morergpd</source>
         <target>En savoir plus</target>
       </trans-unit>
-      <trans-unit id="96zqCIr" resname="Qui sommes nous ?">
-        <source>Qui sommes nous ?</source>
+      <trans-unit id="96zqCIr" resname="whoarewe">
+        <source>whoarewe</source>
         <target>Qui sommes nous ?</target>
       </trans-unit>
-      <trans-unit id="9G9ORlM" resname="Depuis 2017, nous accompagnons nos clients à la réalisation de leurs projets numériques.&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;br&gt;&lt;br&gt;&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;L’humain est au centre de notre stratégie, nous accompagnons, formons, et donnons vie à vos projets avec des solutions adaptées à vos besoins, à ceux de vos clients, à ceux de votre équipe.&lt;br&gt;&lt;br&gt;&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;Code Colliders c’est avant tout la passion du développement de tout projet, quel qu’il soit, en mettant l’accent sur les solutions numériques, connectées.&lt;br&gt;&lt;br&gt;&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;Nous menons à bien vos projets de la conception à la réalisation.">
-        <source>Depuis 2017, nous accompagnons nos clients à la réalisation de leurs projets numériques.
-						&lt;br&gt;&lt;br&gt;
-
-						L’humain est au centre de notre stratégie, nous accompagnons, formons, et donnons vie à vos projets avec des solutions adaptées à vos besoins, à ceux de vos clients, à ceux de votre équipe.&lt;br&gt;&lt;br&gt;
-
-						Code Colliders c’est avant tout la passion du développement de tout projet, quel qu’il soit, en mettant l’accent sur les solutions numériques, connectées.&lt;br&gt;&lt;br&gt;
-
-						Nous menons à bien vos projets de la conception à la réalisation.</source>
+      <trans-unit id="9G9ORlM" resname="codecollidersdescription">
+        <source>codecollidersdescription</source>
         <target><![CDATA[Depuis 2017, nous accompagnons nos clients à la réalisation de leurs projets numériques.
 						<br><br>
 
@@ -232,11 +203,11 @@
 						Nous menons à bien vos projets de la conception à la réalisation.]]></target>
       </trans-unit>
       <trans-unit id="tIvOol9" resname="Politique de confidentialité   -   Cookies   -   Mentions légales">
-        <source>Politique de confidentialité   -   Cookies   -   Mentions légales</source>
+        <source>privacypolicy</source>
         <target>Politique de confidentialité   -   Cookies   -   Mentions légales</target>
       </trans-unit>
-      <trans-unit id="oshT.U9" resname="Tous droits réservés | ©2021 Code colliders">
-        <source>Tous droits réservés | ©2021 Code colliders</source>
+      <trans-unit id="oshT.U9" resname="allrightsreserved">
+        <source>allrightsreserved</source>
         <target>Tous droits réservés | ©2021 Code colliders</target>
       </trans-unit>
     </body>

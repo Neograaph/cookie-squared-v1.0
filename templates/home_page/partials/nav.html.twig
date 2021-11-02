@@ -9,30 +9,30 @@
 					<a href="{{ path('home_page') }}#sectionrgpd">RGPD & ePrivacy</a>
 				</li>
 				<li>
-					<a href="{{ path('home_page') }}#sectionprice">{% trans %}Tarifs{% endtrans %}</a>
+					<a href="{{ path('home_page') }}#sectionprice">{% trans %}prices{% endtrans %}</a>
 				</li>
 				<li>
-					<a href="{{ path('home_page') }}#sectionqsn">{% trans %}A propos{% endtrans %}</a>
+					<a href="{{ path('home_page') }}#sectionqsn">{% trans %}about{% endtrans %}</a>
 				</li>
 				<li>
 					{% if app.user %}
 						<div class="mb-3">
-							<a href="{{ path('user_info') }}">{% trans %}Profil{% endtrans %}</a>
+							<a href="{{ path('user_info') }}">{% trans %}profile{% endtrans %}</a>
 						</div>
 					{% else %}
-						<a href="{{ path('app_login') }}">{% trans %}Connexion{% endtrans %}</a>
+						<a href="{{ path('app_login') }}">{% trans %}connexion{% endtrans %}</a>
 					{% endif %}
 				</li>
 				<li>
 					{% if app.user %}
 						<div class="mb-3">
-							<a href="{{ path('my_sites') }}">{% trans %}Mes sites{% endtrans %}</a>
+							<a href="{{ path('my_sites') }}">{% trans %}mysites{% endtrans %}</a>
 						</div>
 					{% else %}
-						<a href="{{ path('register') }}">{% trans %}Inscription{% endtrans %}</a>
+						<a href="{{ path('register') }}">{% trans %}registration{% endtrans %}</a>
 					{% endif %}
 				</li>
-				<li>{% trans %}Langues{% endtrans %}</li>
+				<li>{% trans %}languages{% endtrans %}</li>
 			</ul>
 			{# menu burger #}
 			<div id='navShow'>
@@ -52,27 +52,27 @@
 					<a class="link" href="{{ path('home_page') }}#sectionrgpd">RGPD & ePrivacy</a>
 				</li>
 				<li>
-					<a class="link" href="{{ path('home_page') }}#sectionprice">{% trans %}Tarifs{% endtrans %}</a>
+					<a class="link" href="{{ path('home_page') }}#sectionprice">{% trans %}prices{% endtrans %}</a>
 				</li>
 				<li>
-					<a class="link" href="{{ path('home_page') }}#sectionqsn">{% trans %}A propos{% endtrans %}</a>
+					<a class="link" href="{{ path('home_page') }}#sectionqsn">{% trans %}about{% endtrans %}</a>
 				</li>
 				<li>
 					{% if app.user %}
-						<a class="link" href="{{ path('user_info') }}">{% trans %}Profil{% endtrans %}</a>					
+						<a class="link" href="{{ path('user_info') }}">{% trans %}profile{% endtrans %}</a>					
 					{% else %}
-						<a class="link" href="{{ path('app_login') }}">{% trans %}Connexion{% endtrans %}</a>
+						<a class="link" href="{{ path('app_login') }}">{% trans %}connexion{% endtrans %}</a>
 					{% endif %}
 				</li>
 				<li>
 					{% if app.user %}
-						<a class="link" href="{{ path('my_sites') }}">{% trans %}Mes sites{% endtrans %}</a>			
+						<a class="link" href="{{ path('my_sites') }}">{% trans %}mysites{% endtrans %}</a>			
 					{% else %}
-						<a class="link" href="{{ path('register') }}">{% trans %}Inscription{% endtrans %}</a>
+						<a class="link" href="{{ path('register') }}">{% trans %}registration{% endtrans %}</a>
 					{% endif %}
 				</li>
 				<li>
-				<a href="#">{% trans %}Langues{% endtrans %}</a>
+				<a href="#">{% trans %}languages{% endtrans %}</a>
 				</li>
 			</ul>
 		</div>
