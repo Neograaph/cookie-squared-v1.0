@@ -57,6 +57,11 @@ class Site
      */
     private $cookies;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $token;
+
     public function __construct()
     {
         $this->created_at = new DateTimeImmutable();
@@ -167,6 +172,18 @@ class Site
                 $cookie->setIdSite(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getToken(): ?int
+    {
+        return $this->token;
+    }
+
+    public function setToken(int $token): self
+    {
+        $this->token = $token;
 
         return $this;
     }
