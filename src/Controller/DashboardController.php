@@ -66,4 +66,12 @@ class DashboardController extends AbstractController
             'controller_name' => 'DashboardController',
         ]);
     }
+
+    /**
+     * @Route("/dashboard/custom", name="custom")
+     */
+    public function Customize(): Response
+    {
+        return $this->render('dashboard/customize.html.twig', []);
+    }
 }

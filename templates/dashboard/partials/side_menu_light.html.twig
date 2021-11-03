@@ -19,7 +19,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="#" class="menu">
+			<a href="{{ path("custom") }}" class="menu">
 				<div class="side-menu__icon">
 					<i data-feather="box"></i>
 				</div>
@@ -87,7 +87,7 @@
 		<div class="side-nav__devider my-6"></div>
 		<ul>
 			<li>
-				<a href="#" {% if app.request.get('_route') == 'cookie' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
+				<a href="{{ path("cookie") }}" {% if app.request.get('_route') == 'cookie' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
 					<div class="side-menu__icon">
 						<i data-feather="calendar" class=""></i>
 					</div>
@@ -97,7 +97,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#" {% if app.request.get('_route') == 'personnalisation' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
+				<a href="{{ path("custom") }}" {% if app.request.get('_route') == 'custom' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
 					<div class="side-menu__icon">
 						<i data-feather="box"></i>
 					</div>

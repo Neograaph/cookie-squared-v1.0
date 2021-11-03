@@ -43,7 +43,7 @@ class Cookie
     private $path;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Site::class, inversedBy="cookies")
+     * @ORM\ManyToOne(targetEntity=Site::class, inversedBy="cookies", cascade={"persist"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $id_site;
