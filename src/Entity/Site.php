@@ -58,7 +58,7 @@ class Site
     private $cookies;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=255)
      */
     private $token;
 
@@ -176,12 +176,12 @@ class Site
         return $this;
     }
 
-    public function getToken(): ?int
+    public function getToken(): ?string
     {
         return $this->token;
     }
 
-    public function setToken(int $token): self
+    public function setToken(string $token): self
     {
         $this->token = $token;
 
