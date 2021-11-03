@@ -16,6 +16,10 @@ class SiteType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
+        
+        $bytes = random_bytes(10);
+        $tokenGen = bin2hex($bytes);
+
         $builder
             ->add('name', TextType::class, [
                 'attr' => ['class' => 'form-control'],
@@ -28,10 +32,11 @@ class SiteType extends AbstractType
                 'label' => 'URL du site'
                 ])
             ->add('token', HiddenType::class, [
-                'data' => random_bytes(10),
+                'data' => $tokenGen,
                 ])
         ;
     }
+
 
     public function configureOptions(OptionsResolver $resolver): void
     {
