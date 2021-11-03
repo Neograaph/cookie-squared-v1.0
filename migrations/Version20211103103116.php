@@ -21,7 +21,7 @@ final class Version20211103103116 extends AbstractMigration
     {
         // this up() migration is auto-generated, please modify it to your needs
         $this->addSql('ALTER TABLE cookie ADD description VARCHAR(255) NOT NULL');
-        $this->addSql('ALTER TABLE site ADD token INT NOT NULL');
+        $this->addSql('ALTER TABLE site ADD token VARCHAR(255) NOT NULL');
         $this->addSql('ALTER TABLE user CHANGE roles roles LONGTEXT NOT NULL COMMENT \'(DC2Type:json)\'');
     }
 
