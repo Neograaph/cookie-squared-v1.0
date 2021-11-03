@@ -74,3 +74,12 @@ body{
   display: block;
   padding: 20px 0;
 }
+#franceflag{
+  height: 20px;
+  width: 30px;
+  display: none;
+}
+#ukflag{
+  height: 20px;
+  width: 30px;
+}
