@@ -43,6 +43,7 @@
 									<tr>
 										<th class="text-nowrap text-center">NOM DU SITE</th>
 										<th class="text-nowrap text-center">DATE DERNIER SCAN</th>
+										<th class="text-nowrap text-center">TOKEN</th>
 										<th class="text-nowrap text-center">STATUS</th>
 										<th class="text-nowrap text-center">ACTIONS</th>
 									</tr>
@@ -60,6 +61,10 @@
 
 											<td>
 												<div class="fw-medium text-nowrap text-center">{% if mysite.scanat is empty %}Aucun scan effectué {% else %} {{ mysite.scanat|date("d/m/Y") }}{% endif %}</div>
+											</td>
+
+											<td>
+												<div>{{ mysite.token }}</div>
 											</td>
 
 											<td>
