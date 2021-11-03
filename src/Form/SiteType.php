@@ -4,12 +4,13 @@ namespace App\Form;
 
 use App\Entity\Site;
 use App\Entity\User;
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
 class SiteType extends AbstractType
 {
@@ -26,7 +27,9 @@ class SiteType extends AbstractType
                 'label_attr' => ['class' => 'form-label'],
                 'label' => 'URL du site'
                 ])
-            
+            ->add('token', HiddenType::class, [
+                'data' => random_bytes(10),
+                ])
         ;
     }
 

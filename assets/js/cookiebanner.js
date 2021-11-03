@@ -29,7 +29,7 @@ window.addEventListener('click', function (event) {
         cookiebanner.style.display = "none";
         all.style.display="none";
         cookie.style.display="block";
-        cookiebanner.style.display="none";     
+        cookiebanner2.style.display="none";     
         console.log(document.cookie);
     }
 })

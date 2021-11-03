@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="vSFYwT3" resname="Fonctionnalités">
+        <source>Fonctionnalités</source>
+        <target>Fonctionnalities</target>
+      </trans-unit>
+      <trans-unit id="_zCujCh" resname="prices">
+        <source>prices</source>
+        <target>Prices</target>
+      </trans-unit>
+      <trans-unit id="YdaVBBA" resname="connexion">
+        <source>connexion</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="4mfTQ4I" resname="profile">
+        <source>profile</source>
+        <target>Profile</target>
+      </trans-unit>
+      <trans-unit id="GS36YEG" resname="mysites">
+        <source>mysites</source>
+        <target>My sites</target>
+      </trans-unit>
+      <trans-unit id="LSWfCb9" resname="languages">
+        <source>languages</source>
+        <target>Languages</target>
+      </trans-unit>
+      <trans-unit id="z7GsDIB" resname="registration">
+        <source>registration</source>
+        <target>Registration</target>
+      </trans-unit>
+      <trans-unit id="ZyFT62v" resname="about">
+        <source>about</source>
+        <target>About</target>
+      </trans-unit>
+      <trans-unit id="iOY9Le6" resname="siteusescookies">
+        <source>siteusescookies</source>
+        <target>This website uses cookies</target>
+      </trans-unit>
+      <trans-unit id="nq8mO4_" resname="simplesolutiontitle">
+        <source>simplesolutiontitle</source>
+        <target>A simple solution to manage cookies on your website</target>
+      </trans-unit>
+      <trans-unit id="ZZrU_6a" resname="refuse">
+        <source>refuse</source>
+        <target>Refuse everything</target>
+      </trans-unit>
+      <trans-unit id="IDJgOHE" resname="preferences">
+        <source>preferences</source>
+        <target>Preferences</target>
+      </trans-unit>
+      <trans-unit id="d1k21.l" resname="accept">
+        <source>accept</source>
+        <target>Accept everything</target>
+      </trans-unit>
+      <trans-unit id="nqv6d41" resname="Essentials">
+        <source>Essentials</source>
+        <target>Essentials</target>
+      </trans-unit>
+      <trans-unit id="vuR3u.z" resname="essentialelements">
+        <source>essentialelements</source>
+        <target>These elements are necessary to enable the basic functionality of the website.</target>
+      </trans-unit>
+      <trans-unit id="9ZBM96E" resname="Marketing">
+        <source>Marketing</source>
+        <target>Marketing</target>
+      </trans-unit>
+      <trans-unit id="jkZwnJV" resname="marketingelements">
+        <source>marketingelements</source>
+        <target>These elements are used to serve advertisements that are more relevant to you and your interests. They can also be used to limit the number of times you see an ad and measure the effectiveness of advertising campaigns. Advertising networks generally place them with the permission of the website operator.</target>
+      </trans-unit>
+      <trans-unit id="EoQMk_o" resname="Personnalisation">
+        <source>Personnalisation</source>
+        <target>Customization</target>
+      </trans-unit>
+      <trans-unit id="__k4mgP" resname="personnalisationelements">
+        <source>personnalisationelements</source>
+        <target>These elements allow the website to remember the choices you make (such as your username, language or region you are in) and provide enhanced and more personal features. For example, a website can provide you with local weather reports or traffic information by keeping data about your current location.</target>
+      </trans-unit>
+      <trans-unit id="0sIo.JH" resname="Analysis">
+        <source>Analysis</source>
+        <target>Analysis</target>
+      </trans-unit>
+      <trans-unit id="XJXOVtE" resname="analysiselements">
+        <source>analysiselements</source>
+        <target>These elements help the website operator understand how its website works, how visitors interact with the website, and whether there may be technical issues. This type of preservation generally does not collect information that identifies a visitor.</target>
+      </trans-unit>
+      <trans-unit id="YmunqJ." resname="Valider">
+        <source>Valider</source>
+        <target>Validate</target>
+      </trans-unit>
+      <trans-unit id="6TTqDf3" resname="weusecookies">
+        <source>weusecookies</source>
+        <target>We use cookies to personalise the user’s navigation and the ads displayed on the site. If you click “accept”, you authorize the collection of information about your browsing.</target>
+      </trans-unit>
+      <trans-unit id="69bried" resname="simplesolution">
+        <source>simplesolution</source>
+        <target>Cookie Squared is a simple solution to open a fully customizable cookie banner on your website. It collects consent transparently and helps your website comply with GDPR and ePrivacy in just three easy steps.</target>
+      </trans-unit>
+      <trans-unit id="OLkQr70" resname="begin">
+        <source>begin</source>
+        <target>Begin</target>
+      </trans-unit>
+      <trans-unit id="zejBcvI" resname="choosemodel">
+        <source>choosemodel</source>
+        <target>Choose a template and customize it</target>
+      </trans-unit>
+      <trans-unit id="pXxOmNf" resname="scanwebsite">
+        <source>scanwebsite</source>
+        <target>Scan your website</target>
+      </trans-unit>
+      <trans-unit id="EEOJGg3" resname="addcookies">
+        <source>addcookies</source>
+        <target>Add the cookies you want</target>
+      </trans-unit>
+      <trans-unit id="9BGh_2J" resname="Free">
+        <source>Free</source>
+        <target>Free</target>
+      </trans-unit>
+      <trans-unit id="yYuhrL0" resname="Feature 1">
+        <source>Feature 1</source>
+        <target>Feature 1</target>
+      </trans-unit>
+      <trans-unit id="4EYgyLO" resname="Feature 2">
+        <source>Feature 2</source>
+        <target>Feature 2</target>
+      </trans-unit>
+      <trans-unit id="guUiqGa" resname="Feature 3">
+        <source>Feature 3</source>
+        <target>Feature 3</target>
+      </trans-unit>
+      <trans-unit id="gi98Rep" resname="Feature 4">
+        <source>Feature 4</source>
+        <target>Feature 4</target>
+      </trans-unit>
+      <trans-unit id="CLsrkoU" resname="Feature 5">
+        <source>Feature 5</source>
+        <target>Feature 5</target>
+      </trans-unit>
+      <trans-unit id="fp6ywwq" resname="Feature 6">
+        <source>Feature 6</source>
+        <target>Feature 6</target>
+      </trans-unit>
+      <trans-unit id="Cc3zL14" resname="tryfree">
+        <source>tryfree</source>
+        <target>Try now for free</target>
+      </trans-unit>
+      <trans-unit id="P7ezlBb" resname="Developer">
+        <source>Developer</source>
+        <target>Developer</target>
+      </trans-unit>
+      <trans-unit id="KngCXea" resname="Select">
+        <source>Select</source>
+        <target>Select</target>
+      </trans-unit>
+      <trans-unit id="dvaKdfA" resname="Business">
+        <source>Business</source>
+        <target>Business</target>
+      </trans-unit>
+      <trans-unit id="oSWUkiT" resname="wpextension">
+        <source>wpextension</source>
+        <target>Wordpress plugin</target>
+      </trans-unit>
+      <trans-unit id="qEtmf0F" resname="wordpressdescription">
+        <source>wordpressdescription</source>
+        <target>Wordpressdescription</target>
+      </trans-unit>
+      <trans-unit id="vdd_XhW" resname="dlplugin">
+        <source>dlplugin</source>
+        <target>Download the Wordpress plugin</target>
+      </trans-unit>
+      <trans-unit id="Uj9GJ.P" resname="rgpddescription">
+        <source>rgpddescription</source>
+        <target><![CDATA[GDPR stands for “General Data Protection Regulation”. The GDPR regulates the processing of personal data in the territory of the European Union.<br><br>
+
+						The ePrivacy 2021 regulation is a draft regulation of the Council of the EU that governs all electronic communications on publicly accessible services and networks from individuals within the European Union.<br><br>
+
+					This new European regulation follows on from the 1978 French Data Protection Act and reinforces citizens' control over the use that can be made of data concerning them.<br><br>
+
+						It harmonises rules in Europe by providing a unique legal framework for professionals. It enables them to develop their digital activities within the EU based on user confidence.]]></target>
+      </trans-unit>
+      <trans-unit id="3TrjMlD" resname="morergpd">
+        <source>morergpd</source>
+        <target>More</target>
+      </trans-unit>
+      <trans-unit id="96zqCIr" resname="whoarewe">
+        <source>whoarewe</source>
+        <target>Who are we ?</target>
+      </trans-unit>
+      <trans-unit id="9G9ORlM" resname="codecollidersdescription">
+        <source>codecollidersdescription</source>
+        <target><![CDATA[Since 2017, we have been supporting our clients with their digital projects.
+						<br><br>
+
+						The human is at the center of our strategy, we accompany, train, and give life to your projects with solutions adapted to your needs, to those of your customers, to those of your team.<br><br>
+
+						Code Colliders is above all the passion of developing any project, with a focus on digital, connected solutions.<br><br>
+
+						We carry out your projects from conception to realization.]]></target>
+      </trans-unit>
+      <trans-unit id="tIvOol9" resname="privacypolicy">
+        <source>privacypolicy</source>
+        <target>Privacy policy   -   Cookies   -   Legal notice</target>
+      </trans-unit>
+      <trans-unit id="oshT.U9" resname="allrightsreserved">
+        <source>allrightsreserved</source>
+        <target>All rights reserved | ©2021 Code colliders</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -62,6 +62,11 @@ class Site
      */
     private $customs;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $token;
+
     public function __construct()
     {
         $this->created_at = new DateTimeImmutable();
@@ -203,6 +208,16 @@ class Site
                 $custom->setIdSite(null);
             }
         }
+    }
+
+    public function getToken(): ?string
+    {
+        return $this->token;
+    }
+
+    public function setToken(string $token): self
+    {
+        $this->token = $token;
 
         return $this;
     }
