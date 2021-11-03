@@ -80,9 +80,11 @@
 					<a class="link" href="{{ path('register') }}">{% trans %}registration{% endtrans %}</a>
 				{% endif %}
 			</li>
-			<li>
-				<a href="#">{% trans %}languages{% endtrans %}</a>
-			</li>
+			{% for locale in locales %}
+				{% if locale != app.request.locale %}
+				<li><a href="{{ path('change_locale', {'locale' : locale})}}"><img src="{{ asset('build/images/'~locale~'.png')}}" alt='{{locale}}' id="flag"></a></li>
+				{% endif %}
+			{% endfor %}
 		</ul>
 	</div>
 	{# fin menu burger #}
