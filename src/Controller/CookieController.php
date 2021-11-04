@@ -15,15 +15,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class CookieController extends AbstractController
 {
     /**
-     * @Route("/dashboard/cookie", name="cookie", methods="GET|POST")
+     * @Route("/dashboard/{id<[0-9]+>}/cookie", name="cookie", methods="GET|POST")
      */
-    public function cookieList(CookieRepository $cookieRepository, Request $request, EntityManagerInterface $em): Response
+    public function cookieList(CookieRepository $cookieRepository, Request $request, EntityManagerInterface $em, Site $site): Response
     {
-        $cookies = $cookieRepository->findAll();
+        $cookies = $cookieRepository->findBy(['id_site'=>$site->getId()]);
 
         $cookie = new Cookie;
-
-        $site = new Site;
 
         $form = $this->createForm(CookieType::class, $cookie);
         $form->handleRequest($request);
@@ -37,7 +35,9 @@ class CookieController extends AbstractController
         return $this->render('dashboard/cookielist.html.twig', [
             'controller_name' => 'CookieController',
             'cookies' => $cookies,
-            'cookieForm' => $form->createView()
+            'site' => $site,
+            'cookieForm' => $form->createView(),
+            
         ]);
     }
 

@@ -16,7 +16,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class DashboardController extends AbstractController
 {
     /**
-     * @Route("/dashboard", name="my_sites")
+     * @Route("/dashboard", name="my_sites", methods="GET")
      */
     public function mySites(SiteRepository $siterepo): Response
     {
@@ -58,20 +58,18 @@ class DashboardController extends AbstractController
     }
 
     /**
-     * @Route("/dashboard/scan", name="scan")
+     * @Route("/dashboard/{id<[0-9]+>}/scan", name="scan")
      */
-    public function showScan(): Response
+    public function showScan(Site $site): Response
     {
-        return $this->render('dashboard/scan.html.twig', [
-            'controller_name' => 'DashboardController',
-        ]);
+        return $this->render('dashboard/scan.html.twig', compact('site'));
     }
 
     /**
-     * @Route("/dashboard/custom", name="custom")
+     * @Route("/dashboard/{id<[0-9]+>}/custom", name="custom")
      */
-    public function Customize(): Response
+    public function Customize(Site $site): Response
     {
-        return $this->render('dashboard/customize.html.twig', []);
+        return $this->render('dashboard/customize.html.twig', compact('site'));
     }
 }
