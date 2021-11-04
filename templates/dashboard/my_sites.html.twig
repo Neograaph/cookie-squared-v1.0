@@ -10,15 +10,15 @@
 			class="top-bar">
 			<!-- BEGIN: Breadcrumb -->
 			<div class="-intro-x breadcrumb me-auto d-none d-sm-flex">
-				<a href="">Dashboard</a>
+				<a href="">{% trans %}dashboard{% endtrans %}</a>
 				<i data-feather="chevron-right" class="breadcrumb__icon"></i>
-				<a href="" class="breadcrumb--active">Mes sites</a>
+				<a href="" class="breadcrumb--active">{% trans %}mysites{% endtrans %}</a>
 			</div>
 
 			<div class="intro-x me-auto me-sm-6">
 				<a href="{{ path('add_site') }}">
 					<button class="btn btn-primary w-50 me-2 mb-2 mt-3">
-						<i data-feather="plus-circle" class="w-4 h-4 me-2"></i>Ajouter un site</button>
+						<i data-feather="plus-circle" class="w-4 h-4 me-2"></i>{% trans %}addsite{% endtrans %}</button>
 				</a>
 			</div>
 
@@ -41,11 +41,11 @@
 							<table class="table table-report mt-sm-2">
 								<thead>
 									<tr>
-										<th class="text-nowrap text-center">NOM DU SITE</th>
-										<th class="text-nowrap text-center">DATE DERNIER SCAN</th>
+										<th class="text-nowrap text-center">{% trans %}namesite{% endtrans %}</th>
+										<th class="text-nowrap text-center">{% trans %}datelastscan{% endtrans %}</th>
 										<th class="text-nowrap text-center">TOKEN</th>
-										<th class="text-nowrap text-center">STATUS</th>
-										<th class="text-nowrap text-center">ACTIONS</th>
+										<th class="text-nowrap text-center">{% trans %}status{% endtrans %}</th>
+										<th class="text-nowrap text-center">{% trans %}actions{% endtrans %}</th>
 									</tr>
 								</thead>
 
@@ -60,7 +60,7 @@
 											</td>
 
 											<td>
-												<div class="fw-medium text-nowrap text-center">{% if mysite.scanat is empty %}Aucun scan effectué {% else %} {{ mysite.scanat|date("d/m/Y") }}{% endif %}</div>
+												<div class="fw-medium text-nowrap text-center">{% if mysite.scanat is empty %}{% trans %}noscandone{% endtrans %}{% else %} {{ mysite.scanat|date("d/m/Y") }}{% endif %}</div>
 											</td>
 
 											<td>
@@ -84,7 +84,7 @@
 															<polyline points="9 11 12 14 22 4"></polyline>
 															<path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
 														</svg>
-														Editer
+														{% trans %}edit{% endtrans %}
 													</a>
 
 													<a class="d-flex align-items-center text-theme-6" href="#">
@@ -94,7 +94,7 @@
 															<line x1="10" y1="11" x2="10" y2="17"></line>
 															<line x1="14" y1="11" x2="14" y2="17"></line>
 														</svg>
-														Supprimer
+														{% trans %}delete{% endtrans %}
 													</a>
 												</div>
 											</td>

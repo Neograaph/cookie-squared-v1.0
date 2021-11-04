@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Connexion
+{% block title %}{% trans %}connexion{% endtrans %}
 {% endblock %}
 
 {% block body %}
@@ -13,9 +13,9 @@
 
 				{% if app.user %}
 					<div>
-						You are logged in as
+						{% trans %}loggedas{% endtrans %}
 						{{ app.user.username }},
-						<a href="{{ path('app_logout') }}">Logout</a>
+						<a href="{{ path('app_logout') }}">{% trans %}Logout{% endtrans %}</a>
 					</div>
 				{% endif %}
 
@@ -26,10 +26,10 @@
 				<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 
 				<input type="checkbox" class="check" name="_remember_me">
-				<label for="_remember_me">Se souvenir de moi</label>
+				<label for="_remember_me">{% trans %}rememberme{% endtrans %}</label>
 
 				<button type="submit">
-					Se connecter
+					{% trans %}connect{% endtrans %}
 				</button>
 			</form>
 		</div>

@@ -11,17 +11,17 @@
       class="top-bar">
       <!-- BEGIN: Breadcrumb -->
       <div class="-intro-x breadcrumb me-auto d-none d-sm-flex">
-          <a href="{{ path('my_sites')}}">Dashboard</a>
+          <a href="{{ path('my_sites')}}">{% trans %}dashboard{% endtrans %}</a>
           <i data-feather="chevron-right" class="breadcrumb__icon"></i>
           <a href="" class="breadcrumb--active">Scan</a>
       </div>
     </div>
-    <h2 class='fs-3xl fw-medium lh-1 my-3'>Effectuer un scan</h2>
+    <h2 class='fs-3xl fw-medium lh-1 my-3'>{% trans %}scanwebsite{% trans %}</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eos adipisci porro illo saepe nobis nisi a non perferendis quo dicta nulla ducimus et tenetur praesentium repellendus consectetur repudiandae, expedita aliquam ex corporis, eius eum! Exercitationem a mollitia corporis nulla. Earum nobis nostrum dicta distinctio consequuntur temporibus hic vero quia!</p>
 
-    <button class="btn btn-primary w-50 me-2 mb-2 mt-5"> <i data-feather="activity" class="w-4 h-4 me-2"></i>Début du scan </button>
+    <button class="btn btn-primary w-50 me-2 mb-2 mt-5"> <i data-feather="activity" class="w-4 h-4 me-2"></i>{% trans %}scanbenning{% endtrans %}</button>
 
-    <h2 class='fs-3xl fw-medium lh-1 my-3'>Rapport de scan</h2>
+    <h2 class='fs-3xl fw-medium lh-1 my-3'>{% trans %}rapportscan{% endtrans %}</h2>
     <p>( ajouter le rapport ici )</p>
 </div>
 {% endblock %}
