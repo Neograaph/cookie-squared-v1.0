@@ -9,59 +9,59 @@
         <source>Fonctionnalités</source>
         <target>Fonctionnalities</target>
       </trans-unit>
-      <trans-unit id="_zCujCh" resname="prices">
+      <trans-unit id=".oH5OQ." resname="prices">
         <source>prices</source>
         <target>Prices</target>
       </trans-unit>
-      <trans-unit id="YdaVBBA" resname="connexion">
+      <trans-unit id="tUKhz_F" resname="connexion">
         <source>connexion</source>
         <target>Login</target>
       </trans-unit>
-      <trans-unit id="4mfTQ4I" resname="profile">
+      <trans-unit id="GQDqtsA" resname="profile">
         <source>profile</source>
         <target>Profile</target>
       </trans-unit>
-      <trans-unit id="GS36YEG" resname="mysites">
+      <trans-unit id="hE3.YaL" resname="mysites">
         <source>mysites</source>
         <target>My sites</target>
       </trans-unit>
-      <trans-unit id="LSWfCb9" resname="languages">
+      <trans-unit id="bLV0_hC" resname="languages">
         <source>languages</source>
         <target>Languages</target>
       </trans-unit>
-      <trans-unit id="z7GsDIB" resname="registration">
+      <trans-unit id="KcnDDgY" resname="registration">
         <source>registration</source>
         <target>Registration</target>
       </trans-unit>
-      <trans-unit id="ZyFT62v" resname="about">
+      <trans-unit id="pCYuHJv" resname="about">
         <source>about</source>
         <target>About</target>
       </trans-unit>
-      <trans-unit id="iOY9Le6" resname="siteusescookies">
+      <trans-unit id="9duugbZ" resname="siteusescookies">
         <source>siteusescookies</source>
         <target>This website uses cookies</target>
       </trans-unit>
-      <trans-unit id="nq8mO4_" resname="simplesolutiontitle">
+      <trans-unit id="qW2.5eZ" resname="simplesolutiontitle">
         <source>simplesolutiontitle</source>
         <target>A simple solution to manage cookies on your website</target>
       </trans-unit>
-      <trans-unit id="ZZrU_6a" resname="refuse">
+      <trans-unit id="X94JXEe" resname="refuse">
         <source>refuse</source>
         <target>Refuse everything</target>
       </trans-unit>
-      <trans-unit id="IDJgOHE" resname="preferences">
+      <trans-unit id="vKaEJCD" resname="preferences">
         <source>preferences</source>
         <target>Preferences</target>
       </trans-unit>
-      <trans-unit id="d1k21.l" resname="accept">
+      <trans-unit id="wSXQOXt" resname="accept">
         <source>accept</source>
         <target>Accept everything</target>
       </trans-unit>
-      <trans-unit id="nqv6d41" resname="Essentials">
+      <trans-unit id="mNlPdce" resname="Essentials">
         <source>Essentials</source>
         <target>Essentials</target>
       </trans-unit>
-      <trans-unit id="vuR3u.z" resname="essentialelements">
+      <trans-unit id="m9nPq7d" resname="essentialelements">
         <source>essentialelements</source>
         <target>These elements are necessary to enable the basic functionality of the website.</target>
       </trans-unit>
@@ -69,7 +69,7 @@
         <source>Marketing</source>
         <target>Marketing</target>
       </trans-unit>
-      <trans-unit id="jkZwnJV" resname="marketingelements">
+      <trans-unit id="8FVhyBC" resname="marketingelements">
         <source>marketingelements</source>
         <target>These elements are used to serve advertisements that are more relevant to you and your interests. They can also be used to limit the number of times you see an ad and measure the effectiveness of advertising campaigns. Advertising networks generally place them with the permission of the website operator.</target>
       </trans-unit>
@@ -77,15 +77,15 @@
         <source>Personnalisation</source>
         <target>Customization</target>
       </trans-unit>
-      <trans-unit id="__k4mgP" resname="personnalisationelements">
+      <trans-unit id="W8MvGQe" resname="personnalisationelements">
         <source>personnalisationelements</source>
         <target>These elements allow the website to remember the choices you make (such as your username, language or region you are in) and provide enhanced and more personal features. For example, a website can provide you with local weather reports or traffic information by keeping data about your current location.</target>
       </trans-unit>
-      <trans-unit id="0sIo.JH" resname="Analysis">
+      <trans-unit id="5w2OuQU" resname="Analysis">
         <source>Analysis</source>
         <target>Analysis</target>
       </trans-unit>
-      <trans-unit id="XJXOVtE" resname="analysiselements">
+      <trans-unit id="TRASp2w" resname="analysiselements">
         <source>analysiselements</source>
         <target>These elements help the website operator understand how its website works, how visitors interact with the website, and whether there may be technical issues. This type of preservation generally does not collect information that identifies a visitor.</target>
       </trans-unit>
@@ -93,27 +93,27 @@
         <source>Valider</source>
         <target>Validate</target>
       </trans-unit>
-      <trans-unit id="6TTqDf3" resname="weusecookies">
+      <trans-unit id="qXnhHN_" resname="weusecookies">
         <source>weusecookies</source>
         <target>We use cookies to personalise the user’s navigation and the ads displayed on the site. If you click “accept”, you authorize the collection of information about your browsing.</target>
       </trans-unit>
-      <trans-unit id="69bried" resname="simplesolution">
+      <trans-unit id="uhU3roZ" resname="simplesolution">
         <source>simplesolution</source>
         <target>Cookie Squared is a simple solution to open a fully customizable cookie banner on your website. It collects consent transparently and helps your website comply with GDPR and ePrivacy in just three easy steps.</target>
       </trans-unit>
-      <trans-unit id="OLkQr70" resname="begin">
+      <trans-unit id="5vB9Q7X" resname="begin">
         <source>begin</source>
         <target>Begin</target>
       </trans-unit>
-      <trans-unit id="zejBcvI" resname="choosemodel">
+      <trans-unit id="Sx2i05R" resname="choosemodel">
         <source>choosemodel</source>
         <target>Choose a template and customize it</target>
       </trans-unit>
-      <trans-unit id="pXxOmNf" resname="scanwebsite">
+      <trans-unit id="r9hDSG7" resname="scanwebsite">
         <source>scanwebsite</source>
         <target>Scan your website</target>
       </trans-unit>
-      <trans-unit id="EEOJGg3" resname="addcookies">
+      <trans-unit id="6eDbjVE" resname="addcookies">
         <source>addcookies</source>
         <target>Add the cookies you want</target>
       </trans-unit>
@@ -145,7 +145,7 @@
         <source>Feature 6</source>
         <target>Feature 6</target>
       </trans-unit>
-      <trans-unit id="Cc3zL14" resname="tryfree">
+      <trans-unit id="Cqfh6l7" resname="tryfree">
         <source>tryfree</source>
         <target>Try now for free</target>
       </trans-unit>
@@ -161,7 +161,7 @@
         <source>Business</source>
         <target>Business</target>
       </trans-unit>
-      <trans-unit id="oSWUkiT" resname="wpextension">
+      <trans-unit id="37vIDx_" resname="wpextension">
         <source>wpextension</source>
         <target>Wordpress plugin</target>
       </trans-unit>
@@ -169,11 +169,11 @@
         <source>wordpressdescription</source>
         <target>Wordpressdescription</target>
       </trans-unit>
-      <trans-unit id="vdd_XhW" resname="dlplugin">
+      <trans-unit id=".oUYqE." resname="dlplugin">
         <source>dlplugin</source>
         <target>Download the Wordpress plugin</target>
       </trans-unit>
-      <trans-unit id="Uj9GJ.P" resname="rgpddescription">
+      <trans-unit id="spuioBA" resname="rgpddescription">
         <source>rgpddescription</source>
         <target><![CDATA[GDPR stands for “General Data Protection Regulation”. The GDPR regulates the processing of personal data in the territory of the European Union.<br><br>
 
@@ -183,15 +183,15 @@
 
 						It harmonises rules in Europe by providing a unique legal framework for professionals. It enables them to develop their digital activities within the EU based on user confidence.]]></target>
       </trans-unit>
-      <trans-unit id="3TrjMlD" resname="morergpd">
+      <trans-unit id="vsn2jUc" resname="morergpd">
         <source>morergpd</source>
         <target>More</target>
       </trans-unit>
-      <trans-unit id="96zqCIr" resname="whoarewe">
+      <trans-unit id="GTFuO57" resname="whoarewe">
         <source>whoarewe</source>
         <target>Who are we ?</target>
       </trans-unit>
-      <trans-unit id="9G9ORlM" resname="codecollidersdescription">
+      <trans-unit id="xAyseJ4" resname="codecollidersdescription">
         <source>codecollidersdescription</source>
         <target><![CDATA[Since 2017, we have been supporting our clients with their digital projects.
 						<br><br>
@@ -202,13 +202,25 @@
 
 						We carry out your projects from conception to realization.]]></target>
       </trans-unit>
-      <trans-unit id="tIvOol9" resname="privacypolicy">
+      <trans-unit id="4B3vW09" resname="privacypolicy">
         <source>privacypolicy</source>
         <target>Privacy policy   -   Cookies   -   Legal notice</target>
       </trans-unit>
-      <trans-unit id="oshT.U9" resname="allrightsreserved">
+      <trans-unit id="3T_2Eal" resname="allrightsreserved">
         <source>allrightsreserved</source>
         <target>All rights reserved | ©2021 Code colliders</target>
+      </trans-unit>
+      <trans-unit id="Pz3gmzc" resname="choosedescription">
+        <source>choosedescription</source>
+        <target>Choose your cookie banner template and customize it to your liking.</target>
+      </trans-unit>
+      <trans-unit id="uNK.Bqn" resname="scandescription">
+        <source>scandescription</source>
+        <target>Scan your site to find and manage all cookies present.</target>
+      </trans-unit>
+      <trans-unit id="rVgP7Ff" resname="addcookiesdescription">
+        <source>addcookiesdescription</source>
+        <target>Ajoutez les cookies que vous souhaitez.</target>
       </trans-unit>
     </body>
   </file>
