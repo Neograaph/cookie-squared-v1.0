@@ -74,3 +74,7 @@ body{
   display: block;
   padding: 20px 0;
 }
+#flag{
+  height: 20px;
+  width: 30px;
+}

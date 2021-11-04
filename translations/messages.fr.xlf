@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
@@ -202,7 +202,7 @@
 
 						Nous menons à bien vos projets de la conception à la réalisation.]]></target>
       </trans-unit>
-      <trans-unit id="tIvOol9" resname="Politique de confidentialité   -   Cookies   -   Mentions légales">
+      <trans-unit id="tIvOol9" resname="privacypolicy">
         <source>privacypolicy</source>
         <target>Politique de confidentialité   -   Cookies   -   Mentions légales</target>
       </trans-unit>

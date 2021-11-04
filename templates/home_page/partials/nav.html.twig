@@ -1,80 +1,91 @@
 <nav id='haut'>
-		<div class='navTopShadow'></div>
-		<div class='navTop'>
-			<a href="{{ path('home_page') }}">
-				<img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared">
-			</a>
-			<ul>
-				<li>
-					<a href="{{ path('home_page') }}#sectionrgpd">RGPD & ePrivacy</a>
-				</li>
-				<li>
-					<a href="{{ path('home_page') }}#sectionprice">{% trans %}prices{% endtrans %}</a>
-				</li>
-				<li>
-					<a href="{{ path('home_page') }}#sectionqsn">{% trans %}about{% endtrans %}</a>
-				</li>
-				<li>
-					{% if app.user %}
-						<div class="mb-3">
-							<a href="{{ path('user_info') }}">{% trans %}profile{% endtrans %}</a>
-						</div>
-					{% else %}
-						<a href="{{ path('app_login') }}">{% trans %}connexion{% endtrans %}</a>
-					{% endif %}
-				</li>
-				<li>
-					{% if app.user %}
-						<div class="mb-3">
-							<a href="{{ path('my_sites') }}">{% trans %}mysites{% endtrans %}</a>
-						</div>
-					{% else %}
-						<a href="{{ path('register') }}">{% trans %}registration{% endtrans %}</a>
-					{% endif %}
-				</li>
-				<li>{% trans %}languages{% endtrans %}</li>
-			</ul>
-			{# menu burger #}
-			<div id='navShow'>
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewbox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-				</svg>
-			</div>
-			<div id='navClose'>
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-				</svg>
-			</div>
+	<div class='navTopShadow'></div>
+	<div class='navTop'>
+		<a href="{{ path('home_page') }}">
+			<img class='logoCS' src="{{ asset('build/images/Logo_cookie_squared.png') }}" alt="logo_cookie_squared">
+		</a>
+		<ul>
+			<li>
+				<a href="{{ path('home_page') }}#sectionrgpd">RGPD & ePrivacy</a>
+			</li>
+			<li>
+				<a href="{{ path('home_page') }}#sectionprice">{% trans %}prices{% endtrans %}</a>
+			</li>
+			<li>
+				<a href="{{ path('home_page') }}#sectionqsn">{% trans %}about{% endtrans %}</a>
+			</li>
+			<li>
+				{% if app.user %}
+					<div class="mb-3">
+						<a href="{{ path('user_info') }}">{% trans %}profile{% endtrans %}</a>
+					</div>
+				{% else %}
+					<a href="{{ path('app_login') }}">{% trans %}connexion{% endtrans %}</a>
+				{% endif %}
+			</li>
+			<li>
+				{% if app.user %}
+					<div class="mb-3">
+						<a href="{{ path('my_sites') }}">{% trans %}mysites{% endtrans %}</a>
+					</div>
+				{% else %}
+					<a href="{{ path('register') }}">{% trans %}registration{% endtrans %}</a>
+				{% endif %}
+			</li>
+
+
+			
+			{% for locale in locales %}
+				{% if locale != app.request.locale %}
+				<li><a href="{{ path('change_locale', {'locale' : locale})}}"><img src="{{ asset('build/images/'~locale~'.png')}}" alt='{{locale}}' id="flag"></a></li>
+				{% endif %}
+			{% endfor %}
+
+
+		</ul>
+		{# menu burger #}
+		<div id='navShow'>
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+			</svg>
 		</div>
-		<div id="navOpen">
-			<ul>
-				<li>
-					<a class="link" href="{{ path('home_page') }}#sectionrgpd">RGPD & ePrivacy</a>
-				</li>
-				<li>
-					<a class="link" href="{{ path('home_page') }}#sectionprice">{% trans %}prices{% endtrans %}</a>
-				</li>
-				<li>
-					<a class="link" href="{{ path('home_page') }}#sectionqsn">{% trans %}about{% endtrans %}</a>
-				</li>
-				<li>
-					{% if app.user %}
-						<a class="link" href="{{ path('user_info') }}">{% trans %}profile{% endtrans %}</a>					
-					{% else %}
-						<a class="link" href="{{ path('app_login') }}">{% trans %}connexion{% endtrans %}</a>
-					{% endif %}
-				</li>
-				<li>
-					{% if app.user %}
-						<a class="link" href="{{ path('my_sites') }}">{% trans %}mysites{% endtrans %}</a>			
-					{% else %}
-						<a class="link" href="{{ path('register') }}">{% trans %}registration{% endtrans %}</a>
-					{% endif %}
-				</li>
-				<li>
-				<a href="#">{% trans %}languages{% endtrans %}</a>
-				</li>
-			</ul>
+		<div id='navClose'>
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 navBurger" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+			</svg>
 		</div>
-			{# fin menu burger #}
+	</div>
+	<div id="navOpen">
+		<ul>
+			<li>
+				<a class="link" href="{{ path('home_page') }}#sectionrgpd">RGPD & ePrivacy</a>
+			</li>
+			<li>
+				<a class="link" href="{{ path('home_page') }}#sectionprice">{% trans %}prices{% endtrans %}</a>
+			</li>
+			<li>
+				<a class="link" href="{{ path('home_page') }}#sectionqsn">{% trans %}about{% endtrans %}</a>
+			</li>
+			<li>
+				{% if app.user %}
+					<a class="link" href="{{ path('user_info') }}">{% trans %}profile{% endtrans %}</a>
+				{% else %}
+					<a class="link" href="{{ path('app_login') }}">{% trans %}connexion{% endtrans %}</a>
+				{% endif %}
+			</li>
+			<li>
+				{% if app.user %}
+					<a class="link" href="{{ path('my_sites') }}">{% trans %}mysites{% endtrans %}</a>
+				{% else %}
+					<a class="link" href="{{ path('register') }}">{% trans %}registration{% endtrans %}</a>
+				{% endif %}
+			</li>
+			{% for locale in locales %}
+				{% if locale != app.request.locale %}
+				<li><a href="{{ path('change_locale', {'locale' : locale})}}"><img src="{{ asset('build/images/'~locale~'.png')}}" alt='{{locale}}' id="flag"></a></li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+	{# fin menu burger #}
 </nav>
