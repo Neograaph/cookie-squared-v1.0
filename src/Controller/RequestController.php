@@ -20,6 +20,7 @@ class RequestController extends AbstractController
     public function cookieShow(CookieRepository $cookieRepository): Response
     {
         $cookieslist = $cookieRepository->findAll();
+        header("Access-Control-Allow-Origin: *");
         return $this->render('request/cookiesList.html.twig', compact('cookieslist'));
     }
     /**
@@ -30,9 +31,31 @@ class RequestController extends AbstractController
         $cookieslist = $cookieRepository->findAll();
         header("Access-Control-Allow-Origin: *");
         return new JsonResponse([
-            'cookie1' => "nuit",
-            'cookie2' => "blabla",
-            'cookie3' => $cookieslist,
+            'cookie1' => [
+                "name"=> "Toto",
+                "category"=> "1",
+                "duration"=> "Dan",
+                "domain"=> "yo",                
+                "path"=> "/",                
+                "description"=> "desc"              
+                ],
+            'cookie2' => [
+                "name"=> "Tata",
+                "category"=> "2",
+                "duration"=> "Dan",
+                "domain"=> "yo",                
+                "path"=> "/",                
+                "description"=> "descdescdescdesc"              
+                ],
+            'cookie3' => [
+                "name"=> "Tonton",
+                "category"=> "1",
+                "duration"=> "Dan",
+                "domain"=> "yo",                
+                "path"=> "/",                
+                "description"=> "5555555"              
+                ]
+            
         ]);
     }
 }
