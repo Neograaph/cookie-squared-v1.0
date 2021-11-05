@@ -410,6 +410,42 @@
         <source>rapportscan</source>
         <target>Scan report</target>
       </trans-unit>
+      <trans-unit id="Rlawcmr" resname="cookiemanagement">
+        <source>cookiemanagement</source>
+        <target>Cookie management</target>
+      </trans-unit>
+      <trans-unit id="vD7JxAn" resname="cookiename">
+        <source>cookiename</source>
+        <target>Cookie name</target>
+      </trans-unit>
+      <trans-unit id="7bLNO3T" resname="category">
+        <source>category</source>
+        <target>Category</target>
+      </trans-unit>
+      <trans-unit id="OT3rCgs" resname="validityduration">
+        <source>validityduration</source>
+        <target>Validity period</target>
+      </trans-unit>
+      <trans-unit id="8v_Dhgp" resname="domain">
+        <source>domain</source>
+        <target>Domain</target>
+      </trans-unit>
+      <trans-unit id="oK_fhlv" resname="path">
+        <source>path</source>
+        <target>Path</target>
+      </trans-unit>
+      <trans-unit id="yQRveje" resname="description">
+        <source>description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="fp5aww8" resname="add">
+        <source>add</source>
+        <target>Add</target>
+      </trans-unit>
+      <trans-unit id="vbs3Vu1" resname="addcookie">
+        <source>addcookie</source>
+        <target>Add cookie</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
