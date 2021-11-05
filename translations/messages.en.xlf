@@ -394,13 +394,21 @@
         <source>modifpassword</source>
         <target>Change password</target>
       </trans-unit>
-      <trans-unit id="MSqsmR9" resname="showmysites">
+      <trans-unit id="QVXXfby" resname="showmysites">
         <source>showmysites</source>
         <target>Show my sites</target>
       </trans-unit>
       <trans-unit id="ACcM9j_" resname="logout">
         <source>logout</source>
         <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="DJ6rBhJ" resname="scanbenning">
+        <source>scanbenning</source>
+        <target>Start the scan</target>
+      </trans-unit>
+      <trans-unit id="gCd._qa" resname="rapportscan">
+        <source>rapportscan</source>
+        <target>Scan report</target>
       </trans-unit>
     </body>
   </file>
