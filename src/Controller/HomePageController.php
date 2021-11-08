@@ -17,4 +17,17 @@ class HomePageController extends AbstractController
             'controller_name' => 'HomePageController',
         ]);
     }
+
+    /**
+     * @Route("/test", name="test")
+     */
+    public function test(): Response
+    {
+        $json = file_get_contents("../tests/data.json");
+
+        var_dump(json_decode($json));
+        return $this->render('home_page/test.html.twig', [
+            'controller_name' => 'TestController',
+        ]);
+    }
 }

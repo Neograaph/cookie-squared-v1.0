@@ -1,0 +1,131 @@
+[
+    {
+        "name": "_clck",
+        "value": "1cdyohj|1|ew9|0",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1667923457,
+        "sameSite": "None"
+    },
+    {
+        "name": "_hjid",
+        "value": "46a7d72d-1609-4443-8c40-b9c230e5e7ed",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1667923468,
+        "sameSite": "Lax"
+    },
+    {
+        "name": "_hjFirstSeen",
+        "value": "1",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1636389268,
+        "sameSite": "Lax"
+    },
+    {
+        "name": "_gat",
+        "value": "1",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1636387576,
+        "sameSite": "None"
+    },
+    {
+        "name": "_gat_gtag_UA_123177514_4",
+        "value": "1",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1636387600,
+        "sameSite": "None"
+    },
+    {
+        "name": "_hjIncludedInPageviewSample",
+        "value": "1",
+        "path": "/",
+        "domain": "www.scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1636387667,
+        "sameSite": "Lax"
+    },
+    {
+        "name": "_hjAbsoluteSessionInProgress",
+        "value": "1",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1636389347,
+        "sameSite": "Lax"
+    },
+    {
+        "name": "crisp-client%2Fsession%2F352f6e05-af84-45d6-a5e9-474e7e0bb156",
+        "value": "session_f3518d8f-65e2-42d6-bc3b-21a26ee19e56",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1652155556,
+        "sameSite": "Lax"
+    },
+    {
+        "name": "_ga_4Y8DBCM1YW",
+        "value": "GS1.1.1636387465.1.1.1636387557.0",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1699459557,
+        "sameSite": "None"
+    },
+    {
+        "name": "utm_journey",
+        "value": "LyAtIC8gLSAvYmxvZy8gLSAvZG9jdW1lbnRhdGlvbi8gLSAvYXBpLXN0b3JlLyAtIC9yZWJyYW5kaW5nLyAtIC9hZmZpbGlhdGVzLyAtIC90ZXJtcy1hbmQtY29uZGl0aW9ucy8gLSAvcHJpdmFjeS1wb2xpY3kvIC0gL2dkcHIvIC0gL2NyYXdsZXJhLWFsdGVybmF0aXZlLyAtIC9sdW1pbmF0aS1hbHRlcm5hdGl2ZS8gLSAvc21hcnRwcm94eS1hbHRlcm5hdGl2ZS8gLSAvb3h5bGFicy1hbHRlcm5hdGl2ZS8gLSAvbmV0bnV0LWFsdGVybmF0aXZlLyAtIC9zY3JhcGluZ2JlZS1hbHRlcm5hdGl2ZS8gLSAvYmxvZy93ZWItc2NyYXBpbmctd2l0aG91dC1nZXR0aW5nLWJsb2NrZWQvIC0gL2Jsb2cvd2ViLXNjcmFwaW5nLXRvb2xzLyAtIC9ibG9nL2Jlc3QtZnJlZS1wcm94eS1saXN0LXdlYi1zY3JhcGluZy8gLSAvYmxvZy9iZXN0LW1vYmlsZS00Zy1wcm94eS1wcm92aWRlci13ZWJzY3JhcGluZy8gLSAvYmxvZy9zY3JhcGluZy12cy1jcmF3bGluZy8gLSAvYmxvZy9yb3RhdGluZy1wcm94aWVzLyAtIC9ibG9nL3dlYi1zY3JhcGluZy0xMDEtd2l0aC1weXRob24vIC0gL2Jsb2cvd2ViLXNjcmFwaW5nLXBocC8gLSAvYmxvZy9pbnRyb2R1Y3Rpb24tdG8td2ViLXNjcmFwaW5nLXdpdGgtamF2YS8gLSAvYmxvZy93ZWItc2NyYXBpbmctcnVieS8gLSAvYmxvZy93ZWItc2NyYXBpbmctamF2YXNjcmlwdC8gLSAvYmxvZy93ZWItc2NyYXBpbmctci8gLSAvYmxvZy93ZWItc2NyYXBpbmctY3NoYXJwLyAtIC9qYXZhLXdlYnNjcmFwaW5nLWJvb2svIC0gL2Jsb2cvcHl0aG9uLXJlcXVlc3RzLXByb3h5LyAtIC9ibG9nL3dnZXQtcHJveHkvIC0gL2Jsb2cvZG93bmxvYWQtaW1hZ2UtcHl0aG9uLyAtIC9ibG9nL2luZmluaXRlLXNjcm9sbC1wdXBwZXRlZXIvIC0gL2Jsb2cvaHRtbC1hZ2lsaXR5LXBhY2svIC0gL2Jsb2cvY3VybC1wcm94eS8gLSAvYmxvZy9zZWxlbml1bS1weXRob24vIC0gL2Jsb2cvaG93LXRvLXNlbmQtcG9zdC1weXRob24tcmVxdWVzdHMvIC0gL2Jsb2cvYmVzdC1weXRob24taHR0cC1jbGllbnRzLyAtIC9ibG9nL2RhdGEtcGFyc2luZy8gLSAvYmxvZy9ibG9jay1yZXF1ZXN0cy1wdXBwZXRlZXIvIC0gL2Jsb2cvc3VibWl0LWZvcm0tcHVwcGV0ZWVyLyAtIC9ibG9nL2Jlc3QtcnVieS1odHRwLWNsaWVudHMvIC0gL2Jsb2cvZG93bmxvYWQtZmlsZS1wdXBwZXRlZXIvIC0gL2Jsb2cvcGxheXdyaWdodC13ZWItc2NyYXBpbmcvIC0gL2Jsb2cvcHl0aG9uLXdlYi1zY3JhcGluZy1iZWF1dGlmdWwtc291cC8gLSAvYmxvZy9ob3ctdG8tZXh0cmFjdC1kYXRhLWZyb20tYS13ZWJzaXRlLyAtIC9ibG9nL2F4aW9zLWhlYWRlcnMvIC0gL2Jsb2cvY3Jhd2xpbmctcHl0aG9uLyAtIC9ibG9nL25vZGUtZmV0Y2gvIC0gL2Jsb2cvY2hhcmxlcy1wcm94eS8gLSAvYmxvZy9wcm94eS1ub2RlLWZldGNoLyAtIC9ibG9nL3NjcmFweS1qYXZhc2NyaXB0LyAtIC9ibG9nL3F1ZXN0LWJlc3QtaGFja2VyLW5ld3MtdGl0bGUvIC0gL2Jsb2cvcGFnZS8yLyAtIC9kb2N1bWVudGF0aW9uLyAtIC9kb2N1bWVudGF0aW9uL2dvb2dsZS8gLSAvZG9jdW1lbnRhdGlvbi9wcm94eS1tb2RlLyAtIC9kb2N1bWVudGF0aW9uL2RhdGEtZXh0cmFjdGlvbi8gLSAvZG9jdW1lbnRhdGlvbi9jb3VudHJ5X2NvZGVzLyAtIC9hcGktc3RvcmUvc2NyZWVuc2hvdC8gLSAvYXBpLXN0b3JlL2dvb2dsZS8gLSAvYmxvZy8gLSAvYXBpLXN0b3JlLyAtIC9kYXRhLXByb2Nlc3NpbmctYWdyZWVtZW50LyAtIC9ibG9nL2ludHJvZHVjdGlvbi10by1jaHJvbWUtaGVhZGxlc3MvIC0gL2Jsb2cvd2ViLXNjcmFwaW5nLXdpdGgtc2NyYXB5LyAtIC9ibG9nL3NjcmFwaW5nLWUtY29tbWVyY2UtcHJvZHVjdC1kYXRhLyAtIC9ibG9nL3ByYWN0aWNhbC14cGF0aC1mb3Itd2ViLXNjcmFwaW5nLyAtIC9kb2N1bWVudGF0aW9uL2RhdGEtZXh0cmFjdGlvbi8gLSAvYmxvZy9zY3JhcGluZy1zaW5nbGUtcGFnZS1hcHBsaWNhdGlvbnMvIC0gL2Jsb2cvd2ViLXNjcmFwaW5nLWhhbmRsaW5nLWFqYXgtd2Vic2l0ZS8gLSAvZG9jdW1lbnRhdGlvbi9wcm94eS1tb2RlLyAtIC9hcGktc3RvcmUvc2NyZWVuc2hvdC8gLSAvZG9jdW1lbnRhdGlvbi9nb29nbGUvIC0gL2Jsb2cvc2VydmVybGVzcy13ZWItc2NyYXBpbmctd2l0aC1hd3MtbGFtYmRhLWFuZC1qYXZhLyAtIC9ibG9nL2hvdy10by1sb2ctaW4tdG8tYWxtb3N0LWFueS13ZWJzaXRlcy8gLSAvYmxvZy9hbi1hdXRvbWF0aWMtYmlsbC1kb3dubG9hZGVyLWluLWphdmEv",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+    },
+    {
+        "name": "_ga",
+        "value": "GA1.2.1579586561.1636387457",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1699459562,
+        "sameSite": "None"
+    },
+    {
+        "name": "_gid",
+        "value": "GA1.2.272767462.1636387457",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1636473962,
+        "sameSite": "None"
+    },
+    {
+        "name": "_clsk",
+        "value": "1ih32nr|1636387563360|71|1|a.clarity.ms/collect",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1636473963,
+        "sameSite": "None"
+    }
+]
