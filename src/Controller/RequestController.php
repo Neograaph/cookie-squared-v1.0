@@ -30,32 +30,8 @@ class RequestController extends AbstractController
     {
         $cookieslist = $cookieRepository->findAll();
         header("Access-Control-Allow-Origin: *");
-        return new JsonResponse([
-            'cookie1' => [
-                "name"=> "Toto",
-                "category"=> "1",
-                "duration"=> "Dan",
-                "domain"=> "yo",                
-                "path"=> "/",                
-                "description"=> "desc"              
-                ],
-            'cookie2' => [
-                "name"=> "Tata",
-                "category"=> "2",
-                "duration"=> "Dan",
-                "domain"=> "yo",                
-                "path"=> "/",                
-                "description"=> "descdescdescdesc"              
-                ],
-            'cookie3' => [
-                "name"=> "Tonton",
-                "category"=> "1",
-                "duration"=> "Dan",
-                "domain"=> "yo",                
-                "path"=> "/",                
-                "description"=> "5555555"              
-                ]
-            
-        ]);
+        return $this->json(
+            $cookieslist,200,[],["groups"=>'displayCookie']
+        );
     }
 }
