@@ -167,7 +167,7 @@
       </trans-unit>
       <trans-unit id="qEtmf0F" resname="wordpressdescription">
         <source>wordpressdescription</source>
-        <target>Wordpressdescription</target>
+        <target>Download this plugin to have access to all our features on the Wordpress dashboard</target>
       </trans-unit>
       <trans-unit id=".oUYqE." resname="dlplugin">
         <source>dlplugin</source>
@@ -221,6 +221,230 @@
       <trans-unit id="rVgP7Ff" resname="addcookiesdescription">
         <source>addcookiesdescription</source>
         <target>Ajoutez les cookies que vous souhaitez.</target>
+      </trans-unit>
+      <trans-unit id="Zs2WiKK" resname="dashboard">
+        <source>dashboard</source>
+        <target>Dashboard</target>
+      </trans-unit>
+      <trans-unit id="szsYrOZ" resname="addsite">
+        <source>addsite</source>
+        <target>Add a site</target>
+      </trans-unit>
+      <trans-unit id="cYfwZ16" resname="return">
+        <source>return</source>
+        <target>Return</target>
+      </trans-unit>
+      <trans-unit id="qcMGD4c" resname="createnewsite">
+        <source>createnewsite</source>
+        <target>Create a new site</target>
+      </trans-unit>
+      <trans-unit id="mfcfwhf" resname="customize">
+        <source>customize</source>
+        <target>Customize</target>
+      </trans-unit>
+      <trans-unit id="QS2sh28" resname="customization">
+        <source>customization</source>
+        <target>Customization</target>
+      </trans-unit>
+      <trans-unit id="dRLShn." resname="bannertitle">
+        <source>bannertitle</source>
+        <target>Banner title</target>
+      </trans-unit>
+      <trans-unit id="XLf5muJ" resname="bannermessage">
+        <source>bannermessage</source>
+        <target>Banner message</target>
+      </trans-unit>
+      <trans-unit id="fYRyOYf" resname="templatecolor">
+        <source>templatecolor</source>
+        <target>Template color</target>
+      </trans-unit>
+      <trans-unit id="xratyyJ" resname="darkmode">
+        <source>darkmode</source>
+        <target>Dark mode</target>
+      </trans-unit>
+      <trans-unit id="AQ3eS74" resname="lightmode">
+        <source>lightmode</source>
+        <target>Light mode</target>
+      </trans-unit>
+      <trans-unit id="1xKoCa9" resname="parameterswindowdisposition">
+        <source>parameterswindowdisposition</source>
+        <target>Parameters window disposition</target>
+      </trans-unit>
+      <trans-unit id="8XmlCdM" resname="center">
+        <source>center</source>
+        <target>Center</target>
+      </trans-unit>
+      <trans-unit id="405uTdS" resname="pasteleft">
+        <source>pasteleft</source>
+        <target>Paste left</target>
+      </trans-unit>
+      <trans-unit id="817iJXT" resname="pasteright">
+        <source>pasteright</source>
+        <target>Paste right</target>
+      </trans-unit>
+      <trans-unit id="6c1M2Ai" resname="addbuttonrefuse">
+        <source>addbuttonrefuse</source>
+        <target>Add button "Refuse all cookies"</target>
+      </trans-unit>
+      <trans-unit id="7ry_838" resname="previewconsentbanner">
+        <source>previewconsentbanner</source>
+        <target>Preview consent banner</target>
+      </trans-unit>
+      <trans-unit id="I3TZF5S" resname="cancel">
+        <source>cancel</source>
+        <target>Cancel</target>
+      </trans-unit>
+      <trans-unit id="cM6HH4o" resname="record">
+        <source>record</source>
+        <target>Record</target>
+      </trans-unit>
+      <trans-unit id="DOdROgw" resname="namesite">
+        <source>namesite</source>
+        <target>Site name</target>
+      </trans-unit>
+      <trans-unit id="9UyQ1eH" resname="datelastscan">
+        <source>datelastscan</source>
+        <target>Date of the last scan</target>
+      </trans-unit>
+      <trans-unit id="BzwWNMS" resname="status">
+        <source>status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="Kw3N1AA" resname="actions">
+        <source>actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="KD84ABe" resname="noscandone">
+        <source>noscandone</source>
+        <target>No scan done</target>
+      </trans-unit>
+      <trans-unit id="JiEhxTc" resname="edit">
+        <source>edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="YZdZVQP" resname="delete">
+        <source>delete</source>
+        <target>Delete</target>
+      </trans-unit>
+      <trans-unit id="oFwey0I" resname="loggedas">
+        <source>loggedas</source>
+        <target>Logged as</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="M6qnFY6" resname="rememberme">
+        <source>rememberme</source>
+        <target>Remember me</target>
+      </trans-unit>
+      <trans-unit id="WmOKEoy" resname="connect">
+        <source>connect</source>
+        <target>Connect</target>
+      </trans-unit>
+      <trans-unit id="HNQDN1y" resname="changepassword">
+        <source>changepassword</source>
+        <target>Change password</target>
+      </trans-unit>
+      <trans-unit id="EzyOuGz" resname="validate">
+        <source>validate</source>
+        <target>Validate</target>
+      </trans-unit>
+      <trans-unit id="UmqkkKm" resname="readandaccept">
+        <source>readandaccept</source>
+        <target>I have read and accept the privacy policy</target>
+      </trans-unit>
+      <trans-unit id="jg0FF3B" resname="createaccount">
+        <source>createaccount</source>
+        <target>Create an account</target>
+      </trans-unit>
+      <trans-unit id="PZxlDJM" resname="havealreadyaccount">
+        <source>havealreadyaccount</source>
+        <target>Do you already have an account ? </target>
+      </trans-unit>
+      <trans-unit id="JnO_XM6" resname="connecthere">
+        <source>connecthere</source>
+        <target>Log in here</target>
+      </trans-unit>
+      <trans-unit id="Mpza.dI" resname="userpage">
+        <source>userpage</source>
+        <target>User page</target>
+      </trans-unit>
+      <trans-unit id="xXdHlFC" resname="profileof">
+        <source>profileof</source>
+        <target>Profile of</target>
+      </trans-unit>
+      <trans-unit id="e7Syy6B" resname="userinformations">
+        <source>userinformations</source>
+        <target>User informations</target>
+      </trans-unit>
+      <trans-unit id="xQN7Y9w" resname="mailadress">
+        <source>mailadress</source>
+        <target>Mail</target>
+      </trans-unit>
+      <trans-unit id="VbXFH4Z" resname="lastname">
+        <source>lastname</source>
+        <target>Lastname</target>
+      </trans-unit>
+      <trans-unit id="TP3eab3" resname="firstname">
+        <source>firstname</source>
+        <target>Firstname</target>
+      </trans-unit>
+      <trans-unit id="aMdCoBx" resname="modifpassword">
+        <source>modifpassword</source>
+        <target>Change password</target>
+      </trans-unit>
+      <trans-unit id="QVXXfby" resname="showmysites">
+        <source>showmysites</source>
+        <target>Show my sites</target>
+      </trans-unit>
+      <trans-unit id="ACcM9j_" resname="logout">
+        <source>logout</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="DJ6rBhJ" resname="scanbenning">
+        <source>scanbenning</source>
+        <target>Start the scan</target>
+      </trans-unit>
+      <trans-unit id="gCd._qa" resname="rapportscan">
+        <source>rapportscan</source>
+        <target>Scan report</target>
+      </trans-unit>
+      <trans-unit id="Rlawcmr" resname="cookiemanagement">
+        <source>cookiemanagement</source>
+        <target>Cookie management</target>
+      </trans-unit>
+      <trans-unit id="vD7JxAn" resname="cookiename">
+        <source>cookiename</source>
+        <target>Cookie name</target>
+      </trans-unit>
+      <trans-unit id="7bLNO3T" resname="category">
+        <source>category</source>
+        <target>Category</target>
+      </trans-unit>
+      <trans-unit id="OT3rCgs" resname="validityduration">
+        <source>validityduration</source>
+        <target>Validity period</target>
+      </trans-unit>
+      <trans-unit id="8v_Dhgp" resname="domain">
+        <source>domain</source>
+        <target>Domain</target>
+      </trans-unit>
+      <trans-unit id="oK_fhlv" resname="path">
+        <source>path</source>
+        <target>Path</target>
+      </trans-unit>
+      <trans-unit id="yQRveje" resname="description">
+        <source>description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="fp5aww8" resname="add">
+        <source>add</source>
+        <target>Add</target>
+      </trans-unit>
+      <trans-unit id="vbs3Vu1" resname="addcookie">
+        <source>addcookie</source>
+        <target>Add cookie</target>
       </trans-unit>
     </body>
   </file>
