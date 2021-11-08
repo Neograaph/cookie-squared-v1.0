@@ -20,7 +20,7 @@ final class Version20211026141337 extends AbstractMigration
     public function up(Schema $schema): void
     {
         // this up() migration is auto-generated, please modify it to your needs
-        $this->addSql('ALTER TABLE cookie ADD id_site_id INT NOT NULL');
+        // $this->addSql('ALTER TABLE cookie ADD id_site_id INT NOT NULL');
         $this->addSql('ALTER TABLE cookie ADD CONSTRAINT FK_8AE0BA662820BF36 FOREIGN KEY (id_site_id) REFERENCES site (id)');
         $this->addSql('CREATE INDEX IDX_8AE0BA662820BF36 ON cookie (id_site_id)');
     }
