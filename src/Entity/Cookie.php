@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\CookieRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=CookieRepository::class)
@@ -19,6 +20,7 @@ class Cookie
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups ({"displayCookie"})
      */
     private $name;
 
