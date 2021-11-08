@@ -26,21 +26,25 @@ class Cookie
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups ({"displayCookie"})
      */
     private $category;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups ({"displayCookie"})
      */
     private $duration;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups ({"displayCookie"})
      */
     private $domain;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Groups ({"displayCookie"})
      */
     private $path;
 
@@ -52,6 +56,7 @@ class Cookie
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups ({"displayCookie"})
      */
     private $description;
 
