@@ -40,12 +40,12 @@
 
                     <tr id="add_cookie_form" style="display:none">
                         {{ form_start(cookieForm) }}
-                        <td>{{ form_row(cookieForm.name, { 'label' : false, 'attr' => ['class' => 'form-control'], }) }}</td>
-                        <td>{{ form_row(cookieForm.category, { 'label' : false }) }}</td>
-                        <td>{{ form_row(cookieForm.duration, { 'label' : false }) }}</td>
-                        <td>{{ form_row(cookieForm.domain, { 'label' : false }) }}</td>
-                        <td>{{ form_row(cookieForm.path, { 'label' : false }) }}</td>
-                        <td>{{ form_row(cookieForm.description, { 'label' : false }) }}</td>
+                        <td>{{ form_row(cookieForm.name, { 'label' : false, 'attr' : {'class': 'form-control'} }) }}</td>
+                        <td>{{ form_row(cookieForm.category, { 'label' : false, 'attr' : {'class': 'form-control'} }) }}</td>
+                        <td>{{ form_row(cookieForm.duration, { 'label' : false, 'attr' : {'class': 'form-control'} }) }}</td>
+                        <td>{{ form_row(cookieForm.domain, { 'label' : false, 'attr' : {'class': 'form-control'} }) }}</td>
+                        <td>{{ form_row(cookieForm.path, { 'label' : false, 'attr' : {'class': 'form-control'} }) }}</td>
+                        <td>{{ form_row(cookieForm.description, { 'label' : false, 'attr' : {'class': 'form-control'} }) }}</td>
                         <td><button class="btn btn-success" type="submit">{% trans %}add{% endtrans %}</button></td>
                         {{ form_end(cookieForm) }}
                     </tr>
