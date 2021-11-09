@@ -7,17 +7,17 @@
 			class="top-bar">
 			<!-- BEGIN: Breadcrumb -->
 			<div class="-intro-x breadcrumb me-auto d-none d-sm-flex">
-				<a href="">Dashboard</a>
+				<a href="">{% trans %}dashboard{% endtrans %}</a>
 				<i data-feather="chevron-right" class="breadcrumb__icon"></i>
-				<a href="{{ path('my_sites') }}">Mes sites</a>
+				<a href="{{ path('my_sites') }}">{% trans %}mysites{% endtrans %}</a>
 				<i data-feather="chevron-right" class="breadcrumb__icon"></i>
-				<a href="#" class="breadcrumb--active">Ajouter un site</a>
+				<a href="#" class="breadcrumb--active">{% trans %}addsite{% endtrans %}</a>
 			</div>
 
 			<div class="intro-x me-auto me-sm-6">
 				<a href="{{ path('my_sites') }}">
 					<button class="btn btn-primary w-50 me-2 mb-2 mt-3">
-						<i data-feather="corner-up-left" class="w-4 h-4 me-2"></i>Retour</button>
+						<i data-feather="corner-up-left" class="w-4 h-4 me-2"></i>{% trans %}return{% endtrans %}</button>
 				</a>
 			</div>
 
@@ -33,7 +33,7 @@
 
 		<div class="intro-y d-flex align-items-center justify-content-center mt-8 mb-5">
 			<h1 class="fs-3xl fw-medium me-auto justify-content-center">
-				Créer un nouveau site
+				{% trans %}createnewsite{% endtrans %}
 			</h1>
 		</div>
 
@@ -42,7 +42,7 @@
 				<div class="preview">
 					{{ form_start(sites) }}
 					{{ form_widget(sites) }}
-                    <input type="submit" class="btn btn-primary mt-5" value="Créer un nouveau site">
+                    <input type="submit" class="btn btn-primary mt-5" value="{% trans %}createnewsite{% endtrans %}">
 					{{ form_end(sites) }}
 				</div>
 

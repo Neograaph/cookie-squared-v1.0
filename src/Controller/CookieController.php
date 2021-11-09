@@ -15,15 +15,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class CookieController extends AbstractController
 {
     /**
-     * @Route("/dashboard/cookie", name="cookie", methods="GET|POST")
+     * @Route("/dashboard/{id<[0-9]+>}/cookie", name="cookie", methods="GET|POST")
      */
-    public function cookieList(CookieRepository $cookieRepository, Request $request, EntityManagerInterface $em): Response
+    public function cookieList(CookieRepository $cookieRepository, Request $request, EntityManagerInterface $em, Site $site): Response
     {
-        $cookies = $cookieRepository->findAll();
+        
 
         $cookie = new Cookie;
-
-        $site = new Site;
 
         $form = $this->createForm(CookieType::class, $cookie);
         $form->handleRequest($request);
@@ -33,27 +31,32 @@ class CookieController extends AbstractController
             $em->flush();
         }
 
+        $cookies = $cookieRepository->findBy(['id_site'=>$site->getId()]);
 
         return $this->render('dashboard/cookielist.html.twig', [
             'controller_name' => 'CookieController',
             'cookies' => $cookies,
-            'cookieForm' => $form->createView()
+            'site' => $site,
+            'cookieForm' => $form->createView(),
+            
         ]);
     }
 
     /**
-     * @Route("/dashboard/delcookie", name="del_cookie")
+     * @Route("/dashboard/{id<[0-9]+>}/delcookie/{cookieId<[0-9]+>}", name="del_cookie")
      */
-    function delCookie(CookieRepository $cookieRepository, EntityManagerInterface $em)
+    function delCookie(CookieRepository $cookieRepository, EntityManagerInterface $em, int $cookieId, Site $site)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $cookie = $cookieRepository->find(2);
+        $cookie = $cookieRepository->findOneBy(['id' => $cookieId]);
 
         $em->remove($cookie);
 
         $em->flush();
 
-        return $this->redirectToRoute('cookie');
+        return $this->redirectToRoute('cookie', [
+            'id' => $site->getId(),
+        ]);
     }
 }

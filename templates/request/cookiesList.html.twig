@@ -1,0 +1,24 @@
+{# {% extends 'dashboard_base.html.twig' %} #}
+
+{% block body %}
+
+<div>
+
+  {% for cookie in cookieslist %}
+
+    id: {{ cookie.id }} //
+    name: {{ cookie.name }} //
+    category: {{ cookie.category }} //
+    duration: {{ cookie.duration }} //
+    domain: {{ cookie.domain }} //
+    path: {{ cookie.path }} //
+    {# {{ cookie.id_site }} #}
+    description: {{ cookie.description }}
+
+  </br>
+	{% endfor %}
+  
+</div>
+
+
+{% endblock %}

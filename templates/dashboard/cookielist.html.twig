@@ -1,24 +1,24 @@
 {% extends 'dashboard_base.html.twig' %}
 
-{% block title %}Gestion des cookies - Cookie Squared{% endblock %}
+{% block title %}{% trans %}cookiemanagement{% endtrans %} - Cookie Squared{% endblock %}
 
 {% block body %}
 {% include "dashboard/partials/side_menu_light.html.twig" %}
     <div class="content">
         <div class="intro-y p-5 mt-5">
-            <h2 class="fs-3xl fw-medium lh-1 my-3">Gestion des cookies</h2>
+            <h2 class="fs-3xl fw-medium lh-1 my-3">{% trans %}cookiemanagement{% endtrans %}</h2>
         </div>
 
         <div class="overflow-x-auto">
             <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
-                        <th class="text-nowrap">Nom du cookie</th>
-                        <th class="text-nowrap">Catégorie</th>
-                        <th class="text-nowrap">Durée de validité</th>
-                        <th class="text-nowrap">Domaine</th>
-                        <th class="text-nowrap">Chemin</th>
-                        <th class="text-nowrap">Description</th>
+                        <th class="text-nowrap">{% trans %}cookiename{% endtrans %}</th>
+                        <th class="text-nowrap">{% trans %}category{% endtrans %}</th>
+                        <th class="text-nowrap">{% trans %}validityduration{% endtrans %}</th>
+                        <th class="text-nowrap">{% trans %}domain{% endtrans %}</th>
+                        <th class="text-nowrap">{% trans %}path{% endtrans %}</th>
+                        <th class="text-nowrap">{% trans %}description{% endtrans %}</th>
                         <th class="text-nowrap"></th>
                     </tr>
                 </thead>
@@ -32,7 +32,7 @@
                         <td>{{ cookie.domain }}</td>
                         <td>{{ cookie.path }}</td>
                         <td>{{ cookie.description }}</td>
-                        <td><a href="{{ path('del_cookie') }}"><button class="btn btn-danger me-1 mb-2">
+                        <td><a href="{{ path('del_cookie', {id: site.id, cookieId: cookie.id}) }}"><button class="btn btn-danger me-1 mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash w-5 h-5"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
                         </button></a></td>
                     </tr>
@@ -40,18 +40,18 @@
 
                     <tr id="add_cookie_form" style="display:none">
                         {{ form_start(cookieForm) }}
-                        <td>{{ form_row(cookieForm.name, { 'label' : false }) }}</td>
+                        <td>{{ form_row(cookieForm.name, { 'label' : false, 'attr' => ['class' => 'form-control'], }) }}</td>
                         <td>{{ form_row(cookieForm.category, { 'label' : false }) }}</td>
                         <td>{{ form_row(cookieForm.duration, { 'label' : false }) }}</td>
                         <td>{{ form_row(cookieForm.domain, { 'label' : false }) }}</td>
                         <td>{{ form_row(cookieForm.path, { 'label' : false }) }}</td>
                         <td>{{ form_row(cookieForm.description, { 'label' : false }) }}</td>
-                        <td><button class="btn btn-success" type="submit">Ajouter</button></td>
+                        <td><button class="btn btn-success" type="submit">{% trans %}add{% endtrans %}</button></td>
                         {{ form_end(cookieForm) }}
                     </tr>
                     
                     <tr>
-                        <td colspan="6" class="text-center"><button class="btn btn-success" id="add_cookie">ajouter un cookie</button></td>
+                        <td colspan="6" class="text-center"><button class="btn btn-success" id="add_cookie">{% trans %}addcookie{% endtrans %}</button></td>
                     </tr>
                     
                 </tbody>

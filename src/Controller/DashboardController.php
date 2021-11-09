@@ -2,11 +2,12 @@
 
 namespace App\Controller;
 
-use App\Entity\User;
 use App\Entity\Site;
+use App\Entity\User;
+use App\Entity\Custom;
 use App\Form\SiteType;
+use App\Form\CustomType;
 use App\Repository\SiteRepository;
-use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -16,7 +17,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class DashboardController extends AbstractController
 {
     /**
-     * @Route("/dashboard", name="my_sites")
+     * @Route("/dashboard", name="my_sites", methods="GET")
      */
     public function mySites(SiteRepository $siterepo): Response
     {
@@ -58,20 +59,32 @@ class DashboardController extends AbstractController
     }
 
     /**
-     * @Route("/dashboard/scan", name="scan")
+     * @Route("/dashboard/{id<[0-9]+>}/scan", name="scan")
      */
-    public function showScan(): Response
+    public function showScan(Site $site): Response
     {
-        return $this->render('dashboard/scan.html.twig', [
-            'controller_name' => 'DashboardController',
-        ]);
+        return $this->render('dashboard/scan.html.twig', compact('site'));
     }
 
     /**
-     * @Route("/dashboard/custom", name="custom")
+     * @Route("/dashboard/{id<[0-9]+>}/custom", name="custom")
      */
-    public function Customize(): Response
+    public function Customize(Request $request, EntityManagerInterface $em, Site $site): Response
     {
-        return $this->render('dashboard/customize.html.twig', []);
+        $custom = new Custom;
+
+        $form = $this->createForm(CustomType::class, $custom);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $custom->setIdSite($site);
+            $em->persist($custom);
+            $em->flush();
+        }
+
+        return $this->render('dashboard/customize.html.twig', [
+            'custom' => $form->createView(),
+            'site' => $site,
+            'mySettings' => $custom
+        ]);
     }
 }

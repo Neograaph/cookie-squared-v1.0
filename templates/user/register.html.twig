@@ -3,16 +3,16 @@
 {% block body %}
     <div class="form_background">
         <div class="user_form register_form">
-            <h1>Inscription</h1>
+            <h1>{% trans %}registration{% endtrans %}</h1>
 
             {{ form_start(register) }}
             {{ form_widget(register) }}
             <input type="checkbox" class="check" name="rules" required>
-			<label for="rules">J'ai lu et j'accepte le règlement et la politique de confidentialité</label>
-            <button type="submit">Créer mon compte</button>
+			<label for="rules">{% trans %}readandaccept{% endtrans %}</label><br>
+            <button type="submit">{% trans %}createaccount{% endtrans %}</button>
             {{ form_end(register) }}
 
-            <p>Vous possédez déjà un compte ? <a href="{{ path('app_login') }}">Connectez-vous ici</a></p>
+            <p>{% trans %}havealreadyaccount{% endtrans %}<a href="{{ path('app_login') }}">{% trans %}connecthere{% endtrans %}</a></p>
         </div>
     </div>
 {% endblock %}
