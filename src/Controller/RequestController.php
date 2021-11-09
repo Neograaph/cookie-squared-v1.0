@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Site;
+use App\Repository\SiteRepository;
 use App\Repository\CookieRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Cookie;
@@ -29,6 +30,18 @@ class RequestController extends AbstractController
     public function jsonShow(CookieRepository $cookieRepository): Response
     {
         $cookieslist = $cookieRepository->findAll();
+        header("Access-Control-Allow-Origin: *");
+        return $this->json(
+            $cookieslist,200,[],["groups"=>'displayCookie']
+        );
+    }
+    /**
+     * @Route("/request/{token}", name="request-token")
+     */
+    public function tokenJsonShow($token, CookieRepository $cookieRepository, SiteRepository $siterepo): Response
+    {
+        $target = $siterepo->findBy(['token' => $token]);
+        $cookieslist = $cookieRepository->findBy(['id_site' => $target]);
         header("Access-Control-Allow-Origin: *");
         return $this->json(
             $cookieslist,200,[],["groups"=>'displayCookie']
