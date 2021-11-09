@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Site;
 use App\Entity\User;
+use App\Entity\Cookie;
 use App\Entity\Custom;
 use App\Form\SiteType;
 use App\Form\CustomType;
@@ -61,8 +62,27 @@ class DashboardController extends AbstractController
     /**
      * @Route("/dashboard/{id<[0-9]+>}/scan", name="scan")
      */
-    public function showScan(Site $site): Response
+    public function showScan(Site $site, EntityManagerInterface $em): Response
     {
+        $json_raw = file_get_contents("../tests/data.json");
+        $json = json_decode($json_raw, true);
+        
+
+        for($i =0; $i<count($json);$i++)
+        {
+            $cookie = new Cookie;
+            $user = $this->getUser();
+            $cookie->setName($json[$i]['name']);
+            $cookie->setCategory('Inconnu');
+            $cookie->setDuration('test');
+            $cookie->setDomain($json[$i]['domain']);
+            $cookie->setPath($json[$i]['path']);
+            $cookie->setDescription('TEST');
+            $cookie->setIdSite($site);
+            $em->persist($cookie);
+            $em->flush();
+        }
+
         return $this->render('dashboard/scan.html.twig', compact('site'));
     }
 
