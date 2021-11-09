@@ -17,13 +17,29 @@
     </div>
     <h2 class='fs-3xl fw-medium lh-1 my-3'>Personnalisation</h2>
     <div class="intro-y box p-5">
-      
-      <label for="title" class="fw-bold">Titre du bandeau</label>
-      <input type="text" id="title" name="title" class="form-control"><br>
-      <label for="message" class="fw-bold">Message du bandeau</label>
-      <textarea type="text" id="message" name="message" class="form-control"></textarea><br>
 
-      <label class="my-3 fw-bold">Couleur du thème</label><br>
+    {{ form_start(custom) }}
+    {{ form_row(custom.title, {
+       'label': 'Titre du bandeau',
+       'label_attr': {'class': 'fw-bold'},
+       'attr': {'class': 'form-control'}
+    }) }}
+    {{ form_row(custom.message, {
+      'label': 'Message du bandeau',
+      'label_attr': {'class': 'fw-bold'},
+      'attr': {'class': 'form-control'}
+    }) }}
+    <label class="my-3 fw-bold">Couleur du thème</label><br>
+    {{ form_row(custom.color, { 
+      'label': 'Clair',
+      'label_attr': {'class': 'form-check-label'},
+      'attr': {'class': 'form-check-input'}
+    }) }}
+    {{ form_row(custom.layout, { 'label': 'Disposition de la fenètre des paramètres'}) }}
+    {{ form_row(custom.refuse_button, { 'label': 'ajouter un bouton "Refuser les cookies"'}) }}
+    {{ form_end(custom) }}
+
+      
       <input id="dark" class="form-check-input" type="radio" name="color" value="dark"><label for="dark" class="form-check-label">Sombre</label>
       <input id="light" class="form-check-input mx-2" type="radio" name="color" value="light"><label for="light" class="form-check-label">Clair</label><br>
 
@@ -49,6 +65,8 @@
       <button class="btn btn-secondary w-50 me-2 mb-2 mt-5">Annuler</button>
       <button class="btn btn-primary w-50 me-2 mb-2 mt-5">Enregistrer</button>
     </div>
+
+    
 
 </div>
 {% endblock %}

@@ -2,11 +2,12 @@
 
 namespace App\Controller;
 
-use App\Entity\User;
 use App\Entity\Site;
+use App\Entity\User;
+use App\Entity\Custom;
 use App\Form\SiteType;
+use App\Form\CustomType;
 use App\Repository\SiteRepository;
-use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -68,8 +69,22 @@ class DashboardController extends AbstractController
     /**
      * @Route("/dashboard/{id<[0-9]+>}/custom", name="custom")
      */
-    public function Customize(Site $site): Response
+    public function Customize(Request $request, EntityManagerInterface $em, Site $site): Response
     {
-        return $this->render('dashboard/customize.html.twig', compact('site'));
+        $custom = new Custom;
+
+        $form = $this->createForm(CustomType::class, $custom);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $custom->setIdSite($site);
+            $em->persist($custom);
+            $em->flush();
+        }
+
+        return $this->render('dashboard/customize.html.twig', [
+            'custom' => $form->createView(),
+            'site' => $site,
+            'mySettings' => $custom
+        ]);
     }
 }

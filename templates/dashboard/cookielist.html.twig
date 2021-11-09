@@ -32,7 +32,7 @@
                         <td>{{ cookie.domain }}</td>
                         <td>{{ cookie.path }}</td>
                         <td>{{ cookie.description }}</td>
-                        <td><a href="{{ path('del_cookie') }}"><button class="btn btn-danger me-1 mb-2">
+                        <td><a href="{{ path('del_cookie', {id: site.id, cookieId: cookie.id}) }}"><button class="btn btn-danger me-1 mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash w-5 h-5"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
                         </button></a></td>
                     </tr>
@@ -40,7 +40,7 @@
 
                     <tr id="add_cookie_form" style="display:none">
                         {{ form_start(cookieForm) }}
-                        <td>{{ form_row(cookieForm.name, { 'label' : false }) }}</td>
+                        <td>{{ form_row(cookieForm.name, { 'label' : false, 'attr' => ['class' => 'form-control'], }) }}</td>
                         <td>{{ form_row(cookieForm.category, { 'label' : false }) }}</td>
                         <td>{{ form_row(cookieForm.duration, { 'label' : false }) }}</td>
                         <td>{{ form_row(cookieForm.domain, { 'label' : false }) }}</td>
