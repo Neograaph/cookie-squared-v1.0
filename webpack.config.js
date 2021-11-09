@@ -36,7 +36,6 @@ Encore
     .addEntry('app', './assets/app.js')
     .addEntry('dashboard', './assets/dashboard.js')
     .addEntry('init', './assets/init.js')
-    .addEntry('scraper', './assets/scraper.js')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
