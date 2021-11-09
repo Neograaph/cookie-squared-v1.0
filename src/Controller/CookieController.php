@@ -19,6 +19,8 @@ class CookieController extends AbstractController
      */
     public function cookieList(CookieRepository $cookieRepository, Request $request, EntityManagerInterface $em, Site $site): Response
     {
+
+        
         $cookie = new Cookie;
 
         $form = $this->createForm(CookieType::class, $cookie);
@@ -56,6 +58,5 @@ class CookieController extends AbstractController
         return $this->redirectToRoute('cookie', [
             'id' => $site->getId(),
         ]);
-
     }
 }
