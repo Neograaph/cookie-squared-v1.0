@@ -10,12 +10,12 @@
     <div class="top-bar">
       <!-- BEGIN: Breadcrumb -->
       <div class="-intro-x breadcrumb me-auto d-none d-sm-flex">
-          <a href="{{ path('my_sites')}}">Dashboard</a>
+          <a href="{{ path('my_sites')}}">{% trans %}dashboard{% endtrans %}</a>
           <i data-feather="chevron-right" class="breadcrumb__icon"></i>
-          <a href="" class="breadcrumb--active">Personnaliser</a>
+          <a href="" class="breadcrumb--active">{% trans %}customize{% endtrans %}</a>
       </div>
     </div>
-    <h2 class='fs-3xl fw-medium lh-1 my-3'>Personnalisation</h2>
+    <h2 class='fs-3xl fw-medium lh-1 my-3'>{% trans %}customization{% endtrans %}</h2>
     <div class="intro-y box p-5">
 
     {{ form_start(custom) }}
@@ -45,25 +45,25 @@
 
      
 
-      <label class="my-3 fw-bold">Disposition de la fenètre des paramètres</label><br>
+      <label class="my-3 fw-bold">{% trans %}parameterswindowdisposition{% endtrans %}</label><br>
       <div class="form-check">
-        <input id="center" class="form-check-input" type="radio" name="layout" value="center"><label for="center" class="form-check-label">centrer</label>
+        <input id="center" class="form-check-input" type="radio" name="layout" value="center"><label for="center" class="form-check-label">{% trans %}center{% endtrans %}</label>
       </div>
       <div class="form-check">
-      <input id="left" class="form-check-input" type="radio" name="layout" value="left"><label for="left" class="form-check-label">coller à gauche</label>
+      <input id="left" class="form-check-input" type="radio" name="layout" value="left"><label for="left" class="form-check-label">{% trans %}pasteleft{% endtrans %}</label>
       </div>
       <div class="form-check">
-      <input id="right" class="form-check-input" type="radio" name="layout" value="right"><label for="right" class="form-check-label">coller à droite</label>
+      <input id="right" class="form-check-input" type="radio" name="layout" value="right"><label for="right" class="form-check-label">{% trans %}pasteright{% endtrans %}</label>
       </div><br>
 
       <div class="form-check mb-3">
-        <input type="checkbox" class="form-check-input fw-bold" id="refuse"><label class="fw-bold" for="refuse">ajouter un bouton "Refuser les cookies"</label><br>
+        <input type="checkbox" class="form-check-input fw-bold" id="refuse"><label class="fw-bold" for="refuse">{% trans %}addbuttonrefuse{% endtrans %}</label><br>
       </div>
 
-      <a href="" class="text-theme-1 d-block fw-bold">Prévisualiser la bannière de consentement</a>
+      <a href="" class="text-theme-1 d-block fw-bold">{% trans %}previewconsentbanner{% endtrans %}</a>
 
-      <button class="btn btn-secondary w-50 me-2 mb-2 mt-5">Annuler</button>
-      <button class="btn btn-primary w-50 me-2 mb-2 mt-5">Enregistrer</button>
+      <button class="btn btn-secondary w-50 me-2 mb-2 mt-5">{% trans %}cancel{% endtrans %}</button>
+      <button class="btn btn-primary w-50 me-2 mb-2 mt-5">{% trans %}record{% endtrans %}</button>
     </div>
 
     

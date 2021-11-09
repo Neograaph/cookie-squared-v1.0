@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Page Utilisateur
+{% block title %}{% trans %}userpage{% endtrans %}
 {% endblock %}
 
 {% block body %}
@@ -8,22 +8,22 @@
 	{% include "home_page/partials/nav.html.twig" %}
 
 	<div class="user_container">
-		<h2>Profil de
+		<h2>{% trans %}profileof{% endtrans %} 
 			{{ app.user.firstname }}
 			{{ app.user.lastname }}</h2><br>
-		<h3>Informations de l'utilisateur</h3><br>
+		<h3>{% trans %}userinformations{% endtrans %}</h3><br>
 
-		<p>Adresse mail :
+		<p>{% trans %}mailadress{% endtrans %} :
 			{{ app.user.email }}</p>
-		<p>Nom :
+		<p>{% trans %}lastname{% endtrans %} :
 			{{ app.user.lastname }}</p>
-		<p>Prénom :
+		<p>{% trans %}firstname{% endtrans %} :
 			{{ app.user.firstname }}</p>
-		<a href="{{ path('change_password') }}">Modifier le mot de passe</a>
+		<a href="{{ path('change_password') }}">{% trans %}modifpassword{% endtrans %}</a>
 
 		<div class="accueil_start_button">
-			<a href="{{ path('my_sites') }}">Voir mes sites</a><br><br><br>
-			<a href="{{ path('app_logout') }}">Déconnexion</a>
+			<a href="{{ path('my_sites') }}">{% trans %}showmysites{% endtrans %}</a><br><br><br>
+			<a href="{{ path('app_logout') }}">{% trans %}logout{% endtrans %}</a>
 		</div>
 	</div>
 
