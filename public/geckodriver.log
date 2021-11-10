@@ -109,3 +109,112 @@ JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a92
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1636548799455	geckodriver	INFO	Listening on 127.0.0.1:51089
+1636548802574	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51090" "-no-remote" "-profile" "C:\\Users\\STAGIA~1\\AppData\\Local\\Temp\\rust_mozprofileAp32VL"
+1636548803328	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\stagiaire\\AppData\\Local\\Temp\\rust_mozprofileAp32VL\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51090/devtools/browser/63ce69d1-994e-4646-a724-539a8154fc4a
+1636548806920	Marionette	INFO	Listening on port 51095
+1636548807394	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1636548840432	Marionette	INFO	Stopped listening on port 51095
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1636548866290	geckodriver	INFO	Listening on 127.0.0.1:51148
+1636548869417	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51149" "-no-remote" "-profile" "C:\\Users\\STAGIA~1\\AppData\\Local\\Temp\\rust_mozprofileg7KFTb"
+1636548870223	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\stagiaire\\AppData\\Local\\Temp\\rust_mozprofileg7KFTb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51149/devtools/browser/888037b9-6907-4b3a-a1d5-41a7840646f9
+1636548873309	Marionette	INFO	Listening on port 51154
+1636548873629	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1636548889575	Marionette	INFO	Stopped listening on port 51154
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1636548933517	geckodriver	INFO	Listening on 127.0.0.1:51207
+1636548936629	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51208" "-no-remote" "-profile" "C:\\Users\\STAGIA~1\\AppData\\Local\\Temp\\rust_mozprofileMCsHRg"
+1636548937521	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\stagiaire\\AppData\\Local\\Temp\\rust_mozprofileMCsHRg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51208/devtools/browser/37366448-5a39-404f-8737-2cb2a8438918
+1636548941018	Marionette	INFO	Listening on port 51214
+1636548941553	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1636548953860	Marionette	INFO	Stopped listening on port 51214
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1636548966366	geckodriver	INFO	Listening on 127.0.0.1:51267
+1636548969483	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51268" "-no-remote" "-profile" "C:\\Users\\STAGIA~1\\AppData\\Local\\Temp\\rust_mozprofileev6cYt"
+1636548970209	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\stagiaire\\AppData\\Local\\Temp\\rust_mozprofileev6cYt\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51268/devtools/browser/b5b411f0-2030-494f-b05d-f02d5f269099
+1636548973385	Marionette	INFO	Listening on port 51273
+1636548973729	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+1636548976307	Marionette	INFO	Stopped listening on port 51273
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590007,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590004,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590004,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1636549198327	geckodriver	INFO	Listening on 127.0.0.1:51417
+1636549201428	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51418" "-no-remote" "-profile" "C:\\Users\\STAGIA~1\\AppData\\Local\\Temp\\rust_mozprofilelhq5no"
+1636549202041	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\stagiaire\\AppData\\Local\\Temp\\rust_mozprofilelhq5no\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51418/devtools/browser/fede9882-28cd-4f08-bd43-acb9dfd76a71
+1636549206108	Marionette	INFO	Listening on port 51423
+1636549206266	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+1636549209067	Marionette	INFO	Stopped listening on port 51423
+1636549231314	geckodriver	INFO	Listening on 127.0.0.1:51494
+1636549234428	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51495" "-no-remote" "-profile" "C:\\Users\\STAGIA~1\\AppData\\Local\\Temp\\rust_mozprofileUhNt9H"
+1636549234986	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\stagiaire\\AppData\\Local\\Temp\\rust_mozprofileUhNt9H\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51495/devtools/browser/1fec3bc5-d005-44c6-857d-c0d4e6cf00c4
+1636549238266	Marionette	INFO	Listening on port 51500
+1636549238633	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+1636549240974	Marionette	INFO	Stopped listening on port 51500
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590004,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1636549271791	geckodriver	INFO	Listening on 127.0.0.1:51571
+1636549274910	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51572" "-no-remote" "-profile" "C:\\Users\\STAGIA~1\\AppData\\Local\\Temp\\rust_mozprofilecEzr71"
+1636549275692	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\stagiaire\\AppData\\Local\\Temp\\rust_mozprofilecEzr71\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51572/devtools/browser/9f30be59-fbde-4175-a188-f28ef85ae8c5
+1636549279292	Marionette	INFO	Listening on port 51577
+1636549279728	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+1636549282471	Marionette	INFO	Stopped listening on port 51577
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
