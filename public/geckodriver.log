@@ -1,0 +1,111 @@
+1636544450081	geckodriver	INFO	Listening on 127.0.0.1:52415
+1636544453320	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52416" "-no-remote" "-profile" "C:\\Users\\STAGIA~1\\AppData\\Local\\Temp\\rust_mozprofilexkhL0U"
+1636544453782	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\stagiaire\\AppData\\Local\\Temp\\rust_mozprofilexkhL0U\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52416/devtools/browser/27d90481-96c8-40f5-ae1f-e05c171c0a22
+1636544457198	Marionette	INFO	Listening on port 52429
+1636544457548	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/terms-and-conditions/, line 301: TypeError: window.SmoothScroll is not a constructor
+JavaScript error: https://www.scrapingbee.com/privacy-policy/, line 64: SyntaxError: missing { before function body
+JavaScript error: https://www.scrapingbee.com/gdpr/, line 152: SyntaxError: missing { before function body
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/crawlera-alternative/, line 986: ReferenceError: Intercom is not defined
+JavaScript error: https://www.scrapingbee.com/luminati-alternative/, line 997: ReferenceError: Intercom is not defined
+JavaScript warning: https://www.scrapingbee.com/smartproxy-alternative/, line 251: unreachable code after return statement
+JavaScript warning: https://www.scrapingbee.com/smartproxy-alternative/, line 251: unreachable code after return statement
+JavaScript error: https://www.scrapingbee.com/smartproxy-alternative/, line 1014: ReferenceError: Intercom is not defined
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+JavaScript error: https://www.scrapingbee.com/oxylabs-alternative/, line 1007: ReferenceError: Intercom is not defined
+JavaScript error: https://www.scrapingbee.com/netnut-alternative/, line 986: ReferenceError: Intercom is not defined
+JavaScript error: https://www.scrapingbee.com/scrapingbee-alternative/, line 1068: ReferenceError: Intercom is not defined
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/eb5d373a889443ee9663fbce22a0b143b7159e2c.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/api-store/screenshot/, line 686: ReferenceError: hljs is not defined
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/eb5d373a889443ee9663fbce22a0b143b7159e2c.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/api-store/google/, line 857: ReferenceError: hljs is not defined
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/data-processing-agreement/, line 152: SyntaxError: missing { before function body
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/eb5d373a889443ee9663fbce22a0b143b7159e2c.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/api-store/screenshot/, line 686: ReferenceError: hljs is not defined
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+1636544654858	Marionette	INFO	Stopped listening on port 52429
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590004,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1636544868597	geckodriver	INFO	Listening on 127.0.0.1:52597
+1636544871740	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52598" "-no-remote" "-profile" "C:\\Users\\STAGIA~1\\AppData\\Local\\Temp\\rust_mozprofilerixjld"
+1636544872338	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\stagiaire\\AppData\\Local\\Temp\\rust_mozprofilerixjld\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52598/devtools/browser/f6d8c8e9-536a-46cc-8bbf-d0ba5c2c57e3
+1636544875625	Marionette	INFO	Listening on port 52603
+1636544875968	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/terms-and-conditions/, line 301: TypeError: window.SmoothScroll is not a constructor
+JavaScript error: https://www.scrapingbee.com/privacy-policy/, line 64: SyntaxError: missing { before function body
+JavaScript error: https://www.scrapingbee.com/gdpr/, line 152: SyntaxError: missing { before function body
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/crawlera-alternative/, line 986: ReferenceError: Intercom is not defined
+JavaScript error: https://www.scrapingbee.com/luminati-alternative/, line 997: ReferenceError: Intercom is not defined
+JavaScript warning: https://www.scrapingbee.com/smartproxy-alternative/, line 251: unreachable code after return statement
+JavaScript warning: https://www.scrapingbee.com/smartproxy-alternative/, line 251: unreachable code after return statement
+JavaScript error: https://www.scrapingbee.com/smartproxy-alternative/, line 1014: ReferenceError: Intercom is not defined
+JavaScript error: https://www.scrapingbee.com/oxylabs-alternative/, line 1007: ReferenceError: Intercom is not defined
+JavaScript error: https://www.scrapingbee.com/netnut-alternative/, line 986: ReferenceError: Intercom is not defined
+JavaScript error: https://www.scrapingbee.com/scrapingbee-alternative/, line 1068: ReferenceError: Intercom is not defined
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/eb5d373a889443ee9663fbce22a0b143b7159e2c.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/api-store/screenshot/, line 686: ReferenceError: hljs is not defined
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/eb5d373a889443ee9663fbce22a0b143b7159e2c.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/api-store/google/, line 857: ReferenceError: hljs is not defined
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/data-processing-agreement/, line 152: SyntaxError: missing { before function body
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/eb5d373a889443ee9663fbce22a0b143b7159e2c.js, line 1: TypeError: logo is null
+JavaScript error: https://www.scrapingbee.com/api-store/screenshot/, line 686: ReferenceError: hljs is not defined
+JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a9252b4ec74bd2ceac4a8f94a7d.js, line 1: TypeError: logo is null
+1636545055130	Marionette	INFO	Stopped listening on port 52603
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

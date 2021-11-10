@@ -64,7 +64,11 @@ class DashboardController extends AbstractController
      */
     public function showScan(Site $site, EntityManagerInterface $em): Response
     {
-        $json_raw = file_get_contents("../tests/data.json");
+        $item = $site->getUrl();
+        
+        exec("test.py $item 2>&1 ", $output, $result);
+
+        $json_raw = file_get_contents("data.json");
         $json = json_decode($json_raw, true);
         
 
@@ -82,7 +86,6 @@ class DashboardController extends AbstractController
             $em->persist($cookie);
             $em->flush();
         }
-
         return $this->render('dashboard/scan.html.twig', compact('site'));
     }
 
