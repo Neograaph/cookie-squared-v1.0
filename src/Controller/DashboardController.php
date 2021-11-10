@@ -8,6 +8,7 @@ use App\Entity\Cookie;
 use App\Entity\Custom;
 use App\Form\SiteType;
 use App\Form\CustomType;
+use App\Repository\CustomRepository;
 use App\Repository\SiteRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -92,22 +93,46 @@ class DashboardController extends AbstractController
     /**
      * @Route("/dashboard/{id<[0-9]+>}/custom", name="custom")
      */
-    public function Customize(Request $request, EntityManagerInterface $em, Site $site): Response
+    public function Customize(Request $request, EntityManagerInterface $em, Site $site, CustomRepository $customrepo): Response
     {
+        $findcustom = $customrepo->findOneBy(['id_site' => $site]);
+        
         $custom = new Custom;
-
         $form = $this->createForm(CustomType::class, $custom);
-        $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()) {
-            $custom->setIdSite($site);
-            $em->persist($custom);
-            $em->flush();
+
+        if (!$findcustom) {
+            $form->handleRequest($request);
+            if ($form->isSubmitted() && $form->isValid()) {
+                $custom->setIdSite($site);
+                $em->persist($custom);
+                $em->flush();
+            }
+        } else {
+            $form->handleRequest($request);
+            if ($form->isSubmitted() && $form->isValid()) {
+                $em->remove($findcustom);
+                $custom->setIdSite($site);
+                $em->persist($custom);
+                $em->flush();
+            }
         }
 
         return $this->render('dashboard/customize.html.twig', [
             'custom' => $form->createView(),
             'site' => $site,
             'mySettings' => $custom
+        ]);
+    }
+
+    /**
+     * @Route("/dashboard/{id<[0-9]+>}/banniere", name="view_banner")
+     */
+    public function FunctionName(CustomRepository $customrepo, Site $site): Response
+    {
+        $mycustom = $customrepo->findOneBy(['id_site' => $site]);
+        
+        return $this->render('dashboard/viewbanner.html.twig', [
+            'custom' => $mycustom,
         ]);
     }
 }

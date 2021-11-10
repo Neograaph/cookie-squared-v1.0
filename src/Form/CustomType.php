@@ -4,10 +4,11 @@ namespace App\Form;
 
 use App\Entity\Custom;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
-use Symfony\Component\Form\Extension\Core\Type\RadioType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 class CustomType extends AbstractType
@@ -17,9 +18,28 @@ class CustomType extends AbstractType
         $builder
             ->add('title')
             ->add('message', TextareaType::class)
-            ->add('color', RadioType::class)
-            ->add('refuse_button')
-            ->add('layout')
+            ->add('color', ChoiceType::class, [
+                'choices' => [
+                    'clair' => 'light',
+                    'sombre'=> 'dark'
+                ],
+                'label' => false,
+                'expanded' => true,
+                'multiple' => false,
+            ])
+            ->add('layout', ChoiceType::class, [
+                'choices' => [
+                    'centrer' => 1,
+                    'Aligner droite'=> 2,
+                    'Aligner gauche'=> 3
+                ],
+                'label' => false,
+                'expanded' => true,
+                'multiple' => false
+            ])
+            ->add('refuse_button', CheckboxType::class, [
+                'required' => false
+            ])
             ->add('id_site', HiddenType::class, ['required' => true])
         ;
     }

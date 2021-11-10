@@ -30,22 +30,41 @@
       'attr': {'class': 'form-control'}
     }) }}
     <label class="my-3 fw-bold">Couleur du thème</label><br>
-    {{ form_row(custom.color, { 
-      'label': 'Clair',
+    <div class="">
+    {{ form_widget(custom.color, { 
       'label_attr': {'class': 'form-check-label'},
-      'attr': {'class': 'form-check-input'}
+      'attr': {'class': 'd-flex flex-column flex-sm-row mt-2'}
     }) }}
-    {{ form_row(custom.layout, { 'label': 'Disposition de la fenètre des paramètres'}) }}
+    </div>
+    <label class="my-3 fw-bold">{% trans %}parameterswindowdisposition{% endtrans %}</label>
+    {{ form_row(custom.layout, {
+      'label_attr': {'class': 'form-check-label'},
+      'attr': {'class': 'd-flex flex-column flex-sm-row mt-2'}
+    }) }} <br>
     {{ form_row(custom.refuse_button, { 'label': 'ajouter un bouton "Refuser les cookies"'}) }}
+
+    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#superlarge-modal-size-preview" class="text-theme-1 d-block fw-bold">{% trans %}previewconsentbanner{% endtrans %}</a>
+    {# Modal #}
+    <div id="superlarge-modal-size-preview" class="modal fade" tabindex="-1" aria-hidden="true">
+     <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <iframe class="h-100" src="{{ path('view_banner', {id: site.id}) }}"></iframe>
+        </div>
+      </div>
+    </div>
+    {# End modal #}
+
+      <button class="btn btn-secondary w-50 me-2 mb-2 mt-5">{% trans %}cancel{% endtrans %}</button>
+      <button class="btn btn-primary w-50 me-2 mb-2 mt-5">{% trans %}record{% endtrans %}</button>
     {{ form_end(custom) }}
 
       
-      <input id="dark" class="form-check-input" type="radio" name="color" value="dark"><label for="dark" class="form-check-label">Sombre</label>
-      <input id="light" class="form-check-input mx-2" type="radio" name="color" value="light"><label for="light" class="form-check-label">Clair</label><br>
+      {# <input id="dark" class="form-check-input" type="radio" name="color" value="dark"><label for="dark" class="form-check-label">Sombre</label>
+      <input id="light" class="form-check-input mx-2" type="radio" name="color" value="light"><label for="light" class="form-check-label">Clair</label><br> #}
 
      
 
-      <label class="my-3 fw-bold">{% trans %}parameterswindowdisposition{% endtrans %}</label><br>
+      {# <label class="my-3 fw-bold">{% trans %}parameterswindowdisposition{% endtrans %}</label><br>
       <div class="form-check">
         <input id="center" class="form-check-input" type="radio" name="layout" value="center"><label for="center" class="form-check-label">{% trans %}center{% endtrans %}</label>
       </div>
@@ -54,16 +73,13 @@
       </div>
       <div class="form-check">
       <input id="right" class="form-check-input" type="radio" name="layout" value="right"><label for="right" class="form-check-label">{% trans %}pasteright{% endtrans %}</label>
-      </div><br>
+      </div><br> #}
 
-      <div class="form-check mb-3">
+      {# <div class="form-check mb-3">
         <input type="checkbox" class="form-check-input fw-bold" id="refuse"><label class="fw-bold" for="refuse">{% trans %}addbuttonrefuse{% endtrans %}</label><br>
-      </div>
+      </div> #}
 
-      <a href="" class="text-theme-1 d-block fw-bold">{% trans %}previewconsentbanner{% endtrans %}</a>
-
-      <button class="btn btn-secondary w-50 me-2 mb-2 mt-5">{% trans %}cancel{% endtrans %}</button>
-      <button class="btn btn-primary w-50 me-2 mb-2 mt-5">{% trans %}record{% endtrans %}</button>
+      
     </div>
 
     
