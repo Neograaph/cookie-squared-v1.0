@@ -65,7 +65,7 @@ class DashboardController extends AbstractController
     public function showScan(Site $site, EntityManagerInterface $em): Response
     {
         $item = $site->getUrl();
-        
+
         exec("test.py $item 2>&1 ", $output, $result);
 
         $json_raw = file_get_contents("data.json");

@@ -1,0 +1,51 @@
+[
+    {
+        "name": "_gat",
+        "value": "1",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1636549340,
+        "sameSite": "None"
+    },
+    {
+        "name": "_clck",
+        "value": "1b6ibv6|1|ewb|0",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1668085281,
+        "sameSite": "None"
+    },
+    {
+        "name": "utm_journey",
+        "value": "LyAtIC8=",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "sameSite": "None"
+    },
+    {
+        "name": "_ga",
+        "value": "GA1.2.340446298.1636549280",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1699621281,
+        "sameSite": "None"
+    },
+    {
+        "name": "_gid",
+        "value": "GA1.2.1481830881.1636549280",
+        "path": "/",
+        "domain": ".scrapingbee.com",
+        "secure": false,
+        "httpOnly": false,
+        "expiry": 1636635681,
+        "sameSite": "None"
+    }
+]
