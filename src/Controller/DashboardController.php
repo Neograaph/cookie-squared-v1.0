@@ -65,6 +65,15 @@ class DashboardController extends AbstractController
      */
     public function showScan(Site $site, EntityManagerInterface $em): Response
     {
+
+        return $this->render('dashboard/scan.html.twig', compact('site'));
+    }
+
+    /**
+     * @Route("/dashboard/{id<[0-9]+>}/currentscan", name="currentscan")
+     */
+    public function currentScan(Site $site, EntityManagerInterface $em): Response
+    {
         $item = $site->getUrl();
 
         exec("test.py $item 2>&1 ", $output, $result);
