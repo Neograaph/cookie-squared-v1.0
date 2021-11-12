@@ -218,3 +218,21 @@ JavaScript error: https://d33wubrfki0l68.cloudfront.net/bundles/914ca7c26d2f0a92
 
 ###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
 
+1636715193913	geckodriver	INFO	Listening on 127.0.0.1:60579
+1636715197003	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60580" "-no-remote" "-profile" "C:\\Users\\STAGIA~1\\AppData\\Local\\Temp\\rust_mozprofileiKe5aT"
+1636715197718	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\stagiaire\\AppData\\Local\\Temp\\rust_mozprofileiKe5aT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60580/devtools/browser/b6fee3a5-d509-44f7-993d-4200823e2259
+1636715201049	Marionette	INFO	Listening on port 60585
+1636715201207	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1636715214561	Marionette	INFO	Stopped listening on port 60585
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1636715280631	geckodriver	INFO	Listening on 127.0.0.1:60650
+1636715283702	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60651" "-no-remote" "-profile" "C:\\Users\\STAGIA~1\\AppData\\Local\\Temp\\rust_mozprofilePOxFW0"
+1636715284135	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\stagiaire\\AppData\\Local\\Temp\\rust_mozprofilePOxFW0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60651/devtools/browser/712bbd7c-20eb-477c-a891-2c65b536d7b7
+1636715287780	Marionette	INFO	Listening on port 60657
+1636715287913	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1636715301709	Marionette	INFO	Stopped listening on port 60657
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

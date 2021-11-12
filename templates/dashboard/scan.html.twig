@@ -19,7 +19,7 @@
     <h2 class='fs-3xl fw-medium lh-1 my-3'>{% trans %}scanwebsite{% endtrans %}</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eos adipisci porro illo saepe nobis nisi a non perferendis quo dicta nulla ducimus et tenetur praesentium repellendus consectetur repudiandae, expedita aliquam ex corporis, eius eum! Exercitationem a mollitia corporis nulla. Earum nobis nostrum dicta distinctio consequuntur temporibus hic vero quia!</p>
 
-    <button class="btn btn-primary w-50 me-2 mb-2 mt-5"> <i data-feather="activity" class="w-4 h-4 me-2"></i>{% trans %}scanbenning{% endtrans %}</button>
+    <a href="{{ path('currentscan', {id: site.id}) }}"><button class="btn btn-primary w-50 me-2 mb-2 mt-5"> <i data-feather="activity" class="w-4 h-4 me-2"></i>{% trans %}scanbenning{% endtrans %}</button></a>
 
     <h2 class='fs-3xl fw-medium lh-1 my-3'>{% trans %}rapportscan{% endtrans %}</h2>
     <p>( ajouter le rapport ici )</p>
