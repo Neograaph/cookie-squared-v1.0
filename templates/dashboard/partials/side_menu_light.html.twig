@@ -117,7 +117,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="{{ path("codeembed", {id: site.id}) }}" {% if app.request.get('_route') == 'embed' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
+				<a href="{{ path("embed", {id: site.id}) }}" {% if app.request.get('_route') == 'embed' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
 					<div class="side-menu__icon">
 						<i data-feather="hard-drive"></i>
 					</div>

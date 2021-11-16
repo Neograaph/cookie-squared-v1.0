@@ -168,4 +168,12 @@ class DashboardController extends AbstractController
             'mycookies' => $mycookies
         ]);
     }
+
+    /**
+     * @Route("/dashboard/{id<[0-9]+>}/embed", name="embed")
+     */
+    public function embed(Site $site): Response
+    {
+        return $this->render('dashboard/embed.html.twig', compact('site'));
+    }
 }
