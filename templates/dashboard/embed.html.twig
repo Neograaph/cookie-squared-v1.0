@@ -1,9 +1,22 @@
 {% extends 'dashboard_base.html.twig' %}
 
-{% block title %}{% trans %}cookiemanagement{% endtrans %} - Cookie Squared{% endblock %}
-
 {% block body %}
+
 {% include "dashboard/partials/side_menu_light.html.twig" %}
 
+<div
+  class="content">
+  <!-- BEGIN: Top Bar -->
+    <div
+      class="top-bar">
+      <!-- BEGIN: Breadcrumb -->
+      <div class="-intro-x breadcrumb me-auto d-none d-sm-flex">
+          <a href="{{ path('my_sites')}}">{% trans %}dashboard{% endtrans %}</a>
+          <i data-feather="chevron-right" class="breadcrumb__icon"></i>
+          <a href="" class="breadcrumb--active">Code embed</a>
+      </div>
+    </div>
+    
+</div>
 
 {% endblock %}
