@@ -8,6 +8,7 @@ use App\Entity\Cookie;
 use App\Entity\Custom;
 use App\Form\SiteType;
 use App\Form\CustomType;
+use App\Repository\CookieRepository;
 use App\Repository\CustomRepository;
 use App\Repository\SiteRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -42,6 +43,12 @@ class DashboardController extends AbstractController
         $user = new User();
         $user = $this->getUser();
         $sites->setIdOwner($user);
+        $custom = new Custom();
+        $custom->setIdSite($sites);
+        $custom->setTitle('Titre de votre bannière');
+        $custom->setMessage('Nous utilisons des cookies pour personnaliser la navigation de l\'utilisateur ainsi que les publicités affichées sur le site. Si vous cliquez sur “accepter”, vous autorisez la collecte d’information concernant votre navigation.');
+        $custom->setColor('light');
+        $custom->setLayout(1);
         $form = $this->createForm(SiteType::class, $sites);
         $form->handleRequest($request);
 
@@ -50,6 +57,8 @@ class DashboardController extends AbstractController
             
             $em->persist($sites);
             $em->persist($user);
+            
+            $em->persist($custom);
             $em->flush();
             return $this->redirectToRoute("my_sites");
         }
@@ -127,12 +136,27 @@ class DashboardController extends AbstractController
     /**
      * @Route("/dashboard/{id<[0-9]+>}/banniere", name="view_banner")
      */
-    public function FunctionName(CustomRepository $customrepo, Site $site): Response
+    public function ViewBanner(CustomRepository $customrepo, Site $site): Response
     {
         $mycustom = $customrepo->findOneBy(['id_site' => $site]);
         
         return $this->render('dashboard/viewbanner.html.twig', [
             'custom' => $mycustom,
+        ]);
+    }
+
+    /**
+     * @Route("/dashboard/{id<[0-9]+>}/preferences", name="view_preferences")
+     */
+    public function ViewPreferences(CustomRepository $customrepo, CookieRepository $cookierepo, Site $site): Response
+    {
+        $mycustom = $customrepo->findOneBy(['id_site' => $site]);
+        $mycookies = $cookierepo->findBy(['id_site' => $site]);
+
+        
+        return $this->render('dashboard/viewpreferences.html.twig', [
+            'custom' => $mycustom,
+            'mycookies' => $mycookies
         ]);
     }
 }
