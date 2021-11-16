@@ -1,0 +1,184 @@
+<div id="cookiebanner2">
+			<br>
+			<h3>{% trans %}siteusescookies{% endtrans %}</h3><br>
+			<p>{% trans %}weusecookies{% endtrans %}
+			</p>
+			<div id="btns">
+				<button id="btnrefuse" class="buttons">Refuse everything</button>
+				<button id="btnpref" class="buttons">Preferences</button>
+				<button id="btnaccept" class="buttons">Accept everything</button>
+			</div>
+		</div>
+
+        <aside id="aside">
+			<div id="cookiebanner">
+				<i class="fas fa-times" id="cross"></i>
+				
+				<div class="gen">
+					<h3>Essentials</h3>
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<br>
+				<p>These elements are necessary to enable the basic functionality of the website.</p><br>
+
+				<div class="gen">
+					<h3>Marketing</h3>
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<br>
+				<p>These elements are used to serve advertisements that are more relevant to you and your interests. They can also be used to limit the number of times you see an ad and measure the effectiveness of advertising campaigns. Advertising networks generally place them with the permission of the website operator.</p><br>
+
+				<div class="gen">
+					<h3>Customization</h3>
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<br>
+				<p>These elements allow the website to remember the choices you make (such as your username, language or region you are in) and provide enhanced and more personal features. For example, a website can provide you with local weather reports or traffic information by keeping data about your current location.</p><br>
+
+				<div class="gen">
+					<h3>Analysis</h3>
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<br>
+				<p>These elements help the website operator understand how its website works, how visitors interact with the website, and whether there may be technical issues. This type of preservation generally does not collect information that identifies a visitor.</p><br>
+				
+				<div id="divvalidate">
+					<button id="btnvalidcookies" class="buttons">Validate</button>
+				</div>
+			</div>
+		</aside>
+
+
+
+
+<style>
+        
+#cookiebanner{
+  top: 0;
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  right: 0;
+  background-color: white;
+  z-index: 45;
+  display: none;
+  animation-name: example1;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  padding: 15px;
+  text-align: center;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+
+
+
+@keyframes example1 {
+  0%   {right: -25%;}
+  100%  {right:0}  
+}
+
+#cookiebanner i{
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.gen{
+  display: flex;
+  justify-content: space-between;
+}
+
+#cookiebanner p{
+  text-align: left;
+}
+
+#btnvalidcookies:hover{
+  cursor: pointer;
+}
+
+#divvalidate{
+  display: flex;
+  justify-content: center;
+}
+
+#btnvalidcookies{
+  background-color: #F9A90C;
+  color: white;
+  border: solid #FF9A23 1px;
+  bottom: 5px;
+}
+
+
+#cookiebanner2{
+      position: fixed;
+      width: 86%;
+      height: auto;
+      background-color: #F9F9F9;
+      z-index: 46;
+      bottom: 10px;
+      left: 7%;
+      border-radius: 10px;
+      text-align: center;
+      padding-left: 5%;
+      padding-right: 5%;
+      border: solid rgb(196, 189, 189) 1px;
+      font-size: 1vw;
+  }
+
+  .buttons{
+    
+    padding: 8px;
+    border-radius: 7px;
+    margin: 5px;
+    width: 20%;
+    height: 5%;
+    font-size: 1vw
+  }
+
+  #btns button:hover{
+    cursor: pointer;
+    
+  }
+
+  #btns{
+      
+      display: flex;
+      justify-content: center;
+  }
+
+  #btnrefuse{
+      background-color: #DEDEDE;
+      color: #0E0E0E;
+  }
+
+  #btnpref{
+    background-color: #FFF2E2;
+    color: #0E0E0E;
+    border: solid #FF9A23 1px;
+  }
+
+  #btnaccept{
+    background-color: #F9A90C;
+    color: white;
+    border: solid #FF9A23 1px;
+  }
+
+  #cross:hover{
+    cursor: pointer;
+  }
+
+</style>
