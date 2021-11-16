@@ -24,27 +24,22 @@ class Custom
     private $id_site;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, options={"default": "Titre de votre bannière"})
      */
     private $title;
 
     /**
-     * @ORM\Column(type="string", length=1000)
+     * @ORM\Column(type="string", length=1000, options={"default": "Nous utilisons des cookies pour personnaliser la navigation de l'utilisateur ainsi que les publicités affichées sur le site. Si vous cliquez sur “accepter”, vous autorisez la collecte d’information concernant votre navigation."})
      */
     private $message;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, options={"default": "light"})
      */
     private $color;
 
     /**
-     * @ORM\Column(type="boolean")
-     */
-    private $refuse_button;
-
-    /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", options={"default": 1})
      */
     private $layout;
 
@@ -97,18 +92,6 @@ class Custom
     public function setColor(string $color): self
     {
         $this->color = $color;
-
-        return $this;
-    }
-
-    public function getRefuseButton(): ?bool
-    {
-        return $this->refuse_button;
-    }
-
-    public function setRefuseButton(bool $refuse_button): self
-    {
-        $this->refuse_button = $refuse_button;
 
         return $this;
     }

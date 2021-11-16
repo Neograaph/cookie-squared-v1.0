@@ -22,7 +22,7 @@
     {{ form_row(custom.title, {
        'label': 'Titre du bandeau',
        'label_attr': {'class': 'fw-bold'},
-       'attr': {'class': 'form-control'}
+       'attr': {'class': 'form-control' }
     }) }}
     {{ form_row(custom.message, {
       'label': 'Message du bandeau',
@@ -41,43 +41,31 @@
       'label_attr': {'class': 'form-check-label'},
       'attr': {'class': 'd-flex flex-column flex-sm-row mt-2'}
     }) }} <br>
-    {{ form_row(custom.refuse_button, { 'label': 'ajouter un bouton "Refuser les cookies"'}) }}
-
-    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#superlarge-modal-size-preview" class="text-theme-1 d-block fw-bold">{% trans %}previewconsentbanner{% endtrans %}</a>
-    {# Modal #}
-    <div id="superlarge-modal-size-preview" class="modal fade" tabindex="-1" aria-hidden="true">
-     <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <iframe class="h-100" src="{{ path('view_banner', {id: site.id}) }}"></iframe>
-        </div>
-      </div>
-    </div>
-    {# End modal #}
 
       <button class="btn btn-secondary w-50 me-2 mb-2 mt-5">{% trans %}cancel{% endtrans %}</button>
       <button class="btn btn-primary w-50 me-2 mb-2 mt-5">{% trans %}record{% endtrans %}</button>
     {{ form_end(custom) }}
 
-      
-      {# <input id="dark" class="form-check-input" type="radio" name="color" value="dark"><label for="dark" class="form-check-label">Sombre</label>
-      <input id="light" class="form-check-input mx-2" type="radio" name="color" value="light"><label for="light" class="form-check-label">Clair</label><br> #}
-
-     
-
-      {# <label class="my-3 fw-bold">{% trans %}parameterswindowdisposition{% endtrans %}</label><br>
-      <div class="form-check">
-        <input id="center" class="form-check-input" type="radio" name="layout" value="center"><label for="center" class="form-check-label">{% trans %}center{% endtrans %}</label>
+    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#banner-modal-preview" class="text-theme-1 d-block fw-bold">{% trans %}previewconsentbanner{% endtrans %}</a>
+    {# Modal #}
+    <div id="banner-modal-preview" class="modal fade" tabindex="-1" aria-hidden="true">
+     <div class="modal-dialog modal-xl">
+        <div class="modal-content overflow-hidden">
+          <iframe src="{{ path('view_banner', {id: site.id}) }}"></iframe>
+        </div>
       </div>
-      <div class="form-check">
-      <input id="left" class="form-check-input" type="radio" name="layout" value="left"><label for="left" class="form-check-label">{% trans %}pasteleft{% endtrans %}</label>
-      </div>
-      <div class="form-check">
-      <input id="right" class="form-check-input" type="radio" name="layout" value="right"><label for="right" class="form-check-label">{% trans %}pasteright{% endtrans %}</label>
-      </div><br> #}
+    </div>
 
-      {# <div class="form-check mb-3">
-        <input type="checkbox" class="form-check-input fw-bold" id="refuse"><label class="fw-bold" for="refuse">{% trans %}addbuttonrefuse{% endtrans %}</label><br>
-      </div> #}
+    <a href="{{ path('view_preferences', {id: site.id}) }}" data-bs-toggle="modal" data-bs-target="#preferences-modal-preview" class="text-theme-1 d-block fw-bold">Prévisualiser la fenètre de préférence</a>
+    <div id="preferences-modal-preview" class="modal fade modal-dialog-scrollable" tabindex="-1" aria-hidden="true">
+     <div class="modal-dialog">
+        <div class="modal-content">
+          <iframe src="{{ path('view_preferences', {id: site.id}) }}" style="height: 800px; width: 500px"></iframe>
+        </div>
+      </div>
+    </div>
+    {# End modal #}
+
 
       
     </div>

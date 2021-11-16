@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <div>
+        <i class="fas fa-times" id="cross"></i>
+        
+        
+        {% for cookie in mycookies %}
+            <div class="gen">
+            <h3>{{ cookie.category }}</h3>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <br>
+        <p>{{ cookie.description }}</p><br>
+        {% endfor %} 
+        <div id="divvalidate">
+            <button id="btnvalidcookies" class="buttons">{% trans %}Valider{% endtrans %}</button>
+        </div>
+    </div>
+{% endblock %}
