@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.css' integrity='sha512-c9N/Xq0n4rQdyCXF4RgrRYAAOSnNJDp8NWILsSUx+33zWyaMbXXvqajgO0UXybRdTGVpxq3FBrcGwabkWsT8OA==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css' integrity='sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q==' crossorigin='anonymous'/>
     <style>
         #cookie{
             height: 50px;
@@ -16,6 +18,7 @@
             background-size: 100%;
             z-index: 45;
             display: none;
+            cursor: pointer;
             
         
         }
@@ -112,12 +115,13 @@
         
           #cookiebanner2{
               position: fixed;
-              width: 86%;
+              width: auto;
               height: auto;
               background-color: #F9F9F9;
               z-index: 46;
               bottom: 10px;
               left: 7%;
+              right: 7%;
               border-radius: 10px;
               text-align: center;
               padding-left: 5%;
@@ -241,7 +245,7 @@
 <body>
     <aside id="aside">
         <div id="cookiebanner">
-            <i class="fas fa-times" id="cross"></i>
+            <i class="fas fa-times" id="cross"></i><br>
             
             <div class="gen">
                 <h3>Essentials</h3>
@@ -310,9 +314,9 @@
     <main
         id='main'>
         
-        <a href="#">
-            <div id="cookie"></div>
-        </a>
+        
+            <div id="cookie"><img src="https://upto1.fr/wp-content/uploads/2020/12/cookies.png" alt="cookie" style="height:50px; width:50px;"></div>
+        
         
 
         
