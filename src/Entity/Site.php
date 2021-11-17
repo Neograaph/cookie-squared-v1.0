@@ -206,7 +206,7 @@ class Site
         return $this;
     }
 
-    public function removeCustom(Custom $custom): self
+    public function removeCustom(Custom $custom)
     {
         if ($this->customs->removeElement($custom)) {
             // set the owning side to null (unless already changed)

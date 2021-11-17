@@ -29,7 +29,9 @@ class DashboardController extends AbstractController
         if($this->getUser())
         {
             $mysites = $siterepo->findBy(['id_owner' => $user]);
-            return $this->render('dashboard/my_sites.html.twig', compact('mysites'));
+            return $this->render('dashboard/my_sites.html.twig', [
+                'mysites' => $mysites
+            ]);
         }
         return $this->redirectToRoute('home_page');
     }
@@ -67,6 +69,21 @@ class DashboardController extends AbstractController
             'sites' => $form->createView()
 
         ]);
+    }
+
+    /**
+     * @Route("/dashboard/del/{siteId<[0-9]+>}", name="del_site")
+     */
+    public function DelSite(SiteRepository $siterepo, EntityManagerInterface $em, int $siteId): Response
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $site = $siterepo->findOneBy(['id' => $siteId]);
+
+        $em->remove($site);
+
+        $em->flush();
+        return $this->redirectToRoute('my_sites', []);
     }
 
     /**
