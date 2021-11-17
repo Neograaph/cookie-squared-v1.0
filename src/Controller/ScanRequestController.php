@@ -17,20 +17,36 @@ class ScanRequestController extends AbstractController
      */
     public function urlShow(ScraperRepository $scraperRepository, SiteRepository $siteRepository, EntityManagerInterface $em): Response
     {
-        $list = $scraperRepository->findBy(['status' => 1]);
-        if(array_key_exists(0, $list))
+        header("Access-Control-Allow-Origin: *");
+        $status = $scraperRepository->findBy(['status' => 1]);
+
+
+        if(array_key_exists(0, $status))
         {
-            $first = $list[0]->getUrl();
-            $change = $list[0]->setStatus(2);
-            $em->persist($change);
-            $em->flush();
+            $getSite = $status[0]->getIdSite();
+            $findSite = $siteRepository->findBy(['id_owner' => $getSite]);
+            $token = $findSite[0]->getToken();
+
+            $first = $status[0]->getUrl();
+
+            $test[0] = $first;
+            $test[1] = $token;
+
             // ENVOYER TOKEN POUR PROCHAINE REQUETE POUR LUTILISER DANS LES ROUTES
-            return $this->json($first);
+            return $this->json($test);
         }
         else
         {
             dd('existe pas');
         }
 
+    }
+
+    /**
+     * @Route("/scan/request/{token}", name="scan_token")
+     */
+    public function changeStatus($token, ScraperRepository $scraperRepository, SiteRepository $siteRepository): Response
+    {
+        return $this->json("");
     }
 }
