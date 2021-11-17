@@ -72,7 +72,7 @@ class DashboardController extends AbstractController
     }
 
     /**
-     * @Route("/dashboard/del/{id<[0-9]+>}", name="del_site")
+     * @Route("/dashboard/del/{siteId<[0-9]+>}", name="del_site")
      */
     public function DelSite(SiteRepository $siterepo, EntityManagerInterface $em, int $siteId): Response
     {
