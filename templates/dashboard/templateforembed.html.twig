@@ -297,13 +297,13 @@
 
     <div id="cookiebanner2">
         <br>
-        <h3>{% trans %}siteusescookies{% endtrans %}</h3><br>
-        <p>{% trans %}weusecookies{% endtrans %}
+        <h3>{{ custom.title }}</h3><br>
+        <p>{{ custom.message }}
         </p>
-        <div id="btns">
-            <button id="btnrefuse" class="buttons">Refuse everything</button>
-            <button id="btnpref" class="buttons">Preferences</button>
-            <button id="btnaccept" class="buttons">Accept everything</button>
+         <div id="btns">
+            <button id="btnrefuse" class="buttons">{% trans %}refuse{% endtrans %}</button>
+            <button id="btnpref" class="buttons">{% trans %}preferences{% endtrans %}</button>
+            <button id="btnaccept" class="buttons">{% trans %}accept{% endtrans %}</button>
         </div>
     </div>
 

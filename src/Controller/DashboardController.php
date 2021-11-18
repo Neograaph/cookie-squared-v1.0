@@ -193,4 +193,22 @@ class DashboardController extends AbstractController
     {
         return $this->render('dashboard/embed.html.twig', compact('site'));
     }
+
+    /**
+     * @Route("/dashboard/{id<[0-9]+>}/templateforembed", name="templateforembed")
+     */
+ 
+    public function TemplateForEmbed(CustomRepository $customrepo, CookieRepository $cookierepo, Site $site): Response
+    {
+        
+
+        $mycustom = $customrepo->findOneBy(['id_site' => $site]);
+        $mycookies = $cookierepo->findBy(['id_site' => $site]);
+
+        
+        return $this->render('dashboard/templateforembed.html.twig', [
+            'custom' => $mycustom,
+            'mycookies' => $mycookies
+        ]);
+    }
 }
