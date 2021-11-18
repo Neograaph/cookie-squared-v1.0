@@ -45,8 +45,29 @@ class ScanRequestController extends AbstractController
     /**
      * @Route("/scan/request/{token}", name="scan_token")
      */
-    public function changeStatus($token, ScraperRepository $scraperRepository, SiteRepository $siteRepository): Response
+    public function changeStatus($token, ScraperRepository $scraperRepository, SiteRepository $siteRepository, EntityManagerInterface $em): Response
     {
-        return $this->json("");
+        header("Access-Control-Allow-Origin: *");
+        $findSite = $siteRepository->findBy(['token' => $token]);
+        $findScrap = $scraperRepository->findBy(['id_site' => $findSite[0]->getIdOwner()]);
+        $findScrap[0]->setStatus(2);
+        $em->persist($findScrap[0]);
+        $em->flush();
+        return $this->json("Test");
+    }
+
+    /**
+     * @Route("/scan/request/finish/{token}", name="scan_finish")
+     */
+    public function getJSON($token, ScraperRepository $scraperRepository, SiteRepository $siteRepository, EntityManagerInterface $em): Response
+    {
+        header("Access-Control-Allow-Origin: *");
+        $findSite = $siteRepository->findBy(['token' => $token]);
+        $findScrap = $scraperRepository->findBy(['id_site' => $findSite[0]->getIdOwner()]);
+        $findScrap[0]->setStatus(3);
+        $em->persist($findScrap[0]);
+        $em->flush();
+
+        return $this->json("Test");
     }
 }
