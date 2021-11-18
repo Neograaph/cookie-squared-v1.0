@@ -6,6 +6,7 @@ use App\Entity\Site;
 use App\Entity\User;
 use App\Entity\Cookie;
 use App\Entity\Custom;
+use App\Entity\Scraper;
 use App\Form\SiteType;
 use App\Form\CustomType;
 use App\Repository\CookieRepository;
@@ -101,27 +102,33 @@ class DashboardController extends AbstractController
     public function currentScan(Site $site, EntityManagerInterface $em): Response
     {
         $item = $site->getUrl();
+        $scrap = new Scraper;
+        $scrap->setIdSite($site);
+        $scrap->setUrl($item);
+        $scrap->setStatus(1);
+        $em->persist($scrap);
+        $em->flush();
 
-        exec("test.py $item 2>&1 ", $output, $result);
+        // exec("test.py $item 2>&1 ", $output, $result);
 
-        $json_raw = file_get_contents("data.json");
-        $json = json_decode($json_raw, true);
+        // $json_raw = file_get_contents("data.json");
+        // $json = json_decode($json_raw, true);
         
 
-        for($i =0; $i<count($json);$i++)
-        {
-            $cookie = new Cookie;
-            $user = $this->getUser();
-            $cookie->setName($json[$i]['name']);
-            $cookie->setCategory('Inconnu');
-            $cookie->setDuration('test');
-            $cookie->setDomain($json[$i]['domain']);
-            $cookie->setPath($json[$i]['path']);
-            $cookie->setDescription('TEST');
-            $cookie->setIdSite($site);
-            $em->persist($cookie);
-            $em->flush();
-        }
+        // for($i =0; $i<count($json);$i++)
+        // {
+        //     $cookie = new Cookie;
+        //     $user = $this->getUser();
+        //     $cookie->setName($json[$i]['name']);
+        //     $cookie->setCategory('Inconnu');
+        //     $cookie->setDuration('test');
+        //     $cookie->setDomain($json[$i]['domain']);
+        //     $cookie->setPath($json[$i]['path']);
+        //     $cookie->setDescription('TEST');
+        //     $cookie->setIdSite($site);
+        //     $em->persist($cookie);
+        //     $em->flush();
+        // }
         return $this->render('dashboard/scan.html.twig', compact('site'));
     }
 
