@@ -102,7 +102,7 @@
 						<i data-feather="box"></i>
 					</div>
 					<div class="side-menu__title">
-						Personnalisation
+						{% trans %}customization{% endtrans %}
 					</div>
 				</a>
 			</li>
@@ -112,17 +112,17 @@
 						<i data-feather="inbox"></i>
 					</div>
 					<div class="side-menu__title">
-						Effectuer un scan
+						{% trans %}scanwebsite{% endtrans %}
 					</div>
 				</a>
 			</li>
 			<li>
-				<a href="#" {% if app.request.get('_route') == 'embed' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
+				<a href="{{ path("embed", {id: site.id}) }}" {% if app.request.get('_route') == 'embed' %}class="side-menu side-menu--active"{% endif %} class="side-menu">
 					<div class="side-menu__icon">
 						<i data-feather="hard-drive"></i>
 					</div>
 					<div class="side-menu__title">
-						Génerer le code embed
+						{% trans %}embed{% endtrans %}
 					</div>
 				</a>
 			</li>
@@ -135,7 +135,7 @@
 						<i data-feather="edit"></i>
 					</div>
 					<div class="side-menu__title">
-						Voir mes sites
+						{% trans %}mysites{% endtrans %}
 					</div>
 				</a>
 			</li>
@@ -144,7 +144,7 @@
 					<div class="side-menu__icon">
 						<i data-feather="home"></i>
 					</div>
-					<div class="side-menu__title">Retourner à l'accueil</div>
+					<div class="side-menu__title">{% trans %}home{% endtrans %}</div>
 				</a>
 			</li>
 

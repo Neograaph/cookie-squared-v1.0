@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
@@ -445,6 +445,22 @@
       <trans-unit id="vbs3Vu1" resname="addcookie">
         <source>addcookie</source>
         <target>Ajouter un cookie</target>
+      </trans-unit>
+      <trans-unit id="jwSRnm2" resname="prevprefwindow">
+        <source>prevprefwindow</source>
+        <target>Prévisualiser la fenêtre de préferences</target>
+      </trans-unit>
+      <trans-unit id="ih7tIhR" resname="embed">
+        <source>embed</source>
+        <target>Générer le code embed</target>
+      </trans-unit>
+      <trans-unit id="TqFAWIF" resname="home">
+        <source>home</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="wxbAGKc" resname="embedcode">
+        <source>embedcode</source>
+        <target>Code embed à intégrer à votre site</target>
       </trans-unit>
     </body>
   </file>
