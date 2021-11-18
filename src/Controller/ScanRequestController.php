@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
+use App\Entity\Cookie;
 use App\Entity\Site;
+use App\Repository\CookieRepository;
 use App\Repository\ScraperRepository;
 use App\Repository\SiteRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -59,14 +61,33 @@ class ScanRequestController extends AbstractController
     /**
      * @Route("/scan/request/finish/{token}", name="scan_finish")
      */
-    public function getJSON($token, ScraperRepository $scraperRepository, SiteRepository $siteRepository, EntityManagerInterface $em): Response
+    public function getJSON($token, Site $site, ScraperRepository $scraperRepository, SiteRepository $siteRepository, CookieRepository $cookieRepository, EntityManagerInterface $em): Response
     {
         header("Access-Control-Allow-Origin: *");
+
         $findSite = $siteRepository->findBy(['token' => $token]);
         $findScrap = $scraperRepository->findBy(['id_site' => $findSite[0]->getIdOwner()]);
         $findScrap[0]->setStatus(3);
         $em->persist($findScrap[0]);
         $em->flush();
+
+        $json_raw = file_get_contents("http://localhost/scraper/data.json");
+        $json = json_decode($json_raw, true);
+
+        for($i =0; $i<count($json);$i++)
+        {
+            $cookie = new Cookie;
+            $user = $this->getUser();
+            $cookie->setName($json[$i]['name']);
+            $cookie->setCategory('Inconnu');
+            $cookie->setDuration('test');
+            $cookie->setDomain($json[$i]['domain']);
+            $cookie->setPath($json[$i]['path']);
+            $cookie->setDescription('TEST');
+            $cookie->setIdSite($site);
+            $em->persist($cookie);
+            $em->flush();
+        }
 
         return $this->json("Test");
     }
