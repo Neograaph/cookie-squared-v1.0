@@ -29,7 +29,7 @@
       'label_attr': {'class': 'fw-bold'},
       'attr': {'class': 'form-control'}
     }) }}
-    <label class="my-3 fw-bold">Couleur du thème</label><br>
+    <label class="my-3 fw-bold">{% trans %}templatecolor{% endtrans %}</label><br>
     <div class="">
     {{ form_widget(custom.color, { 
       'label_attr': {'class': 'form-check-label'},
@@ -56,7 +56,7 @@
       </div>
     </div>
 
-    <a href="{{ path('view_preferences', {id: site.id}) }}" data-bs-toggle="modal" data-bs-target="#preferences-modal-preview" class="text-theme-1 d-block fw-bold">Prévisualiser la fenètre de préférence</a>
+    <a href="{{ path('view_preferences', {id: site.id}) }}" data-bs-toggle="modal" data-bs-target="#preferences-modal-preview" class="text-theme-1 d-block fw-bold">{% trans %}prevprefwindow{% endtrans %}</a>
     <div id="preferences-modal-preview" class="modal fade modal-dialog-scrollable" tabindex="-1" aria-hidden="true">
      <div class="modal-dialog">
         <div class="modal-content">
