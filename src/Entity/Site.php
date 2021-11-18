@@ -67,6 +67,11 @@ class Site
      */
     private $token;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Scraper::class, mappedBy="id_site", orphanRemoval=true)
+     */
+    private $scrapers;
+
     public function __construct()
     {
         $this->created_at = new DateTimeImmutable();
@@ -74,6 +79,7 @@ class Site
         $this->cookie_list = NULL;
         $this->cookies = new ArrayCollection();
         $this->customs = new ArrayCollection();
+        $this->scrapers = new ArrayCollection();
     }
     public function getId(): ?int
     {
@@ -200,7 +206,7 @@ class Site
         return $this;
     }
 
-    public function removeCustom(Custom $custom): self
+    public function removeCustom(Custom $custom)
     {
         if ($this->customs->removeElement($custom)) {
             // set the owning side to null (unless already changed)
@@ -218,6 +224,36 @@ class Site
     public function setToken(string $token): self
     {
         $this->token = $token;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Scraper[]
+     */
+    public function getScrapers(): Collection
+    {
+        return $this->scrapers;
+    }
+
+    public function addScraper(Scraper $scraper): self
+    {
+        if (!$this->scrapers->contains($scraper)) {
+            $this->scrapers[] = $scraper;
+            $scraper->setIdSite($this);
+        }
+
+        return $this;
+    }
+
+    public function removeScraper(Scraper $scraper): self
+    {
+        if ($this->scrapers->removeElement($scraper)) {
+            // set the owning side to null (unless already changed)
+            if ($scraper->getIdSite() === $this) {
+                $scraper->setIdSite(null);
+            }
+        }
 
         return $this;
     }
