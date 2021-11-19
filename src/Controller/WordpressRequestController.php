@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class RequestController extends AbstractController
+class WordpressRequestController extends AbstractController
 {
     /**
      * @Route("/request", name="request")
