@@ -7,6 +7,7 @@ use App\Entity\Site;
 use App\Repository\CookieRepository;
 use App\Repository\ScraperRepository;
 use App\Repository\SiteRepository;
+use DateTimeImmutable;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -26,7 +27,7 @@ class ScanRequestController extends AbstractController
         if(array_key_exists(0, $status))
         {
             $getSite = $status[0]->getIdSite();
-            $findSite = $siteRepository->findBy(['id_owner' => $getSite]);
+            $findSite = $siteRepository->findBy(['id' => $getSite]);
             $token = $findSite[0]->getToken();
 
             $first = $status[0]->getUrl();
@@ -51,7 +52,7 @@ class ScanRequestController extends AbstractController
     {
         header("Access-Control-Allow-Origin: *");
         $findSite = $siteRepository->findBy(['token' => $token]);
-        $findScrap = $scraperRepository->findBy(['id_site' => $findSite[0]->getIdOwner()]);
+        $findScrap = $scraperRepository->findBy(['id_site' => $findSite[0]->getId()]);
         $findScrap[0]->setStatus(2);
         $em->persist($findScrap[0]);
         $em->flush();
@@ -66,7 +67,7 @@ class ScanRequestController extends AbstractController
         header("Access-Control-Allow-Origin: *");
 
         $findSite = $siteRepository->findBy(['token' => $token]);
-        $findScrap = $scraperRepository->findBy(['id_site' => $findSite[0]->getIdOwner()]);
+        $findScrap = $scraperRepository->findBy(['id_site' => $findSite[0]->getId()]);
         $findScrap[0]->setStatus(3);
         $em->persist($findScrap[0]);
         $em->flush();
@@ -76,6 +77,7 @@ class ScanRequestController extends AbstractController
 
         for($i =0; $i<count($json);$i++)
         {
+            $findSite[0]->setScanAt(new DateTimeImmutable());
             $cookie = new Cookie;
             $user = $this->getUser();
             $cookie->setName($json[$i]['name']);
@@ -86,8 +88,12 @@ class ScanRequestController extends AbstractController
             $cookie->setDescription('TEST');
             $cookie->setIdSite($site);
             $em->persist($cookie);
+            $em->persist($findSite[0]);
             $em->flush();
         }
+
+        $em->remove($findScrap[0]);
+        $em->flush();
 
         return $this->json("Test");
     }
