@@ -12,11 +12,13 @@ use App\Form\CustomType;
 use App\Repository\CookieRepository;
 use App\Repository\CustomRepository;
 use App\Repository\SiteRepository;
+use DateTimeImmutable;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Validator\Constraints\Date;
 
 class DashboardController extends AbstractController
 {
@@ -101,34 +103,23 @@ class DashboardController extends AbstractController
      */
     public function currentScan(Site $site, EntityManagerInterface $em): Response
     {
-        $item = $site->getUrl();
-        $scrap = new Scraper;
-        $scrap->setIdSite($site);
-        $scrap->setUrl($item);
-        $scrap->setStatus(1);
-        $em->persist($scrap);
-        $em->flush();
+        $scanAt = $site->getScanAt();
+        $scanOneDay = $scanAt->modify("+24 hours");
 
-        // exec("test.py $item 2>&1 ", $output, $result);
-
-        // $json_raw = file_get_contents("data.json");
-        // $json = json_decode($json_raw, true);
-        
-
-        // for($i =0; $i<count($json);$i++)
-        // {
-        //     $cookie = new Cookie;
-        //     $user = $this->getUser();
-        //     $cookie->setName($json[$i]['name']);
-        //     $cookie->setCategory('Inconnu');
-        //     $cookie->setDuration('test');
-        //     $cookie->setDomain($json[$i]['domain']);
-        //     $cookie->setPath($json[$i]['path']);
-        //     $cookie->setDescription('TEST');
-        //     $cookie->setIdSite($site);
-        //     $em->persist($cookie);
-        //     $em->flush();
-        // }
+        if($scanOneDay < new DateTimeImmutable())
+        {
+            $item = $site->getUrl();
+            $scrap = new Scraper;
+            $scrap->setIdSite($site);
+            $scrap->setUrl($item);
+            $scrap->setStatus(1);
+            $em->persist($scrap);
+            $em->flush();
+        }
+        else
+        {
+            dd('test');
+        }
         return $this->render('dashboard/scan.html.twig', compact('site'));
     }
 
