@@ -16,7 +16,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class WordpressRequestController extends AbstractController
 {
     /**
-     * @Route("/request", name="request")
+     * @Route("/request/cookies", name="request")
      */
     public function cookieShow(CookieRepository $cookieRepository): Response
     {
@@ -25,9 +25,9 @@ class WordpressRequestController extends AbstractController
         return $this->render('request/cookiesList.html.twig', compact('cookieslist'));
     }
     /**
-     * @Route("/request/json", name="request-json")
+     * @Route("/request/cookies/json", name="request-json")
      */
-    public function jsonShow(CookieRepository $cookieRepository): Response
+    public function cookiesJsonShow(CookieRepository $cookieRepository): Response
     {
         $cookieslist = $cookieRepository->findAll();
         header("Access-Control-Allow-Origin: *");
@@ -36,9 +36,9 @@ class WordpressRequestController extends AbstractController
         );
     }
     /**
-     * @Route("/request/{token}", name="request-token")
+     * @Route("/request/cookies/{token}", name="request-token")
      */
-    public function tokenJsonShow($token, CookieRepository $cookieRepository, SiteRepository $siterepo): Response
+    public function cookiesTokenJsonShow($token, CookieRepository $cookieRepository, SiteRepository $siterepo): Response
     {
         $target = $siterepo->findBy(['token' => $token]);
         $cookieslist = $cookieRepository->findBy(['id_site' => $target]);
