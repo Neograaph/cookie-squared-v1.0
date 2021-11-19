@@ -58,13 +58,22 @@ class WordpressRequestController extends AbstractController
         header("Access-Control-Allow-Origin: *");
         $site = new WordpressSite;
         $site->setUrl($key);
-        $site->setToken('params.token');
-        $site->setTitle('');
-        $site->setDescription('');
-        $site->setColor('');
+        $site->setToken('');
+        $site->setTitle('Titre IIIIIIII');
+        $site->setDescription('Description IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII');
+        $site->setColor('#e66465 #e66465 #e66465 #e66465 #e66465');
         $em->persist($site);
         $em->flush();
         
-        return $this->json($key);
+        return $this->json('Save');
+    }
+    /**
+     * @Route("/request/pull/banner/{key}", name="request-pull-banner")
+     */
+    public function bannerKeyPull($key, WordpressSiteRepository $WordpressSiteRepository, EntityManagerInterface $em): Response
+    {
+        header("Access-Control-Allow-Origin: *");
+        $paramsBanner = $WordpressSiteRepository->findBy(['url' => $key]);
+        return $this->json($paramsBanner);
     }
 }
