@@ -59,9 +59,9 @@ class WordpressRequestController extends AbstractController
         $site = new WordpressSite;
         $site->setUrl($key);
         $site->setToken('');
-        $site->setTitle('Titre IIIIIIII');
-        $site->setDescription('Description IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII');
-        $site->setColor('#e66465 #e66465 #e66465 #e66465 #e66465');
+        $site->setTitle('Mon Titre dans la BDD');
+        $site->setDescription('Ma description dans la BDD IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII');
+        $site->setColor('#f13108 #5283e3 #f9d834 #12e542');
         $em->persist($site);
         $em->flush();
         
