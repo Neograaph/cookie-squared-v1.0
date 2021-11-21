@@ -56,16 +56,20 @@ class WordpressRequestController extends AbstractController
     public function bannerKeyPush($key, WordpressSiteRepository $WordpressSiteRepository, EntityManagerInterface $em): Response
     {
         header("Access-Control-Allow-Origin: *");
+        $requestPayload = file_get_contents('php://input');
+        $dataPlugin = json_decode($requestPayload, true);
+        // var_dump($dataPlugin);
         $site = new WordpressSite;
         $site->setUrl($key);
         $site->setToken('');
-        $site->setTitle('Mon Titre dans la BDD');
-        $site->setDescription('Ma description dans la BDD IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII');
-        $site->setColor('#f13108 #5283e3 #f9d834 #12e542');
+        $site->setTitle($dataPlugin[0]['title']);
+        $site->setDescription($dataPlugin[0]['txt']);
+        $site->setColor($dataPlugin[0]['color']);
         $em->persist($site);
         $em->flush();
         
         return $this->json('Save');
+        // return $_POST["data"];
     }
     /**
      * @Route("/request/pull/banner/{key}", name="request-pull-banner")
