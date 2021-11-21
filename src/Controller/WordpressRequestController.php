@@ -62,15 +62,14 @@ class WordpressRequestController extends AbstractController
 
         $site = new WordpressSite;
         $site->setUrl($key);
-        $site->setToken('');
-        $site->setTitle($dataPlugin[0]['title']);
-        $site->setDescription($dataPlugin[0]['txt']);
-        $site->setColor($dataPlugin[0]['color']);
+        $site->setToken($dataPlugin['token']);
+        $site->setTitle($dataPlugin['title']);
+        $site->setDescription($dataPlugin['txt']);
+        $site->setColor($dataPlugin['color']);
         $em->persist($site);
         $em->flush();
         
-        return $this->json('Save');
-        // return $_POST["data"];
+        return $this->json('save');
     }
     /**
      * @Route("/request/pull/banner/{key}", name="request-pull-banner")
