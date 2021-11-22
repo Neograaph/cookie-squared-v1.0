@@ -55,20 +55,29 @@ class WordpressRequestController extends AbstractController
      */
     public function bannerKeyPush($key, WordpressSiteRepository $WordpressSiteRepository, EntityManagerInterface $em): Response
     {
-        // header("Access-Control-Allow-Origin: *");
+        $checkAlreadyCreate = $WordpressSiteRepository->findBy(['url' => $key]);
 
         $requestPayload = file_get_contents("php://input");
         $dataPlugin = json_decode($requestPayload, true);
 
-        $site = new WordpressSite;
-        $site->setUrl($key);
-        $site->setToken($dataPlugin['token']);
-        $site->setTitle($dataPlugin['title']);
-        $site->setDescription($dataPlugin['txt']);
-        $site->setColor($dataPlugin['color']);
-        $em->persist($site);
-        $em->flush();
-        
+        if ($checkAlreadyCreate){
+            $checkAlreadyCreate[0]->setUrl($key);
+            $checkAlreadyCreate[0]->setToken($dataPlugin['token']);
+            $checkAlreadyCreate[0]->setTitle($dataPlugin['title']);
+            $checkAlreadyCreate[0]->setDescription($dataPlugin['txt']);
+            $checkAlreadyCreate[0]->setColor($dataPlugin['color']);
+            $em->persist($checkAlreadyCreate[0]);
+            $em->flush();
+        } else {
+            $site = new WordpressSite;
+            $site->setUrl($key);
+            $site->setToken($dataPlugin['token']);
+            $site->setTitle($dataPlugin['title']);
+            $site->setDescription($dataPlugin['txt']);
+            $site->setColor($dataPlugin['color']);
+            $em->persist($site);
+            $em->flush();
+        }
         return $this->json('save');
     }
     /**
