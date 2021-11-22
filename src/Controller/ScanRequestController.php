@@ -16,7 +16,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ScanRequestController extends AbstractController
 {
     /**
-     * @Route("/scan/request", name="scan_request")
+     * @Route("/scan/request/", name="scan_request")
      */
     public function urlShow(ScraperRepository $scraperRepository, SiteRepository $siteRepository, EntityManagerInterface $em): Response
     {
