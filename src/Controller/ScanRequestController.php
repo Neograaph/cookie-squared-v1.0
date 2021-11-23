@@ -16,7 +16,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ScanRequestController extends AbstractController
 {
     /**
-     * @Route("/scan/request", name="scan_request")
+     * @Route("/scan/request/", name="scan_request")
      */
     public function urlShow(ScraperRepository $scraperRepository, SiteRepository $siteRepository, EntityManagerInterface $em): Response
     {
@@ -72,7 +72,7 @@ class ScanRequestController extends AbstractController
         $em->persist($findScrap[0]);
         $em->flush();
 
-        $json_raw = file_get_contents("http://localhost/scraper/data.json");
+        $json_raw = file_get_contents("https://cookiesscrap.codecolliders.dev/data.json");
         $json = json_decode($json_raw, true);
 
         for($i =0; $i<count($json);$i++)

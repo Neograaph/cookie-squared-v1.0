@@ -104,9 +104,24 @@ class DashboardController extends AbstractController
     public function currentScan(Site $site, EntityManagerInterface $em): Response
     {
         $scanAt = $site->getScanAt();
-        $scanOneDay = $scanAt->modify("+24 hours");
-
-        if($scanOneDay < new DateTimeImmutable())
+        if(!is_null($scanAt))
+        {
+            if($scanAt->modify("+24 hours") < new DateTimeImmutable())
+            {
+                $item = $site->getUrl();
+                $scrap = new Scraper;
+                $scrap->setIdSite($site);
+                $scrap->setUrl($item);
+                $scrap->setStatus(1);
+                $em->persist($scrap);
+                $em->flush();
+            }
+            else
+            {
+                dd('test');
+            }
+        }
+        else
         {
             $item = $site->getUrl();
             $scrap = new Scraper;
@@ -115,10 +130,6 @@ class DashboardController extends AbstractController
             $scrap->setStatus(1);
             $em->persist($scrap);
             $em->flush();
-        }
-        else
-        {
-            dd('test');
         }
         return $this->render('dashboard/scan.html.twig', compact('site'));
     }
