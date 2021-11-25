@@ -40,7 +40,7 @@ class ScanRequestController extends AbstractController
         }
         else
         {
-            dd('existe pas');
+            return $this->json("no");
         }
 
     }
@@ -72,7 +72,7 @@ class ScanRequestController extends AbstractController
         $em->persist($findScrap[0]);
         $em->flush();
 
-        $json_raw = file_get_contents("https://cookiesscrap.codecolliders.dev/data.json");
+        $json_raw = file_get_contents("/home/ubuntu/python-script/data.json");
         $json = json_decode($json_raw, true);
 
         for($i =0; $i<count($json);$i++)
