@@ -21,6 +21,7 @@
     display: grid;
     grid-template-columns: 100%;
     text-align: center;
+    padding: 30px;
     
 }
 .footer4 img{

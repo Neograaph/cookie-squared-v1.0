@@ -213,7 +213,13 @@ a{
 
   .user_container {
     text-align: center;
-    /* padding: 40px; */
   }
 
+}
+
+@media only screen and (min-width: 900px) {
+  body
+  {
+    overflow: hidden;
+  }
 }
