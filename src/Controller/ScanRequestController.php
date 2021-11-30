@@ -72,7 +72,7 @@ class ScanRequestController extends AbstractController
         $em->persist($findScrap[0]);
         $em->flush();
 
-        $json_raw = file_get_contents("/home/ubuntu/python-script/data.json");
+        $json_raw = file_get_contents("php://input");
         $json = json_decode($json_raw, true);
 
         for($i =0; $i<count($json);$i++)
